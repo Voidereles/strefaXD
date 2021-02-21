@@ -1,0 +1,380 @@
+@import 'predefinied.scss';
+
+body {
+    font-family: 'Kelson-Sans-RU', sans-serif;
+    color: $dark;
+    overflow-x: hidden;
+    // font-family: 'Anton', sans-serif;
+}
+
+
+.header {
+    position: fixed;
+    z-index: 1024;
+    width: 100%;
+    display: flex;
+    top: 0;
+    transition: 0.5s;
+
+    .container-fluid {
+        height: 135px;
+        position: relative;
+        background: transparent;
+        border-radius: .0010px;
+        transition: $durationM;
+
+        &.scrolled {
+            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+            margin-top: 0.25rem;
+            border-radius: 200px;
+            background: white;
+            padding: 0 0.75rem;
+
+
+            .header__logo-container {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    &__logo {
+        max-width: 100%;
+        max-height: 100%;
+        position: relative;
+        z-index: 10;
+
+        &-container {
+            font-size: $fontSizeH2;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+
+            sup {
+                font-size: $fontSizeBodyXSS;
+                margin-top: -1rem;
+            }
+        }
+    }
+
+
+    .nav-toggle {
+        z-index: 1024;
+        display: none;
+        background: none;
+        border: 0;
+        outline: 0;
+        height: 48px;
+        align-items: center;
+
+        // background: white;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: $durationM;
+        // box-shadow: 4px 4px 8px $neuShadow1,
+        //     -4px -4px 8px $neuShadow2;
+
+
+        &:active {
+            transform: scale(0.9);
+        }
+
+        svg {
+            // color: $pirateBlack;
+            transition: $bezierFastoutSlowin 0.5s;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            z-index: 1;
+
+
+            path {
+                // fill: white;
+                transition: $bezierFastoutSlowin 0.5s;
+            }
+        }
+
+        &__inner {
+            position: relative;
+        }
+
+        &__icon--menu {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+
+        &__icon--close {
+            opacity: 0;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+    }
+
+    .button-icon-only {
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    &__nav {
+        flex-grow: 10;
+    }
+
+    &__search {
+        &-input {
+            border: none;
+            background: transparent;
+            // color: white;
+            font-size: $fontSizeBodyXS;
+            font-family: 'Kelson-Sans-RU', sans-serif;
+            padding-bottom: 0;
+            line-height: 0.9;
+            min-width: 170px;
+
+            &:focus {
+                border: none;
+                outline: none;
+                box-shadow: none;
+            }
+
+            &::placeholder {
+                // color: white;
+                color: $dark;
+            }
+
+        }
+
+        &-submit {
+            &:hover {
+                transform: scale(1.2);
+                outline: none;
+                box-shadow: none;
+            }
+
+            &:active {
+                transform: scale(0.9);
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        &-form {
+            display: inline-flex;
+            align-items: center;
+            box-shadow: $regularShadow;
+            border-radius: 200px;
+            padding: 0.5rem 1.5rem;
+        }
+    }
+
+    &__cart-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0 1rem;
+
+        .cart__btn {
+
+            svg,
+            svg path {
+                transition: $durationM;
+            }
+
+            &:hover {
+                svg {
+                    transforM: scale(1.2);
+                }
+
+                svg path {
+                    fill: $yellow;
+                }
+            }
+
+            &:active {
+                svg {
+                    transform: scale(0.9);
+                }
+            }
+        }
+
+        .cart {
+            position: absolute;
+            right: 1.5rem;
+            top: 70px;
+            border-radius: 1.5rem;
+            width: 340px;
+            box-shadow: $regularShadow;
+
+            &__item {
+                display: flex;
+
+                &-img {
+                    border-radius: 0.4rem;
+                    max-width: 40px;
+                    max-height: 40px;
+                    object-fit: contain;
+                    object-position: center;
+                    align-self: center;
+                    margin: auto;
+
+                }
+
+                &-content {
+                    flex-grow: 10;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    margin: 0.5rem 0 0.5rem 1rem;
+                    flex-wrap: wrap;
+                }
+
+                &-name {
+                    font-weight: bold;
+                    flex-basis: 100%;
+                    color: $grey-5;
+                }
+
+                &-amount {
+
+                    .plus,
+                    .minus {
+                        margin-top: -1px;
+
+                        svg,
+                        svg path {
+                            transition: $durationS;
+                        }
+
+                        &:hover {
+                            svg path {
+                                fill: black;
+                            }
+                        }
+
+                        &:active {
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+
+                &-amount-number,
+                &-price {
+                    font-weight: bold;
+                }
+            }
+
+            &__go-btn {
+                position: absolute;
+                bottom: -31px;
+                right: 1.5rem;
+            }
+        }
+    }
+
+    &__nav-upper-list {
+        list-style-type: none;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+
+        .header {
+            &__nav-li {
+                padding: 0 1rem;
+                font-weight: bold;
+            }
+
+            &__nav-link {
+                &:hover {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+
+    &__nav-link {
+        // color: white;
+        font-size: $fontSizeBodyS;
+        text-decoration: none;
+        position: relative;
+        transition: color $durationS ease .1s;
+        line-height: 1;
+        border-radius: 0;
+        letter-spacing: $spaceLetters;
+        transition: $bezierFastoutSlowin 0.36s;
+
+        &:active,
+        &:hover {
+            text-decoration: none;
+            // color: white;
+
+            &:before {
+                width: 100%;
+            }
+        }
+
+        &.active {
+            // color: white;
+        }
+    }
+
+    &__nav-left {
+        position: relative;
+        padding: 1rem 0;
+
+        li {
+            list-style-type: none;
+            padding: 0 1.5rem;
+            height: 48px;
+            margin: 0;
+            height: 100%;
+            transition: $durationXL;
+
+            .header__nav-link {
+                height: 48px;
+                display: inline-flex;
+                align-items: center;
+            }
+
+        }
+    }
+
+    &__nav-right {
+        padding: 1.5rem 0;
+        height: 80px;
+        align-items: center;
+        display: inline-flex;
+    }
+
+    &__social-link {
+        width: 42px;
+        height: 42px;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: $durationM;
+
+        svg {
+            width: 30px;
+            height: 20px;
+            position: relative;
+            z-index: 1;
+
+            path {
+                // fill: white;
+                transition: $durationM;
+            }
+        }
+
+
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+
+}

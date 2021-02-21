@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Strefa XD</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+
+    <link rel="shortcut icon" href="images/xd-sign.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header id="header" class="header navbar">
+
+        <div class="container-fluid header__container-upper">
+            <a href="#" class="header__logo-container" aria-label="logo">
+                <svg class="mr-4" width="84" height="68" viewBox="0 0 84 68" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M42.6235 35.8615L68.152 61.276L61.4279 68L36.0134 42.6994L23.2492 55.2358L16.5251 48.5117L29.1754 35.7475L0 7.1419L6.72402 0.417877L36.0134 29.0235L47.8659 17.3989L54.5899 24.1229L42.6235 35.8615Z"
+                        fill="#FFD357" />
+                    <path
+                        d="M83.7653 35.8615C83.7653 46.1184 75.5598 54.324 65.3028 54.324H47.8659V17.3989H65.3028C76.5855 17.3989 83.7653 25.7184 83.7653 35.8615ZM74.876 35.8615C74.876 30.3911 70.7732 26.2883 66.1005 26.2883C63.7072 26.2883 56.6413 26.2883 56.6413 26.2883V45.4346H66.1005C70.7732 45.3207 74.876 41.3319 74.876 35.8615Z"
+                        fill="#FFD357" />
+                </svg>
+                <span>Strefa Mentzena</span>
+                <sup>TM</sup>
+            </a>
+
+            <button aria-expanded="false" aria-label="Menu" class="button nav-toggle button--icon-only d-xl-none">
+                <span class="button__text">
+                    <div class="nav-toggle__inner">
+                        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" width="24"
+                            class="icon nav-toggle__icon nav-toggle__icon--menu">
+                            <path fill="#000" d="M22 6H2V4h20v2zM2 13h16v-2H2v2zm0 7h20v-2H2v2z"></path>
+                        </svg>
+                        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" width="24"
+                            class="icon nav-toggle__icon nav-toggle__icon--close">
+                            <path fill="#000"
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                            </path>
+                        </svg>
+                    </div>
+                </span>
+            </button>
+
+            <nav class="header__nav">
+                <div class="header__nav-upper d-flex justify-content-between">
+                    <ul class="header__nav-upper-list">
+                        <li class="header__nav-li">
+                            <a href="#" class="header__nav-link">Nasza firma</a>
+                        </li>
+
+                        <li class="header__nav-li">
+                            <a href="#" class="header__nav-link">Pomoc</a>
+                        </li>
+
+                        <li class="header__nav-li">
+                            <a href="#" class="header__nav-link">Płatności</a>
+                        </li>
+
+                        <li class="header__nav-li">
+                            <a href="#" class="header__nav-link">Kontakt</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__nav-upper-functions d-flex">
+                        <form class="header__search-form" action="">
+                            <input class="header__search-input" type="text" aria-label="search-text"
+                                placeholder="Szukana nazwa produktu">
+                            <button type="submit" class="btn header__search-submit px-0" aria-label="search-submit">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.3933 16.4079C16.7806 16.0232 17.4015 16.0232 17.7888 16.4079L20.3487 18.4742H20.3932C20.9111 18.9977 20.9111 19.8465 20.3932 20.3699C19.8753 20.8934 19.0356 20.8934 18.5177 20.3699L16.3933 17.9352L16.3127 17.8442C16.1625 17.6541 16.0796 17.4172 16.0796 17.1715C16.0796 16.8849 16.1925 16.6102 16.3933 16.4079ZM9.33569 0.721283C11.6153 0.721283 13.8016 1.6366 15.4135 3.26588C17.0254 4.89517 17.931 7.10494 17.931 9.40909C17.931 14.2072 14.0828 18.0969 9.33569 18.0969C4.58862 18.0969 0.740356 14.2072 0.740356 9.40909C0.740356 4.61095 4.58862 0.721283 9.33569 0.721283Z"
+                                        fill="#FFD357" />
+                                </svg>
+
+                            </button>
+                        </form>
+
+
+                        <div class="header__cart-container">
+                            <button class="btn cart__btn collapsed" data-toggle="collapse" href="#cart" role="button"
+                                aria-label="cart" aria-expanded="false" aria-controls="cart">
+
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.29667 17.6291C7.12603 17.6291 7.8055 18.3231 7.8055 19.1803C7.8055 20.0273 7.12603 20.7213 6.29667 20.7213C5.45733 20.7213 4.77786 20.0273 4.77786 19.1803C4.77786 18.3231 5.45733 17.6291 6.29667 17.6291ZM17.5379 17.6291C18.3673 17.6291 19.0467 18.3231 19.0467 19.1803C19.0467 20.0273 18.3673 20.7213 17.5379 20.7213C16.6986 20.7213 16.0191 20.0273 16.0191 19.1803C16.0191 18.3231 16.6986 17.6291 17.5379 17.6291ZM1.64859 0.721402L1.75042 0.730021L4.13356 1.09638C4.4733 1.15864 4.7231 1.44336 4.75308 1.79033L4.94293 4.07627C4.97291 4.40385 5.2327 4.64878 5.55245 4.64878H19.0469C19.6565 4.64878 20.0562 4.86308 20.4558 5.33252C20.8555 5.80195 20.9255 6.47549 20.8355 7.08677L19.8863 13.7813C19.7064 15.0682 18.6273 16.0162 17.3583 16.0162H6.45675C5.12779 16.0162 4.02864 14.9763 3.91873 13.6293L2.99944 2.50469L1.49062 2.23935C1.09093 2.16792 0.81115 1.76992 0.881095 1.36172C0.951041 0.944328 1.34074 0.66777 1.75042 0.730021L1.64859 0.721402ZM15.7595 8.42364H12.9917C12.572 8.42364 12.2422 8.76041 12.2422 9.18902C12.2422 9.60743 12.572 9.9544 12.9917 9.9544H15.7595C16.1792 9.9544 16.5089 9.60743 16.5089 9.18902C16.5089 8.76041 16.1792 8.42364 15.7595 8.42364Z"
+                                        fill="#3F3F3F" />
+                                </svg>
+
+
+                            </button>
+
+                            <div class="cart collapse" id="cart" aria-labelledby="cart">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-end font-weight-bold mb-4">
+                                        <span class="mr-2 fontSizeBodyM">Twoje zakupy</span>
+                                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.29667 17.6291C7.12603 17.6291 7.8055 18.3231 7.8055 19.1803C7.8055 20.0273 7.12603 20.7213 6.29667 20.7213C5.45733 20.7213 4.77786 20.0273 4.77786 19.1803C4.77786 18.3231 5.45733 17.6291 6.29667 17.6291ZM17.5379 17.6291C18.3673 17.6291 19.0467 18.3231 19.0467 19.1803C19.0467 20.0273 18.3673 20.7213 17.5379 20.7213C16.6986 20.7213 16.0191 20.0273 16.0191 19.1803C16.0191 18.3231 16.6986 17.6291 17.5379 17.6291ZM1.64859 0.721402L1.75042 0.730021L4.13356 1.09638C4.4733 1.15864 4.7231 1.44336 4.75308 1.79033L4.94293 4.07627C4.97291 4.40385 5.2327 4.64878 5.55245 4.64878H19.0469C19.6565 4.64878 20.0562 4.86308 20.4558 5.33252C20.8555 5.80195 20.9255 6.47549 20.8355 7.08677L19.8863 13.7813C19.7064 15.0682 18.6273 16.0162 17.3583 16.0162H6.45675C5.12779 16.0162 4.02864 14.9763 3.91873 13.6293L2.99944 2.50469L1.49062 2.23935C1.09093 2.16792 0.81115 1.76992 0.881095 1.36172C0.951041 0.944328 1.34074 0.66777 1.75042 0.730021L1.64859 0.721402ZM15.7595 8.42364H12.9917C12.572 8.42364 12.2422 8.76041 12.2422 9.18902C12.2422 9.60743 12.572 9.9544 12.9917 9.9544H15.7595C16.1792 9.9544 16.5089 9.60743 16.5089 9.18902C16.5089 8.76041 16.1792 8.42364 15.7595 8.42364Z"
+                                                fill="#FFD357" />
+                                        </svg>
+                                    </div>
+                                    <div class="cart__item">
+                                        <img class="cart__item-img" src="images/lamp.png" alt="lampa">
+                                        <div class="cart__item-content">
+                                            <div class="cart__item-name">Nazwa produktu</div>
+                                            <div class="cart__item-details">
+                                                <div class="cart__item-amount">
+                                                    <span>Ilość: <span class="cart__item-amount-number">4</span>
+                                                        zł</span>
+                                                    <button class="btn plus px-0"><svg width="20" height="20"
+                                                            viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M13 6.5C13 8.22391 12.3152 9.87721 11.0962 11.0962C9.87721 12.3152 8.22391 13 6.5 13C4.77609 13 3.12279 12.3152 1.90381 11.0962C0.68482 9.87721 0 8.22391 0 6.5C0 4.77609 0.68482 3.12279 1.90381 1.90381C3.12279 0.68482 4.77609 0 6.5 0C8.22391 0 9.87721 0.68482 11.0962 1.90381C12.3152 3.12279 13 4.77609 13 6.5ZM6.90625 3.65625C6.90625 3.54851 6.86345 3.44517 6.78726 3.36899C6.71108 3.2928 6.60774 3.25 6.5 3.25C6.39226 3.25 6.28892 3.2928 6.21274 3.36899C6.13655 3.44517 6.09375 3.54851 6.09375 3.65625V6.09375H3.65625C3.54851 6.09375 3.44517 6.13655 3.36899 6.21274C3.2928 6.28892 3.25 6.39226 3.25 6.5C3.25 6.60774 3.2928 6.71108 3.36899 6.78726C3.44517 6.86345 3.54851 6.90625 3.65625 6.90625H6.09375V9.34375C6.09375 9.45149 6.13655 9.55483 6.21274 9.63101C6.28892 9.7072 6.39226 9.75 6.5 9.75C6.60774 9.75 6.71108 9.7072 6.78726 9.63101C6.86345 9.55483 6.90625 9.45149 6.90625 9.34375V6.90625H9.34375C9.45149 6.90625 9.55483 6.86345 9.63101 6.78726C9.7072 6.71108 9.75 6.60774 9.75 6.5C9.75 6.39226 9.7072 6.28892 9.63101 6.21274C9.55483 6.13655 9.45149 6.09375 9.34375 6.09375H6.90625V3.65625Z"
+                                                                fill="#FFD357" />
+                                                        </svg>
+                                                    </button>
+                                                    <button class="btn minus px-0">
+                                                        <svg width="20" height="20" viewBox="0 0 14 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z"
+                                                                fill="#FFD357" />
+                                                        </svg>
+
+                                                    </button>
+                                                    <span>Cena: <span class="cart__item-price">15,99</span> zł</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cart__item">
+                                        <img class="cart__item-img" src="images/lamp.png" alt="lampa">
+                                        <div class="cart__item-content">
+                                            <div class="cart__item-name">Nazwa produktu</div>
+                                            <div class="cart__item-details">
+                                                <div class="cart__item-amount">
+                                                    <span>Ilość: <span class="cart__item-amount-number">4</span>
+                                                        zł</span>
+                                                    <button class="btn plus px-0"><svg width="20" height="20"
+                                                            viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M13 6.5C13 8.22391 12.3152 9.87721 11.0962 11.0962C9.87721 12.3152 8.22391 13 6.5 13C4.77609 13 3.12279 12.3152 1.90381 11.0962C0.68482 9.87721 0 8.22391 0 6.5C0 4.77609 0.68482 3.12279 1.90381 1.90381C3.12279 0.68482 4.77609 0 6.5 0C8.22391 0 9.87721 0.68482 11.0962 1.90381C12.3152 3.12279 13 4.77609 13 6.5ZM6.90625 3.65625C6.90625 3.54851 6.86345 3.44517 6.78726 3.36899C6.71108 3.2928 6.60774 3.25 6.5 3.25C6.39226 3.25 6.28892 3.2928 6.21274 3.36899C6.13655 3.44517 6.09375 3.54851 6.09375 3.65625V6.09375H3.65625C3.54851 6.09375 3.44517 6.13655 3.36899 6.21274C3.2928 6.28892 3.25 6.39226 3.25 6.5C3.25 6.60774 3.2928 6.71108 3.36899 6.78726C3.44517 6.86345 3.54851 6.90625 3.65625 6.90625H6.09375V9.34375C6.09375 9.45149 6.13655 9.55483 6.21274 9.63101C6.28892 9.7072 6.39226 9.75 6.5 9.75C6.60774 9.75 6.71108 9.7072 6.78726 9.63101C6.86345 9.55483 6.90625 9.45149 6.90625 9.34375V6.90625H9.34375C9.45149 6.90625 9.55483 6.86345 9.63101 6.78726C9.7072 6.71108 9.75 6.60774 9.75 6.5C9.75 6.39226 9.7072 6.28892 9.63101 6.21274C9.55483 6.13655 9.45149 6.09375 9.34375 6.09375H6.90625V3.65625Z"
+                                                                fill="#FFD357" />
+                                                        </svg>
+                                                    </button>
+                                                    <button class="btn minus px-0">
+                                                        <svg width="20" height="20" viewBox="0 0 14 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z"
+                                                                fill="#FFD357" />
+                                                        </svg>
+
+                                                    </button>
+                                                    <span>Cena: <span class="cart__item-price">15,99</span> zł</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cart__item">
+                                        <img class="cart__item-img" src="images/fridge.png" alt="lampa">
+                                        <div class="cart__item-content">
+                                            <div class="cart__item-name">Nazwa produktu</div>
+                                            <div class="cart__item-details">
+                                                <div class="cart__item-amount">
+                                                    <span>Ilość: <span class="cart__item-amount-number">4</span>
+                                                        zł</span>
+                                                    <button class="btn plus px-0"><svg width="20" height="20"
+                                                            viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M13 6.5C13 8.22391 12.3152 9.87721 11.0962 11.0962C9.87721 12.3152 8.22391 13 6.5 13C4.77609 13 3.12279 12.3152 1.90381 11.0962C0.68482 9.87721 0 8.22391 0 6.5C0 4.77609 0.68482 3.12279 1.90381 1.90381C3.12279 0.68482 4.77609 0 6.5 0C8.22391 0 9.87721 0.68482 11.0962 1.90381C12.3152 3.12279 13 4.77609 13 6.5ZM6.90625 3.65625C6.90625 3.54851 6.86345 3.44517 6.78726 3.36899C6.71108 3.2928 6.60774 3.25 6.5 3.25C6.39226 3.25 6.28892 3.2928 6.21274 3.36899C6.13655 3.44517 6.09375 3.54851 6.09375 3.65625V6.09375H3.65625C3.54851 6.09375 3.44517 6.13655 3.36899 6.21274C3.2928 6.28892 3.25 6.39226 3.25 6.5C3.25 6.60774 3.2928 6.71108 3.36899 6.78726C3.44517 6.86345 3.54851 6.90625 3.65625 6.90625H6.09375V9.34375C6.09375 9.45149 6.13655 9.55483 6.21274 9.63101C6.28892 9.7072 6.39226 9.75 6.5 9.75C6.60774 9.75 6.71108 9.7072 6.78726 9.63101C6.86345 9.55483 6.90625 9.45149 6.90625 9.34375V6.90625H9.34375C9.45149 6.90625 9.55483 6.86345 9.63101 6.78726C9.7072 6.71108 9.75 6.60774 9.75 6.5C9.75 6.39226 9.7072 6.28892 9.63101 6.21274C9.55483 6.13655 9.45149 6.09375 9.34375 6.09375H6.90625V3.65625Z"
+                                                                fill="#FFD357" />
+                                                        </svg>
+                                                    </button>
+                                                    <button class="btn minus px-0">
+                                                        <svg width="20" height="20" viewBox="0 0 14 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z"
+                                                                fill="#FFD357" />
+                                                        </svg>
+
+                                                    </button>
+                                                    <span>Cena: <span class="cart__item-price">15,99</span> zł</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div
+                                        class="d-flex align-items-center justify-content-end font-weight-bold flex-wrap mb-4 text-right">
+                                        <span class="flex-basis-100">Łącznie do zapłaty</span>
+                                        <span class="fontSizeH3">119,00 zł</span>
+                                    </div>
+
+                                    <a class="btn btn-rounded btn-warning py-3 px-4 fontSizeBodyL cart__go-btn"
+                                        href="#">
+                                        <span>Do kasy</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+        <nav class="container-fluid header__container-bottom d-none">
+            <ul class="header__nav-bottom">
+                <li class="header__nav-li active"> <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
+                        koszulek</a>
+                </li>
+                <li class="header__nav-li"> <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
+                        skarpet</a></li>
+                <li class="header__nav-li"> <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
+                        gadżetów</a>
+                </li>
+                <li class="header__nav-li"> <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
+                        książek</a></li>
+                <li class="header__nav-li"> <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
+                        gadżetów</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>
