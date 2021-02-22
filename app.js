@@ -39,11 +39,11 @@ ready(function () {
     // }
     // headerMoveLinks();
 
-    $(document).click(function (e) {
-        if (!$(e.target).is('.panel-body')) {
-            $('.collapse').collapse('hide');
-        }
-    });
+    // $(document).click(function (e) {
+    //     if (!$(e.target).is('.card-body')) {
+    //         $('.collapse').collapse('hide');
+    //     }
+    // });
 
     function headerOnScroll() {
         let prevScrollpos = window.pageYOffset;
