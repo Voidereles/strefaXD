@@ -9,14 +9,14 @@
   font-family: 'Kelson-Sans-RU';
   font-weight: 700;
   font-display: swap;
-  src: url("../fonts/Kelson Sans Bold RU.otf");
+  src: url("../fonts/kelson-sans-ru-bold.ttf") format("truetype"), url("../fonts/Kelson Sans Bold RU.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Kelson-Sans-RU';
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Kelson Sans Regular RU.otf");
+  src: url("../fonts/kelson-sans-ru-normal.ttf") format("truetype"), url("../fonts/Kelson Sans Regular RU.otf") format("opentype");
 }
 
 .font-grey {
@@ -25,6 +25,10 @@
 
 .fill-grey {
   fill: #3F3F3F;
+}
+
+.font-yellowDark {
+  color: #f6c219;
 }
 
 .fontSizeH1 {
@@ -82,7 +86,7 @@ a {
 
 a:hover, a:focus, a:active {
   text-decoration: none;
-  color: #3F3F3F;
+  color: #f6c219;
 }
 
 .btn {
@@ -116,11 +120,11 @@ a:hover, a:focus, a:active {
   transition: 400ms;
 }
 
-.btn-rounded {
+.el-rounded {
   border-radius: 200px;
 }
 
-.btn-rounded::after {
+.el-rounded::after {
   border-radius: 200px;
 }
 
@@ -184,8 +188,8 @@ a:hover, a:focus, a:active {
 }
 
 .btn-warning {
-  background: #FFC817;
-  color: white;
+  background: #f6c219;
+  color: black;
   border: none;
   position: relative;
   overflow: hidden;
@@ -197,16 +201,16 @@ a:hover, a:focus, a:active {
 }
 
 .btn-warning:hover, .btn-warning:active, .btn-warning:focus, .btn-warning:not(:disabled):not(.disabled):active, .btn-warning:not(:disabled):not(.disabled):focus, .btn-warning:not(:disabled):not(.disabled):active:focus {
-  background: #FFC817;
-  color: white;
+  background: #f6c219;
+  color: black;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .btn-warning:hover::after {
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
 
@@ -262,7 +266,7 @@ a:hover, a:focus, a:active {
   border-color: #FF1717;
 }
 
-.input-white {
+.input-light {
   height: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,7 +274,8 @@ a:hover, a:focus, a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  background: #EEEEEE;
   padding: 1rem;
   -webkit-box-flex: 10;
       -ms-flex-positive: 10;
@@ -282,7 +287,7 @@ a:hover, a:focus, a:active {
   line-height: 0.9;
 }
 
-.input-white:focus {
+.input-light:focus {
   border: none;
   outline: none;
   -webkit-box-shadow: none;

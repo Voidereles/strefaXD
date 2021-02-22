@@ -9,14 +9,14 @@
     font-family: 'Kelson-Sans-RU';
     font-weight: 700;
     font-display: swap;
-    src: url('../fonts/Kelson\ Sans\ Bold\ RU.otf');
+    src: url('../fonts/kelson-sans-ru-bold.ttf') format("truetype"), url('../fonts/Kelson\ Sans\ Bold\ RU.otf') format("opentype");
 }
 
 @font-face {
     font-family: 'Kelson-Sans-RU';
     font-weight: 400;
     font-display: swap;
-    src: url('../fonts/Kelson\ Sans\ Regular\ RU.otf');
+    src: url("../fonts/kelson-sans-ru-normal.ttf") format("truetype"), url('../fonts/Kelson\ Sans\ Regular\ RU.otf') format("opentype");
 }
 
 
@@ -30,7 +30,7 @@ $grey-5:#747474;
 $light:#F6F6F6;
 $grey-light:#EEEEEE;
 $yellow:#FFD357;
-$yellow-dark:#FFC817;
+$yellow-dark:#f6c219;
 $blue:#1766FF;
 $red:#FF1717;
 
@@ -45,11 +45,14 @@ $regularShadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 
 .font-grey {
     color: $dark;
-
 }
 
 .fill-grey {
     fill: $dark;
+}
+
+.font-yellowDark {
+    color: $yellow-dark;
 }
 
 $fontSizeH1:3.85rem;
@@ -126,7 +129,7 @@ a {
     &:focus,
     &:active {
         text-decoration: none;
-        color: $dark;
+        color: $yellow-dark;
     }
 }
 
@@ -153,7 +156,7 @@ a {
     transition: $durationM;
 }
 
-.btn-rounded {
+.el-rounded {
     border-radius: 200px;
 
     &::after {
@@ -223,7 +226,7 @@ a {
 
 .btn-warning {
     background: $yellow-dark;
-    color: white;
+    color: black;
     border: none;
     position: relative;
     overflow: hidden;
@@ -240,14 +243,14 @@ a {
     &:not(:disabled):not(.disabled):focus,
     &:not(:disabled):not(.disabled):active:focus {
         background: $yellow-dark;
-        color: white;
+        color: black;
         border: none;
         box-shadow: none;
     }
 
     &:hover {
         &::after {
-            transform: translate(-50%, -50%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1);
             opacity: 1;
         }
     }
@@ -310,11 +313,12 @@ a {
     border-color: $red;
 }
 
-.input-white {
+.input-light {
     height: 44px;
     display: flex;
     align-items: center;
-    font-size: $fontSizeBodyXS;
+    font-size: $fontSizeBodyS;
+    background: $grey-light;
     padding: 1rem;
     flex-grow: 10;
     border: none;
