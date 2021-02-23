@@ -71,11 +71,9 @@ body {
   font-family: 'Kelson-Sans-RU', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Anton', sans-serif;
+.heading-4 {
+  font-weight: bold;
+  font-size: 1.125rem;
 }
 
 a {
@@ -321,6 +319,49 @@ a:hover, a:focus, a:active {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.color-link {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: grey;
+  margin-right: 0.75rem;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.color-link.active {
+  border: 4px solid white;
+}
+
+.color-link.active.lightColor {
+  border-color: black;
+}
+
+.color-link:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+a.sizeOf.active {
+  color: #f6c219;
+}
+
+.grid-span2 {
+  grid-column: span 2;
+}
+
+.grid-span3 {
+  grid-column: span 3;
+}
+
+.grid-span4 {
+  grid-column: span 4;
+}
+
+.grid-span5 {
+  grid-column: span 5;
 }
 
 .flex-basis-100 {

@@ -114,12 +114,12 @@ body {
     font-family: 'Kelson-Sans-RU', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Anton', sans-serif;
+.heading-4 {
+    font-weight: bold;
+    font-size: $fontSizeBodyM;
 }
+
+
 
 a {
     color: $dark;
@@ -354,6 +354,51 @@ a {
         box-shadow: none;
     }
 }
+
+.color-link {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: grey;
+    margin-right: 0.75rem;
+    transition: $durationM;
+
+    &.active {
+        border: 4px solid white;
+    }
+
+    &.active.lightColor {
+        border-color: black;
+    }
+
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+a.sizeOf {
+    &.active {
+        color: $yellow-dark;
+    }
+}
+
+.grid-span2 {
+    grid-column: span 2;
+}
+
+.grid-span3 {
+    grid-column: span 3;
+}
+
+
+.grid-span4 {
+    grid-column: span 4;
+}
+
+.grid-span5 {
+    grid-column: span 5;
+}
+
 
 // .owl-carousel {
 

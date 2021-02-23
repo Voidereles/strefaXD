@@ -36,7 +36,7 @@
 
         <div class="container-fluid header__container-upper">
             <a href="#" class="header__logo-container" aria-label="logo">
-                <svg class="mr-4" width="84" height="68" viewBox="0 0 84 68" fill="none"
+                <svg class="d-none d-md-block mr-4" width="84" height="68" viewBox="0 0 84 68" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M42.6235 35.8615L68.152 61.276L61.4279 68L36.0134 42.6994L23.2492 55.2358L16.5251 48.5117L29.1754 35.7475L0 7.1419L6.72402 0.417877L36.0134 29.0235L47.8659 17.3989L54.5899 24.1229L42.6235 35.8615Z"
@@ -118,6 +118,12 @@
                                 data-parent=".header__nav-upper-functions">
                                 <div class="card-body">
                                     <div class="d-flex align-items-center justify-content-end font-weight-bold mb-4">
+                                        <svg aria-hidden="true" height="24" viewBox="0 0 24 24" width="24"
+                                            class="header__dropdown-close">
+                                            <path fill="#000"
+                                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                            </path>
+                                        </svg>
                                         <span class="mr-2 fontSizeBodyM">Twoje zakupy</span>
                                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -187,6 +193,12 @@
                             <div class="login collapse" id="login" aria-labelledby="login"
                                 data-parent=".header__nav-upper-functions">
                                 <div class="card-body">
+                                    <svg aria-hidden="true" height="24" viewBox="0 0 24 24" width="24"
+                                        class="header__dropdown-close">
+                                        <path fill="#000"
+                                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                                        </path>
+                                    </svg>
                                     <div class="d-flex align-items-center justify-content-end font-weight-bold mb-4">
                                         <span class="mr-2 fontSizeBodyM">Logowanie</span>
                                         <svg width="16" height="21" viewBox="0 0 16 21" fill="none"
@@ -198,10 +210,10 @@
                                     </div>
 
                                     <form action="">
-                                        <input type="text" class="input-light el-rounded w-100" name="" id=""
+                                        <input type="text" class="input-light el-rounded w-100" name=""
                                             aria-label="login" placeholder="Login" required>
 
-                                        <input type="password" class="input-light el-rounded w-100 mt-2" name="" id=""
+                                        <input type="password" class="input-light el-rounded w-100 mt-2" name=""
                                             aria-label="login" placeholder="Hasło" required>
 
                                         <p class="login__p mx-1 my-3">
@@ -234,9 +246,10 @@
 
         <nav class="container-fluid header__container-bottom">
             <ul class="header__nav-bottom">
-                <li class="header__nav-li">
-                    <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
-                        koszulek
+                <li class="header__nav-li header__nav-bottom-li">
+                    <a class="header__nav-link header__nav-bottom-link" href="#">
+                        <span> Strefa
+                            koszulek</span>
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.3569 0.10379C17.1466 0.10379 21.8569 4.81409 21.8569 10.6038C21.8569 16.3935 17.1466 21.1038 11.3569 21.1038C5.56723 21.1038 0.856934 16.3935 0.856934 10.6038C0.856934 7.31939 2.35108 4.28594 4.95403 2.28044C5.28793 2.02319 5.76883 2.08619 6.02503 2.41904C6.28333 2.75294 6.21928 3.23174 5.88643 3.49109C3.65938 5.20364 2.38363 7.79714 2.38363 10.6038C2.38363 15.5514 6.40828 19.5771 11.3569 19.5771C16.3045 19.5771 20.3292 15.5514 20.3292 10.6038C20.3292 5.65619 16.3045 1.63049 11.3569 1.63049C10.8981 1.63049 10.4392 1.66514 9.99298 1.73339C9.57718 1.79639 9.18763 1.51079 9.12358 1.09394C9.05428 0.67499 9.34513 0.28754 9.76198 0.22349C10.2849 0.14369 10.8214 0.10379 11.3569 0.10379ZM7.15609 8.5313C7.46479 8.2247 7.96249 8.2247 8.26909 8.5334L11.3561 11.6341L14.4431 8.5334C14.7497 8.2247 15.2484 8.2247 15.5571 8.5313C15.8648 8.8379 15.8658 9.33665 15.5592 9.64535L11.9136 13.3056C11.7666 13.4548 11.5661 13.5377 11.3561 13.5377C11.1471 13.5377 10.9466 13.4548 10.7985 13.3056L7.15399 9.64535C6.84634 9.33665 6.84739 8.8379 7.15609 8.5313Z"
@@ -244,36 +257,858 @@
                         </svg>
 
                     </a>
+
+                    <div class="header__nav-bottom-mega-menu row mega-menu">
+                        <div class="mega-menu__colors-sizes mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według rozmiaru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4">
+                                <a href="#" class="sizeOf">XXXL</a>
+                                <a href="#" class="sizeOf active">XXL</a>
+                                <a href="#" class="sizeOf">XL</a>
+                                <a href="#" class="sizeOf">L</a>
+                                <a href="#" class="sizeOf">M</a>
+                                <a href="#" class="sizeOf">S</a>
+                                <a href="#" class="sizeOf">XS</a>
+                            </div>
+
+                            <span class="heading-4">Według koloru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4 mega-menu__colors">
+                                <a href="#" class="color-link active" data-color="#F050F0"
+                                    aria-label="Pick color #FF0000"></a>
+                                <a href="#" class="color-link active lightColor" data-color="#FFFFFF"
+                                    aria-label="Pick color #FFFFFF"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FFFF00"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FF00FF"></a>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__categories-container mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według czegoś tam</span>
+                            <div class="mega-menu__categories">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block active">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__new-products mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <div class="heading-4">Ostatnio dodane</div>
+
+                            <div class="owl-carousel mega-menu__new-products-carousel mt-2">
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mega-menu__banner-container mx-xl-auto">
+                            <div class="owl-carousel mega-menu__banner-carousel">
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-2.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-3.jpg" alt="">
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
                 </li>
-                <li class="header__nav-li"> <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
-                        skarpet <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                <li class="header__nav-li header__nav-bottom-li">
+                    <a class="header__nav-link header__nav-bottom-link" href="#">
+                        <span> Strefa
+                            koszulek</span>
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.3569 0.10379C17.1466 0.10379 21.8569 4.81409 21.8569 10.6038C21.8569 16.3935 17.1466 21.1038 11.3569 21.1038C5.56723 21.1038 0.856934 16.3935 0.856934 10.6038C0.856934 7.31939 2.35108 4.28594 4.95403 2.28044C5.28793 2.02319 5.76883 2.08619 6.02503 2.41904C6.28333 2.75294 6.21928 3.23174 5.88643 3.49109C3.65938 5.20364 2.38363 7.79714 2.38363 10.6038C2.38363 15.5514 6.40828 19.5771 11.3569 19.5771C16.3045 19.5771 20.3292 15.5514 20.3292 10.6038C20.3292 5.65619 16.3045 1.63049 11.3569 1.63049C10.8981 1.63049 10.4392 1.66514 9.99298 1.73339C9.57718 1.79639 9.18763 1.51079 9.12358 1.09394C9.05428 0.67499 9.34513 0.28754 9.76198 0.22349C10.2849 0.14369 10.8214 0.10379 11.3569 0.10379ZM7.15609 8.5313C7.46479 8.2247 7.96249 8.2247 8.26909 8.5334L11.3561 11.6341L14.4431 8.5334C14.7497 8.2247 15.2484 8.2247 15.5571 8.5313C15.8648 8.8379 15.8658 9.33665 15.5592 9.64535L11.9136 13.3056C11.7666 13.4548 11.5661 13.5377 11.3561 13.5377C11.1471 13.5377 10.9466 13.4548 10.7985 13.3056L7.15399 9.64535C6.84634 9.33665 6.84739 8.8379 7.15609 8.5313Z"
                                 fill="#ABABAB" />
-                        </svg></a></li>
-                <li class="header__nav-li"> <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
-                        gadżetów <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                        </svg>
+                    </a>
+                    <div class="header__nav-bottom-mega-menu row mega-menu">
+                        <div class="mega-menu__colors-sizes mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według rozmiaru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4">
+                                <a href="#" class="sizeOf">XXXL</a>
+                                <a href="#" class="sizeOf active">XXL</a>
+                                <a href="#" class="sizeOf">XL</a>
+                                <a href="#" class="sizeOf">L</a>
+                                <a href="#" class="sizeOf">M</a>
+                                <a href="#" class="sizeOf">S</a>
+                                <a href="#" class="sizeOf">XS</a>
+                            </div>
+
+                            <span class="heading-4">Według koloru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4 mega-menu__colors">
+                                <a href="#" class="color-link active" data-color="#F050F0"
+                                    aria-label="Pick color #FF0000"></a>
+                                <a href="#" class="color-link active lightColor" data-color="#FFFFFF"
+                                    aria-label="Pick color #FFFFFF"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FFFF00"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FF00FF"></a>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__categories-container mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według czegoś tam</span>
+                            <div class="mega-menu__categories">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block active">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__new-products mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <div class="heading-4">Ostatnio dodane</div>
+
+                            <div class="owl-carousel mega-menu__new-products-carousel mt-2">
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mega-menu__banner-container mx-xl-auto">
+                            <div class="owl-carousel mega-menu__banner-carousel">
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-2.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-3.jpg" alt="">
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </li>
+                <li class="header__nav-li header__nav-bottom-li"> <a class="header__nav-link header__nav-bottom-link"
+                        href="#"> <span> Strefa
+                            koszulek</span><svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.3569 0.10379C17.1466 0.10379 21.8569 4.81409 21.8569 10.6038C21.8569 16.3935 17.1466 21.1038 11.3569 21.1038C5.56723 21.1038 0.856934 16.3935 0.856934 10.6038C0.856934 7.31939 2.35108 4.28594 4.95403 2.28044C5.28793 2.02319 5.76883 2.08619 6.02503 2.41904C6.28333 2.75294 6.21928 3.23174 5.88643 3.49109C3.65938 5.20364 2.38363 7.79714 2.38363 10.6038C2.38363 15.5514 6.40828 19.5771 11.3569 19.5771C16.3045 19.5771 20.3292 15.5514 20.3292 10.6038C20.3292 5.65619 16.3045 1.63049 11.3569 1.63049C10.8981 1.63049 10.4392 1.66514 9.99298 1.73339C9.57718 1.79639 9.18763 1.51079 9.12358 1.09394C9.05428 0.67499 9.34513 0.28754 9.76198 0.22349C10.2849 0.14369 10.8214 0.10379 11.3569 0.10379ZM7.15609 8.5313C7.46479 8.2247 7.96249 8.2247 8.26909 8.5334L11.3561 11.6341L14.4431 8.5334C14.7497 8.2247 15.2484 8.2247 15.5571 8.5313C15.8648 8.8379 15.8658 9.33665 15.5592 9.64535L11.9136 13.3056C11.7666 13.4548 11.5661 13.5377 11.3561 13.5377C11.1471 13.5377 10.9466 13.4548 10.7985 13.3056L7.15399 9.64535C6.84634 9.33665 6.84739 8.8379 7.15609 8.5313Z"
                                 fill="#ABABAB" />
                         </svg></a>
+                    <div class="header__nav-bottom-mega-menu row mega-menu">
+                        <div class="mega-menu__colors-sizes mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według rozmiaru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4">
+                                <a href="#" class="sizeOf">XXXL</a>
+                                <a href="#" class="sizeOf active">XXL</a>
+                                <a href="#" class="sizeOf">XL</a>
+                                <a href="#" class="sizeOf">L</a>
+                                <a href="#" class="sizeOf">M</a>
+                                <a href="#" class="sizeOf">S</a>
+                                <a href="#" class="sizeOf">XS</a>
+                            </div>
+
+                            <span class="heading-4">Według koloru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4 mega-menu__colors">
+                                <a href="#" class="color-link active" data-color="#F050F0"
+                                    aria-label="Pick color #FF0000"></a>
+                                <a href="#" class="color-link active lightColor" data-color="#FFFFFF"
+                                    aria-label="Pick color #FFFFFF"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FFFF00"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FF00FF"></a>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__categories-container mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według czegoś tam</span>
+                            <div class="mega-menu__categories">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block active">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__new-products mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <div class="heading-4">Ostatnio dodane</div>
+
+                            <div class="owl-carousel mega-menu__new-products-carousel mt-2">
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mega-menu__banner-container mx-xl-auto">
+                            <div class="owl-carousel mega-menu__banner-carousel">
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-2.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-3.jpg" alt="">
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
                 </li>
-                <li class="header__nav-li"> <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
-                        książek <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                <li class="header__nav-li header__nav-bottom-li"> <a class="header__nav-link header__nav-bottom-link"
+                        href="#"> <span> Strefa
+                            koszulek</span> <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.3569 0.10379C17.1466 0.10379 21.8569 4.81409 21.8569 10.6038C21.8569 16.3935 17.1466 21.1038 11.3569 21.1038C5.56723 21.1038 0.856934 16.3935 0.856934 10.6038C0.856934 7.31939 2.35108 4.28594 4.95403 2.28044C5.28793 2.02319 5.76883 2.08619 6.02503 2.41904C6.28333 2.75294 6.21928 3.23174 5.88643 3.49109C3.65938 5.20364 2.38363 7.79714 2.38363 10.6038C2.38363 15.5514 6.40828 19.5771 11.3569 19.5771C16.3045 19.5771 20.3292 15.5514 20.3292 10.6038C20.3292 5.65619 16.3045 1.63049 11.3569 1.63049C10.8981 1.63049 10.4392 1.66514 9.99298 1.73339C9.57718 1.79639 9.18763 1.51079 9.12358 1.09394C9.05428 0.67499 9.34513 0.28754 9.76198 0.22349C10.2849 0.14369 10.8214 0.10379 11.3569 0.10379ZM7.15609 8.5313C7.46479 8.2247 7.96249 8.2247 8.26909 8.5334L11.3561 11.6341L14.4431 8.5334C14.7497 8.2247 15.2484 8.2247 15.5571 8.5313C15.8648 8.8379 15.8658 9.33665 15.5592 9.64535L11.9136 13.3056C11.7666 13.4548 11.5661 13.5377 11.3561 13.5377C11.1471 13.5377 10.9466 13.4548 10.7985 13.3056L7.15399 9.64535C6.84634 9.33665 6.84739 8.8379 7.15609 8.5313Z"
                                 fill="#ABABAB" />
-                        </svg></a></li>
-                <li class="header__nav-li"> <a class="header__nav-link header__nav-bottom-link" href="#">Strefa
-                        gadżetów <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                        </svg></a>
+                    <div class="header__nav-bottom-mega-menu row mega-menu">
+                        <div class="mega-menu__colors-sizes mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według rozmiaru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4">
+                                <a href="#" class="sizeOf">XXXL</a>
+                                <a href="#" class="sizeOf active">XXL</a>
+                                <a href="#" class="sizeOf">XL</a>
+                                <a href="#" class="sizeOf">L</a>
+                                <a href="#" class="sizeOf">M</a>
+                                <a href="#" class="sizeOf">S</a>
+                                <a href="#" class="sizeOf">XS</a>
+                            </div>
+
+                            <span class="heading-4">Według koloru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4 mega-menu__colors">
+                                <a href="#" class="color-link active" data-color="#F050F0"
+                                    aria-label="Pick color #FF0000"></a>
+                                <a href="#" class="color-link active lightColor" data-color="#FFFFFF"
+                                    aria-label="Pick color #FFFFFF"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FFFF00"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FF00FF"></a>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__categories-container mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według czegoś tam</span>
+                            <div class="mega-menu__categories">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block active">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__new-products mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <div class="heading-4">Ostatnio dodane</div>
+
+                            <div class="owl-carousel mega-menu__new-products-carousel mt-2">
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mega-menu__banner-container mx-xl-auto">
+                            <div class="owl-carousel mega-menu__banner-carousel">
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-2.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-3.jpg" alt="">
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
+                <li class="header__nav-li header__nav-bottom-li"> <a class="header__nav-link header__nav-bottom-link"
+                        href="#"> <span> Strefa
+                            koszulek</span> <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11.3569 0.10379C17.1466 0.10379 21.8569 4.81409 21.8569 10.6038C21.8569 16.3935 17.1466 21.1038 11.3569 21.1038C5.56723 21.1038 0.856934 16.3935 0.856934 10.6038C0.856934 7.31939 2.35108 4.28594 4.95403 2.28044C5.28793 2.02319 5.76883 2.08619 6.02503 2.41904C6.28333 2.75294 6.21928 3.23174 5.88643 3.49109C3.65938 5.20364 2.38363 7.79714 2.38363 10.6038C2.38363 15.5514 6.40828 19.5771 11.3569 19.5771C16.3045 19.5771 20.3292 15.5514 20.3292 10.6038C20.3292 5.65619 16.3045 1.63049 11.3569 1.63049C10.8981 1.63049 10.4392 1.66514 9.99298 1.73339C9.57718 1.79639 9.18763 1.51079 9.12358 1.09394C9.05428 0.67499 9.34513 0.28754 9.76198 0.22349C10.2849 0.14369 10.8214 0.10379 11.3569 0.10379ZM7.15609 8.5313C7.46479 8.2247 7.96249 8.2247 8.26909 8.5334L11.3561 11.6341L14.4431 8.5334C14.7497 8.2247 15.2484 8.2247 15.5571 8.5313C15.8648 8.8379 15.8658 9.33665 15.5592 9.64535L11.9136 13.3056C11.7666 13.4548 11.5661 13.5377 11.3561 13.5377C11.1471 13.5377 10.9466 13.4548 10.7985 13.3056L7.15399 9.64535C6.84634 9.33665 6.84739 8.8379 7.15609 8.5313Z"
                                 fill="#ABABAB" />
-                        </svg></a></li>
+                        </svg></a>
+                    <div class="header__nav-bottom-mega-menu row mega-menu">
+                        <div class="mega-menu__colors-sizes mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według rozmiaru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4">
+                                <a href="#" class="sizeOf">XXXL</a>
+                                <a href="#" class="sizeOf active">XXL</a>
+                                <a href="#" class="sizeOf">XL</a>
+                                <a href="#" class="sizeOf">L</a>
+                                <a href="#" class="sizeOf">M</a>
+                                <a href="#" class="sizeOf">S</a>
+                                <a href="#" class="sizeOf">XS</a>
+                            </div>
+
+                            <span class="heading-4">Według koloru</span>
+                            <div class="d-flex justify-content-start mt-2 mb-4 mega-menu__colors">
+                                <a href="#" class="color-link active" data-color="#F050F0"
+                                    aria-label="Pick color #FF0000"></a>
+                                <a href="#" class="color-link active lightColor" data-color="#FFFFFF"
+                                    aria-label="Pick color #FFFFFF"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FFFF00"></a>
+                                <a href="#" class="color-link" data-color="#FF0000" aria-label="Pick color #FF00FF"></a>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__categories-container mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <span class="heading-4">Według czegoś tam</span>
+                            <div class="mega-menu__categories">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block active">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                        <a href="#" class="my-2 d-block">Jakaś kategoria</a>
+                                        <a href="#" class="my-2 d-block">Dodatkowa kategoria</a>
+                                        <a href="#" class="my-2 d-block">Następna</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mega-menu__new-products mr-xl-5 mr-lg-4 mb-4 mb-lg-5">
+                            <div class="heading-4">Ostatnio dodane</div>
+
+                            <div class="owl-carousel mega-menu__new-products-carousel mt-2">
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mega-menu__new-products-item d-flex flex-column">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex align-items-center mb-3">
+                                        <img class="mega-menu__product-img" src="images/notes.png" alt="lampa">
+                                        <div class="mega-menu__product-content">
+                                            <div>Kategoria: Strefa skarpet</div>
+                                            <div class="font-weight-bold mb-1">Nazwa produktu Lorem ipsum</div>
+
+
+
+                                            <div>Cena: <span class="font-yellowDark font-weight-bold">15,99
+                                                    zł</span></div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mega-menu__banner-container mx-xl-auto">
+                            <div class="owl-carousel mega-menu__banner-carousel">
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-2.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px.jpg" alt="">
+                                </a>
+                                <a href="#" class="w-100 d-flex align-items-center mega-menu__banner-link">
+                                    <img class="mega-menu__banner w-100" src="images/xkom1570px-3.jpg" alt="">
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
 
