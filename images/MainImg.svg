@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="867.28" height="753.59" fill="none" version="1.1" viewBox="0 0 867.28 753.59" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m838.05 226.61c55.694 124.79 27.84 274.04-50.018 387.3-67.586 98.309-192.48 128.06-311.46 138.5-98.661 8.657-186.88-31.198-267.65-87.683-92.775-64.881-212.06-132.44-208.86-245.56 3.1888-112.74 134.49-162.9 222.44-234.53 93.792-76.386 171.21-192.44 291.74-184.22 138.75 9.461 267.47 99.946 323.81 226.2z" clip-rule="evenodd" fill="#ffc817" fill-rule="evenodd"/>
+ <path d="m838.05 226.61c55.694 124.79 27.84 274.04-50.018 387.3-67.586 98.309-192.48 128.06-311.46 138.5-98.661 8.657-186.88-31.198-267.65-87.683-92.775-64.881-212.06-132.44-208.86-245.56 3.1888-112.74 134.49-162.9 222.44-234.53 93.792-76.386 171.21-192.44 291.74-184.22 138.75 9.461 267.47 99.946 323.81 226.2z" clip-rule="evenodd" fill="url(#paint0_radial)" fill-rule="evenodd"/>
+ <defs>
+  <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientTransform="matrix(-389.38 179.52 -152.81 -331.45 449.65 408.18)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#F22C2C" stop-opacity=".57" offset="0"/>
+   <stop stop-color="#FFD357" offset="1"/>
+  </radialGradient>
+ </defs>
+</svg>

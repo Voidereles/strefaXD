@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="869.67" height="376.11" fill="none" version="1.1" viewBox="0 0 869.67 376.11" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <clipPath id="clipPath28">
+   <rect x="48.714" y="242.56" width="935.72" height="198.92" d="M 48.714287,242.55655 H 984.4345 V 441.47322 H 48.714287 Z" display="none" fill="#00f" fill-rule="evenodd"/>
+   <path class="powerclip" d="m86.211 371.97h879.67v490.67h-879.67zm-37.497-129.42v198.92h935.72v-198.92z" fill="#00f" fill-rule="evenodd"/>
+  </clipPath>
+  <clipPath id="clipPath86">
+   <path x="40.595242" y="472.41287" width="958.04761" height="429.81628" d="m40.595 472.41h958.05v429.82h-958.05z" fill="#00f" fill-rule="evenodd" stroke-width="1.7778"/>
+  </clipPath>
+ </defs>
+ <g transform="translate(-80.039 -472.41)" clip-path="url(#clipPath86)">
+  <path transform="translate(-11.164 -9.1339)" d="m931.71 405.38c35.402 1.383 23.03-9.746 26.834 24.862h-830.21c12.284-14.871 194.44-2.1501 210.53-15.097 44.283-35.64 62.155-4.4539 117.84-14.726 127.22-23.468 82.298-0.964 203.27 7.034 139 9.551 201.66-4.811 271.74-2.073zm-50.316 312.15c-67.882 98.512-193.14 128.48-312.2 138.93-98.91 8.615-187.46-31.329-268.31-87.86-46.366-32.426-99.446-65.577-140.54-104.79-41.103-39.222-70.268-84.777-68.748-141.62 1.088-36.091 15.192-65.87 36.733-91.947h-37.126v427.41h869.67v-427.41h-2.333c10.901 99.156-19.376 203.19-77.15 287.28z" clip-path="url(#clipPath28)" clip-rule="evenodd" fill="red" fill-rule="evenodd"/>
+ </g>
+</svg>

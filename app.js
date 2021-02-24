@@ -1,14 +1,3 @@
-const header = document.querySelector('.header');
-const columnToggle = document.querySelector('.column-toggle');
-const navToggle = document.querySelector('.nav-toggle');
-
-const headerNav = document.querySelector('.header__nav');
-const navUpper = document.querySelector('.header__nav-upper');
-const navSocialIcons = document.querySelector('.header__nav-right');
-const headerContainerBottom = document.querySelector('.header .header__container-bottom');
-
-
-
 function ready(callbackFunc) {
     if (document.readyState !== 'loading') {
         // Document is already ready, call the callback directly
@@ -26,12 +15,23 @@ function ready(callbackFunc) {
     }
 }
 
+const header = document.querySelector('.header');
+const columnToggle = document.querySelector('.column-toggle');
+const navToggle = document.querySelector('.nav-toggle');
+
+const headerNav = document.querySelector('.header__nav');
+const navUpper = document.querySelector('.header__nav-upper');
+const navFunctions = document.querySelector('.header__nav-upper-functions');
+const headerContainerBottom = document.querySelector('.header .header__container-bottom');
+
+
 
 ready(function () {
 
     const headerMoveLinks = () => {
         if (window.innerWidth < 992) {
             headerNav.append(headerContainerBottom);
+            navUpper.prepend(navFunctions);
             // navSocialIcons.style.display = "flex";
         } else {
             // headerContainerBottom.append(navSocialIcons);
@@ -53,10 +53,10 @@ ready(function () {
                 header.classList.add('scrolled');
                 if (prevScrollpos > currentScrollPos) {
                     header.style.top = "0";
-                    columnToggle.classList.remove('header-hidden')
+                    // columnToggle.classList.remove('header-hidden')
                 } else {
                     header.style.top = "-151px";
-                    columnToggle.classList.add('header-hidden')
+                    // columnToggle.classList.add('header-hidden')
                 }
                 prevScrollpos = currentScrollPos;
             } else {
@@ -115,15 +115,15 @@ ready(function () {
 
     // }
 
-    navToggle.addEventListener('click', function () {
-        headerNav.classList.toggle('header__nav--entered');
-        navToggle.classList.toggle('nav-toggle--entered');
-        if (navToggle.classList.contains('nav-toggle--entered') || columnToggle.classList.contains('open')) {
-            disableBodyScroll();
-        } else {
-            enableBodyScroll();
-        }
-    });
+    // navToggle.addEventListener('click', function () {
+    //     headerNav.classList.toggle('header__nav--entered');
+    //     navToggle.classList.toggle('nav-toggle--entered');
+    //     if (navToggle.classList.contains('nav-toggle--entered') || columnToggle.classList.contains('open')) {
+    //         disableBodyScroll();
+    //     } else {
+    //         enableBodyScroll();
+    //     }
+    // });
 
     const rightColumn = document.querySelector('.right-column');
     // columnToggle.addEventListener('click', function () {
@@ -340,6 +340,105 @@ ready(function () {
         // }
     })
     //////////
+
+
+    var o2 = $('.hero__text-carousel')
+    var o2settings = {
+        items: 1,
+        // singleItem: true,
+        loop: true,
+        // margin: 10,
+        dots: false,
+        // pagination: false,
+        nav: false,
+        dots: false,
+        margin: 30
+        // autoplay: true
+        // touchDrag: true,
+        // slideBy: 2,
+        // mouseDrag: false
+    };
+    o2.owlCarousel(o2settings);
+
+    var o1 = $('.hero__img-carousel');
+    o1.owlCarousel({
+        items: 1,
+        // singleItem: true,
+        loop: true,
+        margin: 0,
+        dots: false,
+        autoplay: true,
+        margin: 30
+        //dots:false,
+        // pagination: false,
+        // nav: true,
+        // touchDrag: true,
+        // slideBy: 1,
+        // mouseDrag: true
+    });
+
+    var o1 = $('hero__text-carousel'),
+        o2 = $('.hero__text-carousel');
+
+    // Sync o2 by o1
+    o1.on('click onDragged', '.owl-next', function () {
+        o2.trigger('next.owl.carousel')
+    });
+
+    o1.on('click dragged.owl.carousel', '.owl-prev', function () {
+        o2.trigger('prev.owl.carousel')
+    });
+
+    o1.on('translate.owl.carousel', function (e) {
+        o2.trigger('to.owl.carousel', e.page.index * o2settings.slideBy);
+    });
+    //Sync o1 by o2
+    o2.on('click onDragged', '.owl-next', function () {
+        o1.trigger('next.owl.carousel')
+    });
+
+    o2.on('click dragged.owl.carousel', '.owl-prev', function () {
+        o1.trigger('prev.owl.carousel')
+    });
+
+
+
+
+
+
+
+    $('.products__carousel').owlCarousel({
+        loop: true,
+        // autoplay: true,
+        autoplay: false,
+        // lazyLoad: true,
+        items: 1,
+        margin: 16,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true
+            },
+            600: {
+                items: 2
+            },
+            900: {
+                items: 3,
+            },
+            1200: {
+                items: 4
+            },
+            1500: {
+                items: 5
+            }
+        }
+    })
+
+
 
 
     const allColors = document.querySelectorAll(".color-link");
