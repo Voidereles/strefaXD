@@ -32,11 +32,11 @@
 }
 
 .fontSizeH1 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .fontSizeH2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .fontSizeH3 {
@@ -399,7 +399,7 @@ a.sizeOf.active {
 }
 
 .header__container-upper {
-  height: 135px;
+  height: 105px;
   position: relative;
   background: transparent;
   border-radius: .0010px;
@@ -428,7 +428,7 @@ a.sizeOf.active {
 }
 
 .header__logo-container {
-  font-size: 2rem;
+  font-size: 1.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

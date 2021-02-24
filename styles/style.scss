@@ -12,6 +12,70 @@ body {
     padding-top: 173px;
 }
 
+.owl {
+    &-arrow {
+        background: none;
+        border: none;
+        outline: none;
+
+        &:hover {
+            outline: none;
+            background: none;
+            border: none;
+        }
+
+        svg {
+            transition: $durationM;
+        }
+
+        &:active {
+            svg {
+                transform: scale(0.8);
+            }
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -210px;
+            position: relative;
+            max-width: 100px;
+            z-index: 3;
+            margin-left: auto;
+        }
+    }
+
+    &-prev {
+        transform: rotate(90deg) translate(-38px, -15px);
+
+        svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        svg path {
+            fill: $grey-3;
+        }
+    }
+
+    &-next {
+        transform: rotate(-90deg);
+
+        svg {
+            width: 59px;
+            height: 59px;
+        }
+
+        svg path {
+            fill: $yellow-dark;
+        }
+    }
+}
+
 .hero {
 
     &__yellow-splash,
@@ -36,6 +100,7 @@ body {
         background-position: bottom;
         transform: scale(1.2) rotate(-6.9deg) translateY(-83px) translateX(18px);
         z-index: 1;
+        max-height: 100vh;
     }
 
     &__cut {
@@ -45,7 +110,7 @@ body {
         background-repeat: no-repeat;
         background-position: bottom left;
         z-index: 1;
-        height: 40%;
+        height: 100%;
 
         q &::after {
             position: absolute;
@@ -68,6 +133,7 @@ body {
         margin-bottom: -20px;
         display: initial !important;
         width: initial !important;
+        max-height: 100vh;
     }
 
     &__text-carousel {
@@ -81,6 +147,7 @@ body {
 
         &.owl-carousel .owl-item {
             display: flex;
+            justify-content: center;
         }
     }
 
@@ -89,6 +156,7 @@ body {
         flex-direction: column;
         place-items: flex-start;
         justify-content: center;
+        max-width: 600px;
     }
 
     &__heading {

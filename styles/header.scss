@@ -11,7 +11,7 @@
     padding: 0;
 
     &__container-upper {
-        height: 135px;
+        height: 105px;
         position: relative;
         background: transparent;
         border-radius: .0010px;
@@ -38,7 +38,7 @@
         z-index: 10;
 
         &-container {
-            font-size: $fontSizeH2;
+            font-size: $fontSizeH3;
             display: flex;
             align-items: center;
             font-weight: bold;

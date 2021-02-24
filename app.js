@@ -342,8 +342,8 @@ ready(function () {
     //////////
 
 
-    var o2 = $('.hero__text-carousel')
-    var o2settings = {
+    const heroOwlText = $('.hero__text-carousel')
+    const heroOwlTextSettings = {
         items: 1,
         // singleItem: true,
         loop: true,
@@ -352,56 +352,71 @@ ready(function () {
         // pagination: false,
         nav: false,
         dots: false,
-        margin: 30
+        margin: 30,
         // autoplay: true
-        // touchDrag: true,
+        touchDrag: false,
         // slideBy: 2,
-        // mouseDrag: false
+        mouseDrag: false
     };
-    o2.owlCarousel(o2settings);
+    heroOwlText.owlCarousel(heroOwlTextSettings);
 
-    var o1 = $('.hero__img-carousel');
-    o1.owlCarousel({
+    const heroOwlImgs = $('.hero__img-carousel');
+    heroOwlImgs.owlCarousel({
         items: 1,
         // singleItem: true,
         loop: true,
         margin: 0,
         dots: false,
-        autoplay: true,
-        margin: 30
+        // autoplay: true,
+        margin: 30,
         //dots:false,
         // pagination: false,
         // nav: true,
+        touchDrag: false,
+        // slideBy: 2,
+        mouseDrag: false
         // touchDrag: true,
         // slideBy: 1,
         // mouseDrag: true
     });
 
-    var o1 = $('hero__text-carousel'),
-        o2 = $('.hero__text-carousel');
+    // var o1 = $('hero__text-carousel'),
+    //     o2 = $('.hero__text-carousel');
 
     // Sync o2 by o1
-    o1.on('click onDragged', '.owl-next', function () {
-        o2.trigger('next.owl.carousel')
-    });
+    // o1.on('click onDragged', '.owl-next', function () {
+    //     o2.trigger('next.owl.carousel')
+    // });
 
-    o1.on('click dragged.owl.carousel', '.owl-prev', function () {
-        o2.trigger('prev.owl.carousel')
-    });
+    // o1.on('click dragged.owl.carousel', '.owl-prev', function () {
+    //     o2.trigger('prev.owl.carousel')
+    // });
 
-    o1.on('translate.owl.carousel', function (e) {
-        o2.trigger('to.owl.carousel', e.page.index * o2settings.slideBy);
-    });
-    //Sync o1 by o2
-    o2.on('click onDragged', '.owl-next', function () {
-        o1.trigger('next.owl.carousel')
-    });
+    // o1.on('translate.owl.carousel', function (e) {
+    //     o2.trigger('to.owl.carousel', e.page.index * o2settings.slideBy);
+    // });
+    // //Sync o1 by o2
+    // o2.on('click onDragged', '.owl-next', function () {
+    //     o1.trigger('next.owl.carousel')
+    // });
 
-    o2.on('click dragged.owl.carousel', '.owl-prev', function () {
-        o1.trigger('prev.owl.carousel')
-    });
+    // o2.on('click dragged.owl.carousel', '.owl-prev', function () {
+    //     o1.trigger('prev.owl.carousel')
+    // });
 
 
+    const heroPrevBtn = document.querySelector('.hero__prev');
+    const heroNextBtn = document.querySelector('.hero__next');
+
+    heroPrevBtn.addEventListener('click', function () {
+        heroOwlText.trigger('prev.owl.carousel');
+        heroOwlImgs.trigger('prev.owl.carousel');
+    })
+
+    heroNextBtn.addEventListener('click', function () {
+        heroOwlText.trigger('next.owl.carousel');
+        heroOwlImgs.trigger('next.owl.carousel');
+    })
 
 
 
@@ -409,7 +424,7 @@ ready(function () {
 
     $('.products__carousel').owlCarousel({
         loop: true,
-        // autoplay: true,
+        autoplay: true,
         autoplay: false,
         // lazyLoad: true,
         items: 1,
