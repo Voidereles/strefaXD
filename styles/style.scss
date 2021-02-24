@@ -172,6 +172,12 @@ body {
 
 .products {
 
+
+    &__carousel {
+        max-width: 1300px;
+        margin: auto;
+    }
+
     &__subheading,
     &__heading {
         text-align: center;
@@ -242,7 +248,42 @@ body {
     }
 
     &__item-container {
-        padding: 2px;
+        padding: 8px;
+        border: 2px solid transparent;
+        border-radius: 1rem;
+        transition: $durationS;
+        max-width: 320px;
+        margin: auto;
+        overflow-y: hidden;
+
+        &:hover {
+            border-color: $yellow-dark;
+        }
+    }
+
+    &__goto-product {
+        &:hover {
+            .products__click-info {
+                top: 1.5rem;
+            }
+        }
+    }
+
+    &__click-info {
+        font-weight: bold;
+        background: black;
+        color: white;
+        padding: 0.5rem 1rem;
+        display: block;
+        position: absolute;
+        border-radius: 0.6rem;
+        top: -5rem;
+        font-size: 0.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: calc(100% - 3rem);
+        transition: $durationM;
     }
 
     &__img-container {
@@ -273,6 +314,7 @@ body {
 
     &__description {
         color: $dark;
+        font-size: $fontSizeBodyXS;
     }
 
     &__price {
@@ -284,6 +326,7 @@ body {
             font-size: $fontSizeH3;
             font-weight: bold;
             margin-bottom: -10px;
+            color: $dark;
         }
 
         &-old {
@@ -305,6 +348,66 @@ body {
                 transform: rotate(30deg);
 
             }
+        }
+    }
+
+    &__add {
+        margin-left: 1rem;
+
+        svg {
+            z-index: 2;
+            position: relative;
+        }
+    }
+}
+
+.toggle-favourite {
+    padding: 0;
+    transition: $durationS;
+
+    svg {
+        height: 36px;
+        width: auto;
+
+        path {
+            transition: $durationS;
+            fill: transparent;
+            stroke: $yellow-dark;
+        }
+    }
+
+    &:hover {
+        svg path {
+            fill: $yellow-dark;
+            stroke: transparent;
+        }
+    }
+
+    &.added {
+        svg path {
+            fill: $yellow-dark;
+            stroke: transparent;
+        }
+
+        &:hover {
+
+            transform: scale(1.2);
+            // svg path {
+            //     fill: white;
+            //     stroke: $yellow-dark;
+            // }
+        }
+    }
+
+    &:active {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width:1700px) {
+    .products {
+        &__carousel {
+            max-width: initial;
         }
     }
 }

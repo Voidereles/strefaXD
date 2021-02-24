@@ -1229,33 +1229,239 @@
                         <div class="owl-carousel products__carousel">
                             <div class="products__item-container">
                                 <div class="products__item">
-                                    <div class="products__img-container">
-                                        <img src="images/fridge.png" alt="" class="products__img">
-                                    </div>
-                                    <a href="#" class="products__content">
-                                        <div class="products__category">
-                                            Kategoria: <span>Strefa skarpet</span>
+                                    <a class="products__goto-product" href="#" target="_blank">
+                                        <span class="products__click-info">Kliknij, by przejść do produktu</span>
+                                        <div class="products__img-container">
+                                            <img src="images/fridge.png" alt="" class="products__img">
                                         </div>
-                                        <h4 class="products__name">Kolorowe skarpetki</h4>
-                                        <div class="products__description">Ut sed ipsum sit amet ante dingissim molis
-                                            scealreque sit amet mi.</div>
-                                        <div class="products__price">
-                                            <div class="products__price-now">14,99</div>
-                                            <div class="products__price-old">29,99</div>
-                                            <div class="products__price-basket ml-5">
-                                                <svg width="26" height="26" viewBox="0 0 21 21" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M6.29667 17.6291C7.12603 17.6291 7.8055 18.3231 7.8055 19.1803C7.8055 20.0273 7.12603 20.7213 6.29667 20.7213C5.45733 20.7213 4.77786 20.0273 4.77786 19.1803C4.77786 18.3231 5.45733 17.6291 6.29667 17.6291ZM17.5379 17.6291C18.3673 17.6291 19.0467 18.3231 19.0467 19.1803C19.0467 20.0273 18.3673 20.7213 17.5379 20.7213C16.6986 20.7213 16.0191 20.0273 16.0191 19.1803C16.0191 18.3231 16.6986 17.6291 17.5379 17.6291ZM1.64859 0.721402L1.75042 0.730021L4.13356 1.09638C4.4733 1.15864 4.7231 1.44336 4.75308 1.79033L4.94293 4.07627C4.97291 4.40385 5.2327 4.64878 5.55245 4.64878H19.0469C19.6565 4.64878 20.0562 4.86308 20.4558 5.33252C20.8555 5.80195 20.9255 6.47549 20.8355 7.08677L19.8863 13.7813C19.7064 15.0682 18.6273 16.0162 17.3583 16.0162H6.45675C5.12779 16.0162 4.02864 14.9763 3.91873 13.6293L2.99944 2.50469L1.49062 2.23935C1.09093 2.16792 0.81115 1.76992 0.881095 1.36172C0.951041 0.944328 1.34074 0.66777 1.75042 0.730021L1.64859 0.721402ZM15.7595 8.42364H12.9917C12.572 8.42364 12.2422 8.76041 12.2422 9.18902C12.2422 9.60743 12.572 9.9544 12.9917 9.9544H15.7595C16.1792 9.9544 16.5089 9.60743 16.5089 9.18902C16.5089 8.76041 16.1792 8.42364 15.7595 8.42364Z"
-                                                        fill="#3F3F3F" />
-                                                </svg>
+                                        <div class="products__content">
+                                            <div class="products__category">
+                                                Kategoria: <span>Strefa skarpet</span>
+                                            </div>
+                                            <h4 class="products__name">Kolorowe skarpetki</h4>
+                                            <div class="products__description">Ut sed ipsum sit amet ante dingissim
+                                                molis
+                                                scealreque sit amet mi.</div>
+                                            <div class="products__price">
+                                                <div class="products__price-now">14,99</div>
+                                                <div class="products__price-old">29,99</div>
+                                                <div class="products__price-basket ml-5">
+
+                                                </div>
                                             </div>
                                         </div>
                                     </a>
-                                    <a class="btn el-rounded btn-warning py-3 px-4 fontSizeBodyL login__go-btn"
-                                        href="#">
-                                        <span>Dodaj do koszyka</span>
+                                    <div class="d-flex  align-items-center">
+                                        <a class="btn el-rounded btn-warning py-2 px-4 fontSizeBodyS products__add"
+                                            href="#">
+                                            <span>Dodaj do koszyka</span>
+                                            <svg width="22" height="22" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.29667 17.6291C7.12603 17.6291 7.8055 18.3231 7.8055 19.1803C7.8055 20.0273 7.12603 20.7213 6.29667 20.7213C5.45733 20.7213 4.77786 20.0273 4.77786 19.1803C4.77786 18.3231 5.45733 17.6291 6.29667 17.6291ZM17.5379 17.6291C18.3673 17.6291 19.0467 18.3231 19.0467 19.1803C19.0467 20.0273 18.3673 20.7213 17.5379 20.7213C16.6986 20.7213 16.0191 20.0273 16.0191 19.1803C16.0191 18.3231 16.6986 17.6291 17.5379 17.6291ZM1.64859 0.721402L1.75042 0.730021L4.13356 1.09638C4.4733 1.15864 4.7231 1.44336 4.75308 1.79033L4.94293 4.07627C4.97291 4.40385 5.2327 4.64878 5.55245 4.64878H19.0469C19.6565 4.64878 20.0562 4.86308 20.4558 5.33252C20.8555 5.80195 20.9255 6.47549 20.8355 7.08677L19.8863 13.7813C19.7064 15.0682 18.6273 16.0162 17.3583 16.0162H6.45675C5.12779 16.0162 4.02864 14.9763 3.91873 13.6293L2.99944 2.50469L1.49062 2.23935C1.09093 2.16792 0.81115 1.76992 0.881095 1.36172C0.951041 0.944328 1.34074 0.66777 1.75042 0.730021L1.64859 0.721402ZM15.7595 8.42364H12.9917C12.572 8.42364 12.2422 8.76041 12.2422 9.18902C12.2422 9.60743 12.572 9.9544 12.9917 9.9544H15.7595C16.1792 9.9544 16.5089 9.60743 16.5089 9.18902C16.5089 8.76041 16.1792 8.42364 15.7595 8.42364Z"
+                                                    fill="#3F3F3F" />
+                                            </svg>
+                                        </a>
+                                        <button class="btn toggle-favourite ml-3 added">
+                                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18.6689 4.72858C19.441 7.02661 18.7949 9.36502 17.4331 11.1269C16.5343 12.3217 15.4601 13.3514 14.3618 14.2516C13.3515 15.1576 11.0903 16.9502 10.4909 17C9.96118 16.9025 9.36677 16.3254 8.94621 16.0284C6.58296 14.298 4.03901 12.1936 2.7491 9.89273C1.66762 7.68381 1.66564 4.95164 3.34882 3.25811C5.53134 1.36282 8.82172 1.73316 10.4909 3.71326C10.9392 3.15308 11.4905 2.71252 12.1447 2.39159C14.7969 1.37184 17.556 2.41094 18.6689 4.72858V4.72858Z"
+                                                    fill="white" stroke="#FFD357" stroke-width="2.3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="products__item-container">
+                                <div class="products__item">
+                                    <a class="products__goto-product" href="#" target="_blank">
+                                        <span class="products__click-info">Kliknij, by przejść do produktu</span>
+                                        <div class="products__img-container">
+                                            <img src="images/fridge.png" alt="" class="products__img">
+                                        </div>
+                                        <div class="products__content">
+                                            <div class="products__category">
+                                                Kategoria: <span>Strefa skarpet</span>
+                                            </div>
+                                            <h4 class="products__name">Kolorowe skarpetki</h4>
+                                            <div class="products__description">Ut sed ipsum sit amet ante dingissim
+                                                molis
+                                                scealreque sit amet mi.</div>
+                                            <div class="products__price">
+                                                <div class="products__price-now">14,99</div>
+                                                <div class="products__price-old">29,99</div>
+                                                <div class="products__price-basket ml-5">
+
+                                                </div>
+                                            </div>
+                                        </div>
                                     </a>
+                                    <div class="d-flex  align-items-center">
+                                        <a class="btn el-rounded btn-warning py-2 px-4 fontSizeBodyS products__add"
+                                            href="#">
+                                            <span>Dodaj do koszyka</span>
+                                            <svg width="22" height="22" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.29667 17.6291C7.12603 17.6291 7.8055 18.3231 7.8055 19.1803C7.8055 20.0273 7.12603 20.7213 6.29667 20.7213C5.45733 20.7213 4.77786 20.0273 4.77786 19.1803C4.77786 18.3231 5.45733 17.6291 6.29667 17.6291ZM17.5379 17.6291C18.3673 17.6291 19.0467 18.3231 19.0467 19.1803C19.0467 20.0273 18.3673 20.7213 17.5379 20.7213C16.6986 20.7213 16.0191 20.0273 16.0191 19.1803C16.0191 18.3231 16.6986 17.6291 17.5379 17.6291ZM1.64859 0.721402L1.75042 0.730021L4.13356 1.09638C4.4733 1.15864 4.7231 1.44336 4.75308 1.79033L4.94293 4.07627C4.97291 4.40385 5.2327 4.64878 5.55245 4.64878H19.0469C19.6565 4.64878 20.0562 4.86308 20.4558 5.33252C20.8555 5.80195 20.9255 6.47549 20.8355 7.08677L19.8863 13.7813C19.7064 15.0682 18.6273 16.0162 17.3583 16.0162H6.45675C5.12779 16.0162 4.02864 14.9763 3.91873 13.6293L2.99944 2.50469L1.49062 2.23935C1.09093 2.16792 0.81115 1.76992 0.881095 1.36172C0.951041 0.944328 1.34074 0.66777 1.75042 0.730021L1.64859 0.721402ZM15.7595 8.42364H12.9917C12.572 8.42364 12.2422 8.76041 12.2422 9.18902C12.2422 9.60743 12.572 9.9544 12.9917 9.9544H15.7595C16.1792 9.9544 16.5089 9.60743 16.5089 9.18902C16.5089 8.76041 16.1792 8.42364 15.7595 8.42364Z"
+                                                    fill="#3F3F3F" />
+                                            </svg>
+                                        </a>
+                                        <button class="btn toggle-favourite ml-3">
+                                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18.6689 4.72858C19.441 7.02661 18.7949 9.36502 17.4331 11.1269C16.5343 12.3217 15.4601 13.3514 14.3618 14.2516C13.3515 15.1576 11.0903 16.9502 10.4909 17C9.96118 16.9025 9.36677 16.3254 8.94621 16.0284C6.58296 14.298 4.03901 12.1936 2.7491 9.89273C1.66762 7.68381 1.66564 4.95164 3.34882 3.25811C5.53134 1.36282 8.82172 1.73316 10.4909 3.71326C10.9392 3.15308 11.4905 2.71252 12.1447 2.39159C14.7969 1.37184 17.556 2.41094 18.6689 4.72858V4.72858Z"
+                                                    fill="white" stroke="#FFD357" stroke-width="2.3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="products__item-container">
+                                <div class="products__item">
+                                    <a class="products__goto-product" href="#" target="_blank">
+                                        <span class="products__click-info">Kliknij, by przejść do produktu</span>
+                                        <div class="products__img-container">
+                                            <img src="images/fridge.png" alt="" class="products__img">
+                                        </div>
+                                        <div class="products__content">
+                                            <div class="products__category">
+                                                Kategoria: <span>Strefa skarpet</span>
+                                            </div>
+                                            <h4 class="products__name">Kolorowe skarpetki</h4>
+                                            <div class="products__description">Ut sed ipsum sit amet ante dingissim
+                                                molis
+                                                scealreque sit amet mi.</div>
+                                            <div class="products__price">
+                                                <div class="products__price-now">14,99</div>
+                                                <div class="products__price-old">29,99</div>
+                                                <div class="products__price-basket ml-5">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="d-flex  align-items-center">
+                                        <a class="btn el-rounded btn-warning py-2 px-4 fontSizeBodyS products__add"
+                                            href="#">
+                                            <span>Dodaj do koszyka</span>
+                                            <svg width="22" height="22" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.29667 17.6291C7.12603 17.6291 7.8055 18.3231 7.8055 19.1803C7.8055 20.0273 7.12603 20.7213 6.29667 20.7213C5.45733 20.7213 4.77786 20.0273 4.77786 19.1803C4.77786 18.3231 5.45733 17.6291 6.29667 17.6291ZM17.5379 17.6291C18.3673 17.6291 19.0467 18.3231 19.0467 19.1803C19.0467 20.0273 18.3673 20.7213 17.5379 20.7213C16.6986 20.7213 16.0191 20.0273 16.0191 19.1803C16.0191 18.3231 16.6986 17.6291 17.5379 17.6291ZM1.64859 0.721402L1.75042 0.730021L4.13356 1.09638C4.4733 1.15864 4.7231 1.44336 4.75308 1.79033L4.94293 4.07627C4.97291 4.40385 5.2327 4.64878 5.55245 4.64878H19.0469C19.6565 4.64878 20.0562 4.86308 20.4558 5.33252C20.8555 5.80195 20.9255 6.47549 20.8355 7.08677L19.8863 13.7813C19.7064 15.0682 18.6273 16.0162 17.3583 16.0162H6.45675C5.12779 16.0162 4.02864 14.9763 3.91873 13.6293L2.99944 2.50469L1.49062 2.23935C1.09093 2.16792 0.81115 1.76992 0.881095 1.36172C0.951041 0.944328 1.34074 0.66777 1.75042 0.730021L1.64859 0.721402ZM15.7595 8.42364H12.9917C12.572 8.42364 12.2422 8.76041 12.2422 9.18902C12.2422 9.60743 12.572 9.9544 12.9917 9.9544H15.7595C16.1792 9.9544 16.5089 9.60743 16.5089 9.18902C16.5089 8.76041 16.1792 8.42364 15.7595 8.42364Z"
+                                                    fill="#3F3F3F" />
+                                            </svg>
+                                        </a>
+                                        <button class="btn toggle-favourite ml-3">
+                                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18.6689 4.72858C19.441 7.02661 18.7949 9.36502 17.4331 11.1269C16.5343 12.3217 15.4601 13.3514 14.3618 14.2516C13.3515 15.1576 11.0903 16.9502 10.4909 17C9.96118 16.9025 9.36677 16.3254 8.94621 16.0284C6.58296 14.298 4.03901 12.1936 2.7491 9.89273C1.66762 7.68381 1.66564 4.95164 3.34882 3.25811C5.53134 1.36282 8.82172 1.73316 10.4909 3.71326C10.9392 3.15308 11.4905 2.71252 12.1447 2.39159C14.7969 1.37184 17.556 2.41094 18.6689 4.72858V4.72858Z"
+                                                    fill="white" stroke="#FFD357" stroke-width="2.3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="products__item-container">
+                                <div class="products__item">
+                                    <a class="products__goto-product" href="#" target="_blank">
+                                        <span class="products__click-info">Kliknij, by przejść do produktu</span>
+                                        <div class="products__img-container">
+                                            <img src="images/fridge.png" alt="" class="products__img">
+                                        </div>
+                                        <div class="products__content">
+                                            <div class="products__category">
+                                                Kategoria: <span>Strefa skarpet</span>
+                                            </div>
+                                            <h4 class="products__name">Kolorowe skarpetki</h4>
+                                            <div class="products__description">Ut sed ipsum sit amet ante dingissim
+                                                molis
+                                                scealreque sit amet mi.</div>
+                                            <div class="products__price">
+                                                <div class="products__price-now">14,99</div>
+                                                <div class="products__price-old">29,99</div>
+                                                <div class="products__price-basket ml-5">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="d-flex  align-items-center">
+                                        <a class="btn el-rounded btn-warning py-2 px-4 fontSizeBodyS products__add"
+                                            href="#">
+                                            <span>Dodaj do koszyka</span>
+                                            <svg width="22" height="22" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.29667 17.6291C7.12603 17.6291 7.8055 18.3231 7.8055 19.1803C7.8055 20.0273 7.12603 20.7213 6.29667 20.7213C5.45733 20.7213 4.77786 20.0273 4.77786 19.1803C4.77786 18.3231 5.45733 17.6291 6.29667 17.6291ZM17.5379 17.6291C18.3673 17.6291 19.0467 18.3231 19.0467 19.1803C19.0467 20.0273 18.3673 20.7213 17.5379 20.7213C16.6986 20.7213 16.0191 20.0273 16.0191 19.1803C16.0191 18.3231 16.6986 17.6291 17.5379 17.6291ZM1.64859 0.721402L1.75042 0.730021L4.13356 1.09638C4.4733 1.15864 4.7231 1.44336 4.75308 1.79033L4.94293 4.07627C4.97291 4.40385 5.2327 4.64878 5.55245 4.64878H19.0469C19.6565 4.64878 20.0562 4.86308 20.4558 5.33252C20.8555 5.80195 20.9255 6.47549 20.8355 7.08677L19.8863 13.7813C19.7064 15.0682 18.6273 16.0162 17.3583 16.0162H6.45675C5.12779 16.0162 4.02864 14.9763 3.91873 13.6293L2.99944 2.50469L1.49062 2.23935C1.09093 2.16792 0.81115 1.76992 0.881095 1.36172C0.951041 0.944328 1.34074 0.66777 1.75042 0.730021L1.64859 0.721402ZM15.7595 8.42364H12.9917C12.572 8.42364 12.2422 8.76041 12.2422 9.18902C12.2422 9.60743 12.572 9.9544 12.9917 9.9544H15.7595C16.1792 9.9544 16.5089 9.60743 16.5089 9.18902C16.5089 8.76041 16.1792 8.42364 15.7595 8.42364Z"
+                                                    fill="#3F3F3F" />
+                                            </svg>
+                                        </a>
+                                        <button class="btn toggle-favourite ml-3">
+                                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18.6689 4.72858C19.441 7.02661 18.7949 9.36502 17.4331 11.1269C16.5343 12.3217 15.4601 13.3514 14.3618 14.2516C13.3515 15.1576 11.0903 16.9502 10.4909 17C9.96118 16.9025 9.36677 16.3254 8.94621 16.0284C6.58296 14.298 4.03901 12.1936 2.7491 9.89273C1.66762 7.68381 1.66564 4.95164 3.34882 3.25811C5.53134 1.36282 8.82172 1.73316 10.4909 3.71326C10.9392 3.15308 11.4905 2.71252 12.1447 2.39159C14.7969 1.37184 17.556 2.41094 18.6689 4.72858V4.72858Z"
+                                                    fill="white" stroke="#FFD357" stroke-width="2.3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="products__item-container">
+                                <div class="products__item">
+                                    <a class="products__goto-product" href="#" target="_blank">
+                                        <span class="products__click-info">Kliknij, by przejść do produktu</span>
+                                        <div class="products__img-container">
+                                            <img src="images/fridge.png" alt="" class="products__img">
+                                        </div>
+                                        <div class="products__content">
+                                            <div class="products__category">
+                                                Kategoria: <span>Strefa skarpet</span>
+                                            </div>
+                                            <h4 class="products__name">Kolorowe skarpetki</h4>
+                                            <div class="products__description">Ut sed ipsum sit amet ante dingissim
+                                                molis
+                                                scealreque sit amet mi.</div>
+                                            <div class="products__price">
+                                                <div class="products__price-now">14,99</div>
+                                                <div class="products__price-old">29,99</div>
+                                                <div class="products__price-basket ml-5">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="d-flex  align-items-center">
+                                        <a class="btn el-rounded btn-warning py-2 px-4 fontSizeBodyS products__add"
+                                            href="#">
+                                            <span>Dodaj do koszyka</span>
+                                            <svg width="22" height="22" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M6.29667 17.6291C7.12603 17.6291 7.8055 18.3231 7.8055 19.1803C7.8055 20.0273 7.12603 20.7213 6.29667 20.7213C5.45733 20.7213 4.77786 20.0273 4.77786 19.1803C4.77786 18.3231 5.45733 17.6291 6.29667 17.6291ZM17.5379 17.6291C18.3673 17.6291 19.0467 18.3231 19.0467 19.1803C19.0467 20.0273 18.3673 20.7213 17.5379 20.7213C16.6986 20.7213 16.0191 20.0273 16.0191 19.1803C16.0191 18.3231 16.6986 17.6291 17.5379 17.6291ZM1.64859 0.721402L1.75042 0.730021L4.13356 1.09638C4.4733 1.15864 4.7231 1.44336 4.75308 1.79033L4.94293 4.07627C4.97291 4.40385 5.2327 4.64878 5.55245 4.64878H19.0469C19.6565 4.64878 20.0562 4.86308 20.4558 5.33252C20.8555 5.80195 20.9255 6.47549 20.8355 7.08677L19.8863 13.7813C19.7064 15.0682 18.6273 16.0162 17.3583 16.0162H6.45675C5.12779 16.0162 4.02864 14.9763 3.91873 13.6293L2.99944 2.50469L1.49062 2.23935C1.09093 2.16792 0.81115 1.76992 0.881095 1.36172C0.951041 0.944328 1.34074 0.66777 1.75042 0.730021L1.64859 0.721402ZM15.7595 8.42364H12.9917C12.572 8.42364 12.2422 8.76041 12.2422 9.18902C12.2422 9.60743 12.572 9.9544 12.9917 9.9544H15.7595C16.1792 9.9544 16.5089 9.60743 16.5089 9.18902C16.5089 8.76041 16.1792 8.42364 15.7595 8.42364Z"
+                                                    fill="#3F3F3F" />
+                                            </svg>
+                                        </a>
+                                        <button class="btn toggle-favourite ml-3">
+                                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18.6689 4.72858C19.441 7.02661 18.7949 9.36502 17.4331 11.1269C16.5343 12.3217 15.4601 13.3514 14.3618 14.2516C13.3515 15.1576 11.0903 16.9502 10.4909 17C9.96118 16.9025 9.36677 16.3254 8.94621 16.0284C6.58296 14.298 4.03901 12.1936 2.7491 9.89273C1.66762 7.68381 1.66564 4.95164 3.34882 3.25811C5.53134 1.36282 8.82172 1.73316 10.4909 3.71326C10.9392 3.15308 11.4905 2.71252 12.1447 2.39159C14.7969 1.37184 17.556 2.41094 18.6689 4.72858V4.72858Z"
+                                                    fill="white" stroke="#FFD357" stroke-width="2.3" />
+                                            </svg>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

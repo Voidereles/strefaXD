@@ -1879,6 +1879,11 @@ q .hero__cut::after {
   margin: 1rem 0 4rem 0;
 }
 
+.products__carousel {
+  max-width: 1300px;
+  margin: auto;
+}
+
 .products__subheading, .products__heading {
   text-align: center;
 }
@@ -1942,7 +1947,41 @@ q .hero__cut::after {
 }
 
 .products__item-container {
-  padding: 2px;
+  padding: 8px;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  max-width: 320px;
+  margin: auto;
+  overflow-y: hidden;
+}
+
+.products__item-container:hover {
+  border-color: #f6c219;
+}
+
+.products__goto-product:hover .products__click-info {
+  top: 1.5rem;
+}
+
+.products__click-info {
+  font-weight: bold;
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: block;
+  position: absolute;
+  border-radius: 0.6rem;
+  top: -5rem;
+  font-size: 0.8rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  width: calc(100% - 3rem);
+  -webkit-transition: 400ms;
+  transition: 400ms;
 }
 
 .products__img-container {
@@ -1973,6 +2012,7 @@ q .hero__cut::after {
 
 .products__description {
   color: #3F3F3F;
+  font-size: 0.8rem;
 }
 
 .products__price {
@@ -1989,6 +2029,7 @@ q .hero__cut::after {
   font-size: 1.625rem;
   font-weight: bold;
   margin-bottom: -10px;
+  color: #3F3F3F;
 }
 
 .products__price-old {
@@ -2010,5 +2051,58 @@ q .hero__cut::after {
   position: absolute;
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
+}
+
+.products__add {
+  margin-left: 1rem;
+}
+
+.products__add svg {
+  z-index: 2;
+  position: relative;
+}
+
+.toggle-favourite {
+  padding: 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.toggle-favourite svg {
+  height: 36px;
+  width: auto;
+}
+
+.toggle-favourite svg path {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+  fill: transparent;
+  stroke: #f6c219;
+}
+
+.toggle-favourite:hover svg path {
+  fill: #f6c219;
+  stroke: transparent;
+}
+
+.toggle-favourite.added svg path {
+  fill: #f6c219;
+  stroke: transparent;
+}
+
+.toggle-favourite.added:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.toggle-favourite:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@media (min-width: 1700px) {
+  .products__carousel {
+    max-width: initial;
+  }
 }
 /*# sourceMappingURL=style.css.map */
