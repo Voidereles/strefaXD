@@ -50,7 +50,7 @@ ready(function () {
                     header.style.top = "0";
                     // columnToggle.classList.remove('header-hidden')
                 } else {
-                    header.style.top = "-151px";
+                    header.style.top = "-161px";
                     // columnToggle.classList.add('header-hidden')
                 }
                 prevScrollpos = currentScrollPos;
@@ -227,12 +227,14 @@ ready(function () {
     heroPrevBtn.addEventListener('click', function () {
         heroOwlText.trigger('prev.owl.carousel');
         heroOwlImgs.trigger('prev.owl.carousel');
-    })
+    });
 
     heroNextBtn.addEventListener('click', function () {
         heroOwlText.trigger('next.owl.carousel');
         heroOwlImgs.trigger('next.owl.carousel');
-    })
+    });
+
+
 
 
 
@@ -269,6 +271,21 @@ ready(function () {
         }
     })
 
+    //owl things need to be made on jquery objects
+    $('.products__prev').each(function () {
+        $(this).on('click', function () {
+            $(this).parent().parent().children('.products__carousel').trigger('prev.owl.carousel');
+        });
+    });
+
+    $('.products__next').each(function () {
+        $(this).on('click', function () {
+            $(this).parent().parent().children('.products__carousel').trigger('next.owl.carousel');
+        });
+    });
+
+
+
     document.querySelectorAll('.toggle-favourite').forEach(element => {
         element.addEventListener('click', function () {
             element.classList.toggle('added');
@@ -281,11 +298,6 @@ ready(function () {
 
 
 
-    // if (typeof (document.querySelector('.all-articles__content')) != 'undefined' && document.querySelector('.all-articles__content') != null) {
-    //     if (window.innerWidth < 480) {
-    //         document.querySelector('.pagination-container').prepend(document.querySelector('.pagination'));
-    //     }
-    // }
 
 
 });

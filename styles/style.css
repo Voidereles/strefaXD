@@ -781,6 +781,12 @@ a.sizeOf.active {
   padding: 0;
 }
 
+.header.scrolled {
+  background: white;
+  -webkit-box-shadow: 0 0 20px 0px rgba(134, 134, 134, 0.5);
+          box-shadow: 0 0 20px 0px rgba(134, 134, 134, 0.5);
+}
+
 .header__container-upper {
   height: 105px;
   position: relative;
@@ -788,19 +794,6 @@ a.sizeOf.active {
   border-radius: .0010px;
   -webkit-transition: 400ms;
   transition: 400ms;
-}
-
-.header__container-upper.scrolled {
-  -webkit-box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
-  margin-top: 0.25rem;
-  border-radius: 200px;
-  background: white;
-  padding: 0 0.75rem;
-}
-
-.header__container-upper.scrolled .header__logo-container {
-  margin-left: 1rem;
 }
 
 .header__logo {
@@ -1880,8 +1873,20 @@ q .hero__cut::after {
 }
 
 .products__carousel {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: auto;
+  border-radius: 1.25rem;
+  padding: 2rem;
+  border: 8px solid transparent;
+  margin-top: calc(-2rem - 8px);
+}
+
+.products .owl-arrow-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-top: calc(50px - 2rem - 8px - 1rem - 4px);
 }
 
 .products__subheading, .products__heading {
@@ -1965,6 +1970,27 @@ q .hero__cut::after {
   top: 1.5rem;
 }
 
+.products__extra {
+  bottom: 0.75rem;
+  left: 0.75rem;
+  position: absolute;
+}
+
+.products__extra-red {
+  background: #FF1717;
+  color: white;
+}
+
+.products__extra-red:hover {
+  color: white;
+  background: #FF1717;
+}
+
+.products__extra-yellow {
+  background: #FFD357;
+  color: black;
+}
+
 .products__click-info {
   font-weight: bold;
   background: black;
@@ -1982,12 +2008,15 @@ q .hero__cut::after {
   width: calc(100% - 3rem);
   -webkit-transition: 400ms;
   transition: 400ms;
+  z-index: 2;
 }
 
 .products__img-container {
   border: 1px solid #EEEEEE;
   border-radius: 1rem;
   padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .products__img {
@@ -2060,6 +2089,130 @@ q .hero__cut::after {
 .products__add svg {
   z-index: 2;
   position: relative;
+}
+
+.products--blue .nav-link.active {
+  background: #3fbaff;
+  color: white;
+}
+
+.products--blue .nav-link.active:hover, .products--blue .nav-link.active:active, .products--blue .nav-link.active:focus, .products--blue .nav-link.active:not(:disabled):not(.disabled):active, .products--blue .nav-link.active:not(:disabled):not(.disabled):focus, .products--blue .nav-link.active:not(:disabled):not(.disabled):active:focus {
+  background: #3fbaff;
+  color: white;
+}
+
+.products--blue .tab-pane .products__carousel {
+  border: 8px solid #3fbaff;
+  margin-top: 0;
+}
+
+.products--blue .tab-pane .products__item-container:hover {
+  border-color: #3fbaff;
+}
+
+.products--blue .tab-pane .products__item-container a:hover {
+  color: #3fbaff;
+}
+
+.products--blue .tab-pane a.products__add {
+  background: #3fbaff;
+  color: white;
+}
+
+.products--blue .tab-pane a.products__add::after, .products--blue .tab-pane a.products__add::before {
+  content: '';
+}
+
+.products--blue .tab-pane a.products__add svg path {
+  fill: white;
+}
+
+.products--blue .tab-pane a.products__add:hover {
+  background: #1766FF;
+  color: white;
+}
+
+.products--blue .tab-pane .toggle-favourite svg path {
+  stroke: #3fbaff;
+}
+
+.products--blue .tab-pane .toggle-favourite.added svg path {
+  stroke: transparent;
+  fill: #3fbaff;
+}
+
+.products--blue .tab-pane .toggle-favourite:hover svg path {
+  fill: #3fbaff;
+}
+
+.products--blue .owl-arrow-container {
+  margin-top: 36px;
+}
+
+.products--blue .owl-next svg path {
+  fill: #3fbaff;
+}
+
+.products--red .nav-link.active {
+  background: #FF1717;
+  color: white;
+}
+
+.products--red .nav-link.active:hover, .products--red .nav-link.active:active, .products--red .nav-link.active:focus, .products--red .nav-link.active:not(:disabled):not(.disabled):active, .products--red .nav-link.active:not(:disabled):not(.disabled):focus, .products--red .nav-link.active:not(:disabled):not(.disabled):active:focus {
+  background: #FF1717;
+  color: white;
+}
+
+.products--red .tab-pane .products__carousel {
+  border: 8px solid #FF1717;
+  margin-top: 0;
+}
+
+.products--red .tab-pane .products__item-container:hover {
+  border-color: #FF1717;
+}
+
+.products--red .tab-pane .products__item-container a:hover {
+  color: #FF1717;
+}
+
+.products--red .tab-pane a.products__add {
+  background: #FF1717;
+  color: white;
+}
+
+.products--red .tab-pane a.products__add::after, .products--red .tab-pane a.products__add::before {
+  content: '';
+}
+
+.products--red .tab-pane a.products__add svg path {
+  fill: white;
+}
+
+.products--red .tab-pane a.products__add:hover {
+  color: white;
+  background: #e30000;
+}
+
+.products--red .tab-pane .toggle-favourite svg path {
+  stroke: #FF1717;
+}
+
+.products--red .tab-pane .toggle-favourite.added svg path {
+  stroke: transparent;
+  fill: #FF1717;
+}
+
+.products--red .tab-pane .toggle-favourite:hover svg path {
+  fill: #FF1717;
+}
+
+.products--red .owl-arrow-container {
+  margin-top: 36px;
+}
+
+.products--red .owl-next svg path {
+  fill: #FF1717;
 }
 
 .toggle-favourite {

@@ -174,8 +174,19 @@ body {
 
 
     &__carousel {
-        max-width: 1300px;
+        max-width: 1400px;
         margin: auto;
+        border-radius: 1.25rem;
+        padding: 2rem;
+        border: 8px solid transparent;
+        margin-top: calc(-2rem - 8px);
+        //minus margin -top because of transparent here but borders on the blue and red containers
+    }
+
+    .owl-arrow-container {
+        justify-content: center;
+        margin: auto;
+        margin-top: calc(50px - 2rem - 8px - 1rem - 4px);
     }
 
     &__subheading,
@@ -269,6 +280,27 @@ body {
         }
     }
 
+    &__extra {
+        bottom: 0.75rem;
+        left: 0.75rem;
+        position: absolute;
+
+        &-red {
+            background: $red;
+            color: white;
+
+            &:hover {
+                color: white;
+                background: $red;
+            }
+        }
+
+        &-yellow {
+            background: $yellow;
+            color: black;
+        }
+    }
+
     &__click-info {
         font-weight: bold;
         background: black;
@@ -284,12 +316,15 @@ body {
         text-align: center;
         width: calc(100% - 3rem);
         transition: $durationM;
+        z-index: 2;
     }
 
     &__img-container {
         border: 1px solid $grey-light;
         border-radius: 1rem;
         padding: 2rem;
+        position: relative;
+        z-index: 1;
     }
 
     &__img {
@@ -357,6 +392,189 @@ body {
         svg {
             z-index: 2;
             position: relative;
+        }
+    }
+
+    &--blue {
+
+        .nav-link {
+            &.active {
+
+                background: $lightBlue;
+                color: white;
+
+                &:hover,
+                &:active,
+                &:focus,
+                &:not(:disabled):not(.disabled):active,
+                &:not(:disabled):not(.disabled):focus,
+                &:not(:disabled):not(.disabled):active:focus {
+                    background: $lightBlue;
+                    color: white;
+                }
+            }
+        }
+
+
+
+        .tab-pane {
+            .products {
+
+                &__carousel {
+                    border: 8px solid $lightBlue;
+                    margin-top: 0;
+                }
+
+                &__item-container {
+                    &:hover {
+                        border-color: $lightBlue;
+                    }
+
+                    a:hover {
+                        color: $lightBlue;
+                    }
+                }
+            }
+
+            a.products__add {
+                background: $lightBlue;
+                color: white;
+
+                &::after,
+                &::before {
+                    content: '';
+                }
+
+                svg {
+                    path {
+                        fill: white;
+                    }
+                }
+
+                &:hover {
+                    background: $blue;
+
+                    color: white;
+
+                }
+            }
+
+            .toggle-favourite {
+                svg path {
+                    stroke: $lightBlue;
+                }
+
+                &.added svg path {
+                    stroke: transparent;
+                    fill: $lightBlue;
+                }
+
+                &:hover {
+                    svg path {
+                        fill: $lightBlue;
+                    }
+                }
+            }
+
+        }
+
+        .owl-arrow-container {
+            margin-top: 36px;
+        }
+
+        .owl-next svg path {
+            fill: $lightBlue;
+        }
+    }
+
+
+    &--red {
+
+        .nav-link {
+            &.active {
+
+                background: $red;
+                color: white;
+
+                &:hover,
+                &:active,
+                &:focus,
+                &:not(:disabled):not(.disabled):active,
+                &:not(:disabled):not(.disabled):focus,
+                &:not(:disabled):not(.disabled):active:focus {
+                    background: $red;
+                    color: white;
+                }
+            }
+        }
+
+
+
+        .tab-pane {
+            .products {
+
+                &__carousel {
+                    border: 8px solid $red;
+                    margin-top: 0;
+                }
+
+                &__item-container {
+                    &:hover {
+                        border-color: $red;
+                    }
+
+                    a:hover {
+                        color: $red;
+                    }
+                }
+            }
+
+            a.products__add {
+                background: $red;
+                color: white;
+
+                &::after,
+                &::before {
+                    content: '';
+                }
+
+                svg {
+                    path {
+                        fill: white;
+                    }
+                }
+
+                &:hover {
+                    color: white;
+                    background: darken($color: $red, $amount: 10%);
+                }
+            }
+
+            .toggle-favourite {
+                svg path {
+                    stroke: $red;
+                }
+
+                &.added svg path {
+                    stroke: transparent;
+                    fill: $red;
+                }
+
+                &:hover {
+                    svg path {
+                        fill: $red;
+                    }
+                }
+            }
+
+        }
+
+        .owl-arrow-container {
+            margin-top: 36px;
+        }
+
+        .owl-next svg path {
+            fill: $red;
         }
     }
 }

@@ -10,6 +10,11 @@
     flex-direction: column;
     padding: 0;
 
+    &.scrolled {
+        background: white;
+        box-shadow: 0 0 20px 0px rgba(134, 134, 134, 0.5);
+    }
+
     &__container-upper {
         height: 105px;
         position: relative;
@@ -17,18 +22,18 @@
         border-radius: .0010px;
         transition: $durationM;
 
-        &.scrolled {
-            box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
-            margin-top: 0.25rem;
-            border-radius: 200px;
-            background: white;
-            padding: 0 0.75rem;
+        // &.scrolled {
+        //     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+        //     margin-top: 0.25rem;
+        //     border-radius: 200px;
+        //     background: white;
+        //     padding: 0 0.75rem;
 
 
-            .header__logo-container {
-                margin-left: 1rem;
-            }
-        }
+        //     .header__logo-container {
+        //         margin-left: 1rem;
+        //     }
+        // }
     }
 
     &__logo {
