@@ -1872,6 +1872,10 @@ q .hero__cut::after {
   margin: 1rem 0 4rem 0;
 }
 
+.products {
+  position: relative;
+}
+
 .products__carousel {
   max-width: 1400px;
   margin: auto;
@@ -1879,6 +1883,7 @@ q .hero__cut::after {
   padding: 2rem;
   border: 8px solid transparent;
   margin-top: calc(-2rem - 8px);
+  background: white;
 }
 
 .products .owl-arrow-container {
@@ -2091,6 +2096,12 @@ q .hero__cut::after {
   position: relative;
 }
 
+.products--blue__splash {
+  position: absolute;
+  left: -25%;
+  top: -12%;
+}
+
 .products--blue .nav-link.active {
   background: #3fbaff;
   color: white;
@@ -2151,6 +2162,12 @@ q .hero__cut::after {
 
 .products--blue .owl-next svg path {
   fill: #3fbaff;
+}
+
+.products--red__splash {
+  position: absolute;
+  right: -25%;
+  top: -12%;
 }
 
 .products--red .nav-link.active {

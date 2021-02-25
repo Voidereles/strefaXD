@@ -171,7 +171,7 @@ body {
 }
 
 .products {
-
+    position: relative;
 
     &__carousel {
         max-width: 1400px;
@@ -180,6 +180,7 @@ body {
         padding: 2rem;
         border: 8px solid transparent;
         margin-top: calc(-2rem - 8px);
+        background: white;
         //minus margin -top because of transparent here but borders on the blue and red containers
     }
 
@@ -396,6 +397,11 @@ body {
     }
 
     &--blue {
+        &__splash {
+            position: absolute;
+            left: -25%;
+            top: -12%;
+        }
 
         .nav-link {
             &.active {
@@ -489,6 +495,12 @@ body {
 
 
     &--red {
+
+        &__splash {
+            position: absolute;
+            right: -25%;
+            top: -12%;
+        }
 
         .nav-link {
             &.active {
