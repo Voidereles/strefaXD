@@ -179,7 +179,7 @@ body {
         border-radius: 1.25rem;
         padding: 2rem;
         border: 8px solid transparent;
-        margin-top: calc(-2rem - 8px);
+        margin-top: -8px;
         background: white;
         //minus margin -top because of transparent here but borders on the blue and red containers
     }
@@ -188,20 +188,6 @@ body {
         justify-content: center;
         margin: auto;
         margin-top: calc(50px - 2rem - 8px - 1rem - 4px);
-    }
-
-    &__subheading,
-    &__heading {
-        text-align: center;
-    }
-
-    &__subheading {
-        font-size: $fontSizeH3;
-    }
-
-    &__heading {
-        font-size: $fontSizeH2;
-        font-weight: bold;
     }
 
     .nav-pills {
@@ -631,6 +617,171 @@ body {
 
     &:active {
         transform: scale(0.8);
+    }
+}
+
+.opinions {
+    &__date {
+        color: $grey-2;
+        font-size: $fontSizeBodyXS;
+    }
+
+    &__name {
+        font-size: $fontSizeH3;
+        font-weight: bold;
+    }
+
+    &__text {
+        color: $grey;
+    }
+
+    &__arrows {
+        margin: auto;
+        margin-top: 1rem;
+    }
+}
+
+.news {
+    &__arrows {
+        margin: 0;
+        margin-right: auto;
+        margin-bottom: -1rem;
+
+        .owl-next {
+            svg path {
+                fill: $dark;
+            }
+        }
+    }
+
+    &__date {
+        color: $dark;
+    }
+
+    &__name {
+        font-size: $fontSizeBodyL;
+        font-weight: bold;
+    }
+
+    &__text {
+        color: $grey-5;
+        font-size: $fontSizeBodyXS;
+    }
+}
+
+
+.instagram {
+    &__img {
+        height: 295px;
+        width: auto;
+        object-fit: cover;
+    }
+}
+
+.help,
+.delivery {
+    margin-top: 104px;
+    padding: 2.5rem;
+    background: $grey;
+    color: white;
+
+    &__heading {
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+        font-size: $fontSizeBodyS;
+    }
+
+    &__tel {
+        color: white;
+    }
+}
+
+.delivery {
+    margin-top: 2.5rem;
+    background: $dark;
+}
+
+.partners {
+    background: $dark;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    color: white;
+
+    &__carousel {
+        max-width: calc(100% - 4rem);
+        width: calc(100% - 4rem);
+        display: inline-block !important;
+    }
+
+    &__arrows {
+        margin: 0;
+        margin-left: auto;
+        display: inline-block;
+        max-width: 3rem;
+
+        .owl-next {
+            svg {
+                width: 2rem;
+                height: 2rem;
+
+            }
+        }
+    }
+}
+
+.newsletter {
+    margin-top: 2.5rem;
+    background: $yellow;
+    padding: 2.5rem;
+    color: $dark;
+    position: relative;
+
+    &__input {
+        border: none;
+        // color: white;
+        font-size: $fontSizeBodyXS;
+        font-family: 'Kelson-Sans-RU', sans-serif;
+        padding-bottom: 0;
+        line-height: 0.9;
+        transition: $durationM;
+        width: calc(100% - 200px);
+        background: white;
+        overflow: hidden;
+        height: 59px;
+        line-height: 59px;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 2;
+
+        &:focus {
+            border: none;
+            outline: none;
+            box-shadow: none;
+            width: calc(100% - 200px);
+        }
+
+        &::placeholder {
+            // color: white;
+            color: $dark;
+        }
+    }
+
+    &__submit {
+        width: 240px;
+        height: 59px;
+        margin-left: -80px;
+        padding-left: 60px;
+    }
+
+    &__decoration {
+
+        position: absolute;
+        height: 100%;
+        width: auto;
+        top: 0;
+        z-index: 0;
+        right: 14%;
+
     }
 }
 

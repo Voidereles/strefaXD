@@ -248,6 +248,60 @@ ready(function () {
         items: 1,
         margin: 16,
         autoplayHoverPause: true,
+        dots: false,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: false
+            },
+            600: {
+                items: 2
+            },
+            900: {
+                items: 3,
+            },
+            1200: {
+                items: 4
+            },
+            1700: {
+                items: 5
+            }
+        }
+    })
+
+    //owl things need to be made on jquery objects
+    $('.owl-prev').each(function () {
+        $(this).on('click', function () {
+            $(this).parent().parent().children('.owl-carousel').trigger('prev.owl.carousel');
+        });
+    });
+
+    $('.owl-next').each(function () {
+        $(this).on('click', function () {
+            $(this).parent().parent().children('.owl-carousel').trigger('next.owl.carousel');
+        });
+    });
+
+
+
+    document.querySelectorAll('.toggle-favourite').forEach(element => {
+        element.addEventListener('click', function () {
+            element.classList.toggle('added');
+        });
+    });
+
+
+
+
+    $('.opinions__carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        lazyLoad: true,
+        items: 1,
+        margin: 32,
+        autoplayHoverPause: true,
         dots: true,
         nav: false,
         responsiveClass: true,
@@ -271,33 +325,66 @@ ready(function () {
         }
     })
 
-    //owl things need to be made on jquery objects
-    $('.products__prev').each(function () {
-        $(this).on('click', function () {
-            $(this).parent().parent().children('.products__carousel').trigger('prev.owl.carousel');
-        });
-    });
-
-    $('.products__next').each(function () {
-        $(this).on('click', function () {
-            $(this).parent().parent().children('.products__carousel').trigger('next.owl.carousel');
-        });
+    let numberOfStars;
+    const star = document.querySelector('.opinions__stars').innerHTML;
+    document.querySelectorAll('.opinions__stars').forEach(element => {
+        numberOfStars = element.getAttribute('data-stars');
+        for (i = 1; i < numberOfStars; i++) {
+            element.innerHTML += star;
+        };
     });
 
 
 
-    document.querySelectorAll('.toggle-favourite').forEach(element => {
-        element.addEventListener('click', function () {
-            element.classList.toggle('added');
-        });
+    $('.news__carousel, .instagram__carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        lazyLoad: true,
+        items: 1,
+        margin: 32,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true
+            },
+            900: {
+                items: 2,
+            },
+            1200: {
+                items: 3
+            },
+            1700: {
+                items: 4
+            }
+        }
     });
 
-
-
-
-
-
-
-
+    $('.partners__carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        lazyLoad: true,
+        items: 1,
+        margin: 32,
+        autoplayHoverPause: true,
+        dots: true,
+        nav: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true
+            },
+            900: {
+                items: 2,
+            },
+            1200: {
+                items: 3
+            }
+        }
+    })
 
 });
