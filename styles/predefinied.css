@@ -277,6 +277,11 @@ a:hover, a:focus, a:active {
   border-color: #FF1717;
 }
 
+.btn-success {
+  background: #59CD90;
+  border-color: #59CD90;
+}
+
 .input-light {
   height: 44px;
   display: -webkit-box;
