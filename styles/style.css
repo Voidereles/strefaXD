@@ -2411,9 +2411,8 @@ body {
     border: none;
   }
   .products--blue__splash {
-    top: -32%;
-    -webkit-transform: rotate(145deg) translateX(120px);
-            transform: rotate(145deg) translateX(120px);
+    -webkit-transform: rotate(40deg) translateX(-280px) translateY(-20%);
+            transform: rotate(40deg) translateX(-280px) translateY(-20%);
   }
   .products--yellow {
     margin-top: -64vh !important;
