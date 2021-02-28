@@ -208,13 +208,13 @@ ready(function () {
         lazyLoad: true,
         dots: false,
         // autoplay: true,
-        margin: 50,
+        margin: 100,
         touchDrag: false,
         mouseDrag: false,
         responsiveClass: true,
         responsive: {
             0: {
-                margin: 100
+                margin: 150
             },
             480: {
                 margin: 50

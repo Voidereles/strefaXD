@@ -2306,6 +2306,10 @@ body {
   .help svg {
     display: none;
   }
+  .partners,
+  .newsletter {
+    padding: 1.5rem;
+  }
   .delivery {
     margin-top: 24px;
   }
