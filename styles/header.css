@@ -447,6 +447,11 @@ a.sizeOf.active {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
+  color: #3F3F3F !important;
+}
+
+.header__logo-container.opacity0 {
+  opacity: 0;
 }
 
 .header__logo-container svg {
@@ -480,6 +485,10 @@ a.sizeOf.active {
 .header .nav-toggle:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.header .nav-toggle.white svg path {
+  fill: white;
 }
 
 .header .nav-toggle svg {

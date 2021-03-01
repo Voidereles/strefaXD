@@ -16,13 +16,18 @@ function ready(callbackFunc) {
 }
 
 const header = document.querySelector('.header');
-const columnToggle = document.querySelector('.column-toggle');
 const navToggle = document.querySelector('.nav-toggle');
 
 const headerNav = document.querySelector('.header__nav');
 const navUpper = document.querySelector('.header__nav-upper');
 const navFunctions = document.querySelector('.header__nav-upper-functions');
 const headerContainerBottom = document.querySelector('.header .header__container-bottom');
+
+const changeLogoColor = () => {
+    document.querySelector('.header__logo-container').classList.toggle('opacity0');
+    navToggle.classList.toggle('white');
+
+};
 
 
 
@@ -32,6 +37,20 @@ ready(function () {
         if (window.innerWidth < 992) {
             headerNav.append(headerContainerBottom);
             navUpper.prepend(navFunctions);
+
+
+
+            document.querySelectorAll('.header__nav-bottom-li').forEach(element => {
+                element.addEventListener('mouseover', function () {
+                    changeLogoColor();
+                });
+                element.addEventListener('mouseout', function () {
+                    changeLogoColor();
+                });
+            });
+
+
+
             // navSocialIcons.style.display = "flex";
         } else {
             // headerContainerBottom.append(navSocialIcons);
