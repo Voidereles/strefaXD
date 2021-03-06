@@ -237,6 +237,12 @@ body {
 .products {
     position: relative;
 
+
+    &--blue__splash,
+    &--green__splash {
+        z-index: -1;
+    }
+
     &__carousel {
         max-width: 1400px;
         margin: auto;
@@ -317,6 +323,7 @@ body {
         max-width: 320px;
         margin: auto;
         overflow-y: hidden;
+        position: relative;
 
         &:hover {
             border-color: $yellow-dark;
@@ -376,6 +383,9 @@ body {
         padding: 2rem;
         position: relative;
         z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__img {
@@ -945,7 +955,7 @@ body {
     }
 }
 
-@media (min-width:1700px) {
+@media (min-width:1200px) {
     .products {
         &__carousel {
             max-width: initial;
@@ -957,6 +967,10 @@ body {
     .main {
         &>.container-fluid {
             overflow-x: hidden;
+
+            &.overflow-visible {
+                overflow: visible;
+            }
         }
     }
 
@@ -1034,10 +1048,6 @@ body {
             z-index: 10;
         }
 
-        &--blue__splash,
-        &--green__splash {
-            z-index: -1;
-        }
 
         &--blue__splash {
             left: -65%;
@@ -1185,6 +1195,13 @@ body {
 
                 &-outer {
                     margin-left: -40px;
+                }
+            }
+
+            .grid-view {
+                .card {
+                    border: none;
+                    border: none;
                 }
             }
         }
