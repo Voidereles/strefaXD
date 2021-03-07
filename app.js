@@ -79,7 +79,7 @@ ready(function () {
         body.style.position = 'fixed';
         body.style.top = `-${scrollY}`;
         body.style.overflow = `hidden`;
-        body.style.height = `100vh`;
+        // body.style.height = `100vh`;
     };
     const enableBodyScroll = () => {
         const body = document.body;
