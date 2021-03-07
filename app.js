@@ -73,28 +73,28 @@ ready(function () {
         }
     }
 
-    const disableBodyScroll = () => {
-        const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-        const body = document.body;
-        body.style.position = 'fixed';
-        body.style.top = `-${scrollY}`;
-        body.style.overflow = `hidden`;
-        // body.style.height = `100vh`;
-    };
-    const enableBodyScroll = () => {
-        const body = document.body;
-        const scrollY = body.style.top;
-        body.style.position = '';
-        body.style.top = '';
-        window.scrollTo(0, parseInt(scrollY || '0') * -1);
-        body.style.overflow = `auto`;
-        body.style.overflowX = `hidden`;
-        body.style.height = `auto`;
-        // document.getElementById('dialog').classList.remove('show');
-    };
-    window.addEventListener('scroll', () => {
-        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
-    });
+    // const disableBodyScroll = () => {
+    //     const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+    //     const body = document.body;
+    //     body.style.position = 'fixed';
+    //     body.style.top = `-${scrollY}`;
+    //     body.style.overflow = `hidden`;
+    //     body.style.height = `100vh`;
+    // };
+    // const enableBodyScroll = () => {
+    //     const body = document.body;
+    //     const scrollY = body.style.top;
+    //     body.style.position = '';
+    //     body.style.top = '';
+    //     window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    //     body.style.overflow = `auto`;
+    //     body.style.overflowX = `hidden`;
+    //     body.style.height = `auto`;
+    //     // document.getElementById('dialog').classList.remove('show');
+    // };
+    // window.addEventListener('scroll', () => {
+    //     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+    // });
 
     document.querySelectorAll('.header__dropdown-close').forEach(element => {
         element.addEventListener('click', function () {
