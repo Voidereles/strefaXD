@@ -72,12 +72,17 @@ ready(function () {
     const disableBodyScroll = () => {
         // const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
         // const body = document.body;
-        // body.style.position = 'fixed';
+        document.documentElement.style.position = 'fixed';
+        document.documentElement.style.width = '100%';
+
         // body.style.top = `-${scrollY}`;
         // body.style.overflow = `hidden`;
         // body.style.height = `100vh`;
+
     };
     const enableBodyScroll = () => {
+        document.documentElement.style.position = 'initial';
+        document.documentElement.style.width = 'initial';
         // const body = document.body;
         // const scrollY = body.style.top;
         // body.style.position = '';
@@ -107,11 +112,11 @@ ready(function () {
     navToggle.addEventListener('click', function () {
         headerNav.classList.toggle('header__nav--entered');
         navToggle.classList.toggle('nav-toggle--entered');
-        // if (navToggle.classList.contains('nav-toggle--entered')) {
-        //     disableBodyScroll();
-        // } else {
-        //     enableBodyScroll();
-        // }
+        if (navToggle.classList.contains('nav-toggle--entered')) {
+            disableBodyScroll();
+        } else {
+            enableBodyScroll();
+        }
     });
 
 
