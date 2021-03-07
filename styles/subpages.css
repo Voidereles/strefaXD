@@ -3184,5 +3184,8 @@ span.select2-dropdown.filters__select-container.select2-dropdown--below .select2
   .big-cart__img {
     max-width: 100px;
   }
+  .big-cart__summary {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=subpages.css.map */

@@ -656,6 +656,7 @@ span.select2-dropdown.filters__select-container.select2-dropdown--below {
 
 @media (max-width:900px) {
     .big-cart {
+
         .heading-3 {
             font-size: $fontSizeBodyL;
         }
@@ -666,6 +667,11 @@ span.select2-dropdown.filters__select-container.select2-dropdown--below {
 
         &__img {
             max-width: 100px;
+        }
+
+        &__summary {
+
+            width: 100%;
         }
     }
 }

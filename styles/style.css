@@ -1807,6 +1807,7 @@ body {
 
 .products__add {
   margin-left: 1rem;
+  min-width: 158px;
 }
 
 .products__add svg {
@@ -2267,9 +2268,6 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .main > .container-fluid {
-    overflow-x: hidden;
-  }
   .main > .container-fluid.overflow-visible {
     overflow: visible;
   }
@@ -2327,6 +2325,9 @@ body {
   .products--blue__splash {
     left: -65%;
   }
+  .products--green {
+    overflow: hidden;
+  }
   .products--green__splash {
     right: -65%;
   }
@@ -2367,6 +2368,12 @@ body {
 }
 
 @media (max-width: 992px) {
+  .header__login-container .login,
+  .header__login-container .cart, .header__cart-container .login,
+  .header__cart-container .cart {
+    right: calc(50% - 340px/2);
+    top: 130px;
+  }
   .main {
     padding-top: 80px;
   }

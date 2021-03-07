@@ -449,6 +449,7 @@ body {
 
     &__add {
         margin-left: 1rem;
+        min-width: 158px;
 
         svg {
             z-index: 2;
@@ -966,7 +967,7 @@ body {
 @media (max-width:1200px) {
     .main {
         &>.container-fluid {
-            overflow-x: hidden;
+            // overflow-x: hidden;
 
             &.overflow-visible {
                 overflow: visible;
@@ -1053,6 +1054,10 @@ body {
             left: -65%;
         }
 
+        &--green {
+            overflow: hidden;
+        }
+
         &--green__splash {
             right: -65%;
         }
@@ -1104,6 +1109,19 @@ body {
 }
 
 @media (max-width: 992px) {
+    .header {
+
+        &__login-container,
+        &__cart-container {
+
+            .login,
+            .cart {
+                right: calc(50% - 340px/2);
+                top: 130px;
+            }
+        }
+    }
+
     .main {
         padding-top: 80px;
     }

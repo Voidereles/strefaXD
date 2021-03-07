@@ -34,7 +34,7 @@ const changeLogoColor = () => {
 ready(function () {
 
     const headerMoveLinks = () => {
-        if (window.innerWidth < 992) {
+        if (window.innerWidth <= 992) {
             headerNav.append(headerContainerBottom);
             navUpper.prepend(navFunctions);
 
@@ -48,12 +48,6 @@ ready(function () {
                     changeLogoColor();
                 });
             });
-
-
-
-            // navSocialIcons.style.display = "flex";
-        } else {
-            // headerContainerBottom.append(navSocialIcons);
         }
     }
     headerMoveLinks();
