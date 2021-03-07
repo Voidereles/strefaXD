@@ -147,16 +147,16 @@
             padding-bottom: 0;
             line-height: 0.9;
             transition: $durationM;
-            width: 0;
-            overflow: hidden;
+            // width: 0;
+            // overflow: hidden;
 
-            &:focus {
-                border: none;
-                outline: none;
-                box-shadow: none;
-                width: 170px;
-                padding-left: 0.5rem;
-            }
+            // &:focus {
+            //     border: none;
+            //     outline: none;
+            //     box-shadow: none;
+            //     width: 170px;
+            //     padding-left: 0.5rem;
+            // }
 
             &::placeholder {
                 // color: white;
@@ -201,13 +201,13 @@
 
             transition: $durationM;
 
-            &:hover {
+            // &:hover {
 
-                .header__search-input {
-                    width: 170px;
-                    padding-left: 0.5rem;
-                }
-            }
+            //     .header__search-input {
+            //         width: 170px;
+            //         padding-left: 0.5rem;
+            //     }
+            // }
         }
     }
 
