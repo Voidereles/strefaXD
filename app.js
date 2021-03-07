@@ -90,7 +90,7 @@ ready(function () {
         body.style.overflow = `auto`;
         body.style.overflowX = `hidden`;
         body.style.height = `auto`;
-        document.getElementById('dialog').classList.remove('show');
+        // document.getElementById('dialog').classList.remove('show');
     };
     window.addEventListener('scroll', () => {
         document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);

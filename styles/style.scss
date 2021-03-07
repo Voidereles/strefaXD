@@ -1165,6 +1165,10 @@ body {
 }
 
 @media (max-width:480px) {
+    .main {
+        overflow: hidden;
+    }
+
     .hero {
         &__heading {
             font-size: $fontSizeH3;

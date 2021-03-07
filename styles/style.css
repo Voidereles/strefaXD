@@ -37,15 +37,15 @@
 }
 
 .fontSizeH1 {
-  font-size: 4rem;
-}
-
-.fontSizeH2 {
   font-size: 3rem;
 }
 
+.fontSizeH2 {
+  font-size: 2rem;
+}
+
 .fontSizeH3 {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
 }
 
 .fontSizeBodyL {
@@ -77,12 +77,12 @@ body {
 }
 
 .heading-2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .heading-3 {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
 }
 
 .heading-4 {
@@ -416,8 +416,8 @@ a.sizeOf.active {
   display: -ms-flexbox;
   display: flex;
   top: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 200ms;
+  transition: 200ms;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -448,7 +448,7 @@ a.sizeOf.active {
 }
 
 .header__logo-container {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1581,7 +1581,7 @@ body {
 
 .hero__heading {
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .hero__subheading {
@@ -1778,7 +1778,7 @@ body {
 }
 
 .products__price-now {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: -10px;
   color: #3F3F3F;
@@ -2001,7 +2001,7 @@ body {
 }
 
 .opinions__name {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -2403,8 +2403,11 @@ body {
 }
 
 @media (max-width: 480px) {
+  .main {
+    overflow: hidden;
+  }
   .hero__heading {
-    font-size: 1.625rem;
+    font-size: 1.5rem;
   }
   .hero__subheading {
     max-width: 90%;
