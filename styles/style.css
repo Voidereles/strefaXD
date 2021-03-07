@@ -2262,8 +2262,23 @@ body {
 }
 
 @media (min-width: 1200px) {
+  .main > .container-fluid {
+    overflow-x: hidden;
+  }
+  .main > .container-fluid.overflow-visible {
+    overflow: visible;
+  }
   .products__carousel {
     max-width: initial;
+  }
+}
+
+@media (min-width: 1700px) {
+  .main > .container-fluid {
+    overflow-x: visible;
+  }
+  .main > .container-fluid.overflow-visible {
+    overflow: visible;
   }
 }
 

@@ -1,3 +1,18 @@
+const header = document.querySelector('.header');
+const navToggle = document.querySelector('.nav-toggle');
+
+const headerNav = document.querySelector('.header__nav');
+const navUpper = document.querySelector('.header__nav-upper');
+const navFunctions = document.querySelector('.header__nav-upper-functions');
+const headerContainerBottom = document.querySelector('.header .header__container-bottom');
+
+const changeLogoColor = () => {
+    document.querySelector('.header__logo-container').classList.toggle('opacity0');
+    navToggle.classList.toggle('white');
+
+};
+
+
 function ready(callbackFunc) {
     if (document.readyState !== 'loading') {
         // Document is already ready, call the callback directly
@@ -14,21 +29,6 @@ function ready(callbackFunc) {
         });
     }
 }
-
-const header = document.querySelector('.header');
-const navToggle = document.querySelector('.nav-toggle');
-
-const headerNav = document.querySelector('.header__nav');
-const navUpper = document.querySelector('.header__nav-upper');
-const navFunctions = document.querySelector('.header__nav-upper-functions');
-const headerContainerBottom = document.querySelector('.header .header__container-bottom');
-
-const changeLogoColor = () => {
-    document.querySelector('.header__logo-container').classList.toggle('opacity0');
-    navToggle.classList.toggle('white');
-
-};
-
 
 
 ready(function () {
@@ -49,6 +49,7 @@ ready(function () {
                 });
             });
         }
+
     }
     headerMoveLinks();
 
@@ -61,10 +62,8 @@ ready(function () {
                 header.classList.add('scrolled');
                 if (prevScrollpos > currentScrollPos) {
                     header.style.top = "0";
-                    // columnToggle.classList.remove('header-hidden')
                 } else {
                     header.style.top = "-161px";
-                    // columnToggle.classList.add('header-hidden')
                 }
                 prevScrollpos = currentScrollPos;
             } else {
@@ -79,7 +78,7 @@ ready(function () {
         body.style.position = 'fixed';
         body.style.top = `-${scrollY}`;
         body.style.overflow = `hidden`;
-        body.style.height = `100vh`;
+        // body.style.height = `100vh`;
     };
     const enableBodyScroll = () => {
         const body = document.body;
@@ -89,8 +88,8 @@ ready(function () {
         window.scrollTo(0, parseInt(scrollY || '0') * -1);
         body.style.overflow = `auto`;
         body.style.overflowX = `hidden`;
-        body.style.height = `auto`;
-        document.getElementById('dialog').classList.remove('show');
+        // body.style.height = `auto`;
+        // document.getElementById('dialog').classList.remove('show');
     };
     window.addEventListener('scroll', () => {
         document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);

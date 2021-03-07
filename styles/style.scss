@@ -957,12 +957,36 @@ body {
 }
 
 @media (min-width:1200px) {
+    .main {
+        &>.container-fluid {
+            overflow-x: hidden;
+
+            &.overflow-visible {
+                overflow: visible;
+            }
+        }
+    }
+
     .products {
         &__carousel {
             max-width: initial;
         }
     }
 }
+
+
+@media (min-width:1700px) {
+    .main {
+        &>.container-fluid {
+            overflow-x: visible;
+
+            &.overflow-visible {
+                overflow: visible;
+            }
+        }
+    }
+}
+
 
 @media (max-width:1200px) {
     .main {
