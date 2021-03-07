@@ -959,7 +959,7 @@ body {
 @media (min-width:1200px) {
     .main {
         &>.container-fluid {
-            overflow-x: hidden;
+            overflow: hidden;
 
             &.overflow-visible {
                 overflow: visible;

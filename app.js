@@ -51,7 +51,7 @@ ready(function () {
         }
 
     }
-    // headerMoveLinks();
+    headerMoveLinks();
 
 
     // function headerOnScroll() {

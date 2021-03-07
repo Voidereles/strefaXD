@@ -2263,7 +2263,7 @@ body {
 
 @media (min-width: 1200px) {
   .main > .container-fluid {
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .main > .container-fluid.overflow-visible {
     overflow: visible;
