@@ -398,8 +398,7 @@ ready(function () {
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 1,
-                    dots: true
+                    items: 2
                 },
 
                 600: {
