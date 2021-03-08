@@ -28576,18 +28576,18 @@ ready(function () {
     };
   }
 
-  var disableBodyScroll = function disableBodyScroll() {// const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+  var disableBodyScroll = function disableBodyScroll() {
+    // const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
     // const body = document.body;
-    // document.documentElement.style.position = 'fixed';
-    // document.documentElement.style.width = '100%';
-    // body.style.top = `-${scrollY}`;
+    document.documentElement.style.position = 'fixed';
+    document.documentElement.style.width = '100%'; // body.style.top = `-${scrollY}`;
     // body.style.overflow = `hidden`;
     // body.style.height = `100vh`;
   };
 
-  var enableBodyScroll = function enableBodyScroll() {// document.documentElement.style.position = 'initial';
-    // document.documentElement.style.width = 'initial';
-    // const body = document.body;
+  var enableBodyScroll = function enableBodyScroll() {
+    document.documentElement.style.position = 'initial';
+    document.documentElement.style.width = 'initial'; // const body = document.body;
     // const scrollY = body.style.top;
     // body.style.position = '';
     // body.style.top = '';
@@ -28596,11 +28596,11 @@ ready(function () {
     // body.style.overflowX = `hidden`;
     // body.style.height = `auto`;
     // document.getElementById('dialog').classList.remove('show');
-  };
+  }; // window.addEventListener('scroll', () => {
+  //     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+  // });
 
-  window.addEventListener('scroll', function () {
-    document.documentElement.style.setProperty('--scroll-y', "".concat(window.scrollY, "px"));
-  });
+
   document.querySelectorAll('.header__dropdown-close').forEach(function (element) {
     element.addEventListener('click', function () {
       $('.collapse').collapse('hide');
@@ -28958,7 +28958,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53060" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53322" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

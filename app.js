@@ -79,8 +79,8 @@ ready(function () {
         // const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
         // const body = document.body;
 
-        // document.documentElement.style.position = 'fixed';
-        // document.documentElement.style.width = '100%';
+        document.documentElement.style.position = 'fixed';
+        document.documentElement.style.width = '100%';
 
         // body.style.top = `-${scrollY}`;
         // body.style.overflow = `hidden`;
@@ -88,8 +88,8 @@ ready(function () {
 
     };
     const enableBodyScroll = () => {
-        // document.documentElement.style.position = 'initial';
-        // document.documentElement.style.width = 'initial';
+        document.documentElement.style.position = 'initial';
+        document.documentElement.style.width = 'initial';
 
         // const body = document.body;
         // const scrollY = body.style.top;
@@ -101,9 +101,9 @@ ready(function () {
         // body.style.height = `auto`;
         // document.getElementById('dialog').classList.remove('show');
     };
-    window.addEventListener('scroll', () => {
-        document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
-    });
+    // window.addEventListener('scroll', () => {
+    //     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+    // });
 
     document.querySelectorAll('.header__dropdown-close').forEach(element => {
         element.addEventListener('click', function () {
@@ -143,6 +143,7 @@ ready(function () {
 
     headerOnScroll();
     headerMoveLinks();
+
     // window.scrollTo(0, parseInt(scrollY || '0') * -1);
 
     document.querySelectorAll('.owl-carousel').forEach(element => {
