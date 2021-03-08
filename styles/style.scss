@@ -451,7 +451,7 @@ body {
 
     &__add {
         margin-left: 1rem;
-        min-width: 158px;
+        min-width: 168px;
 
         svg {
             z-index: 2;
@@ -958,7 +958,7 @@ body {
     }
 }
 
-@media (min-width:1200px) {
+@media (min-width:1200px) and (max-width:1699px) {
     .main {
         &>.container-fluid {
             overflow: hidden;
@@ -969,12 +969,8 @@ body {
         }
     }
 
-    .products {
-        &__carousel {
-            max-width: initial;
-        }
-    }
 }
+
 
 
 @media (min-width:1700px) {
