@@ -2,6 +2,7 @@
 @import 'header.scss';
 @import url('bootstrap/dist/css/bootstrap.min.css');
 @import url('owl.carousel/dist/assets/owl.carousel.css');
+// @import url('select2/dist/css/select2.min.css');
 
 
 body {
@@ -450,7 +451,7 @@ body {
     }
 
     &__add {
-        margin-left: 1rem;
+        // margin-left: 1rem;
         min-width: 168px;
 
         svg {

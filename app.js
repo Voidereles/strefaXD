@@ -1,7 +1,8 @@
+// import 'select2';
 import 'bootstrap';
 import 'owl.carousel';
-import 'select2';
-import 'stickybits';
+import stickybits from 'stickybits';
+import './scripts/product.js';
 
 
 const header = document.querySelector('.header');
