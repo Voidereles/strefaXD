@@ -141,8 +141,8 @@ ready(function () {
 
 
 
-    headerOnScroll();
-    headerMoveLinks();
+    // headerOnScroll();
+    // headerMoveLinks();
 
     // window.scrollTo(0, parseInt(scrollY || '0') * -1);
 
