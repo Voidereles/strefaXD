@@ -78,8 +78,9 @@ ready(function () {
     const disableBodyScroll = () => {
         // const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
         // const body = document.body;
-        document.documentElement.style.position = 'fixed';
-        document.documentElement.style.width = '100%';
+
+        // document.documentElement.style.position = 'fixed';
+        // document.documentElement.style.width = '100%';
 
         // body.style.top = `-${scrollY}`;
         // body.style.overflow = `hidden`;
@@ -87,8 +88,9 @@ ready(function () {
 
     };
     const enableBodyScroll = () => {
-        document.documentElement.style.position = 'initial';
-        document.documentElement.style.width = 'initial';
+        // document.documentElement.style.position = 'initial';
+        // document.documentElement.style.width = 'initial';
+
         // const body = document.body;
         // const scrollY = body.style.top;
         // body.style.position = '';
