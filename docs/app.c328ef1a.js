@@ -28611,19 +28611,21 @@ ready(function () {
 
   navToggle.addEventListener('click', function () {
     headerNav.classList.toggle('header__nav--entered');
-    navToggle.classList.toggle('nav-toggle--entered'); // if (navToggle.classList.contains('nav-toggle--entered')) {
-    //     disableBodyScroll();
-    // } else {
-    //     enableBodyScroll();
-    // }
+    navToggle.classList.toggle('nav-toggle--entered');
+
+    if (navToggle.classList.contains('nav-toggle--entered')) {
+      disableBodyScroll();
+    } else {
+      enableBodyScroll();
+    }
   });
   var allColors = document.querySelectorAll(".color-link");
   Array.from(allColors).forEach(function (element) {
     // element.style.transitionDelay = "0.01s";
     var dataColor = element.getAttribute('data-color');
     element.style.backgroundColor = dataColor;
-  }); // headerOnScroll();
-  // headerMoveLinks();
+  });
+  headerOnScroll(); // headerMoveLinks();
   // window.scrollTo(0, parseInt(scrollY || '0') * -1);
 
   document.querySelectorAll('.owl-carousel').forEach(function (element) {

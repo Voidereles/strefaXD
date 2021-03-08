@@ -120,11 +120,11 @@ ready(function () {
     navToggle.addEventListener('click', function () {
         headerNav.classList.toggle('header__nav--entered');
         navToggle.classList.toggle('nav-toggle--entered');
-        // if (navToggle.classList.contains('nav-toggle--entered')) {
-        //     disableBodyScroll();
-        // } else {
-        //     enableBodyScroll();
-        // }
+        if (navToggle.classList.contains('nav-toggle--entered')) {
+            disableBodyScroll();
+        } else {
+            enableBodyScroll();
+        }
     });
 
 
@@ -141,7 +141,7 @@ ready(function () {
 
 
 
-    // headerOnScroll();
+    headerOnScroll();
     // headerMoveLinks();
 
     // window.scrollTo(0, parseInt(scrollY || '0') * -1);
