@@ -28599,25 +28599,23 @@ ready(function () {
   }; // window.addEventListener('scroll', () => {
   //     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
   // });
+  // document.querySelectorAll('.header__dropdown-close').forEach(element => {
+  //     element.addEventListener('click', function () {
+  //         $('.collapse').collapse('hide');
+  //     });
+  // });
+  // window.addEventListener('resize', function (event) {
+  //     headerMoveLinks();
+  // });
 
 
-  document.querySelectorAll('.header__dropdown-close').forEach(function (element) {
-    element.addEventListener('click', function () {
-      $('.collapse').collapse('hide');
-    });
-  });
-  window.addEventListener('resize', function (event) {
-    headerMoveLinks();
-  });
   navToggle.addEventListener('click', function () {
     headerNav.classList.toggle('header__nav--entered');
-    navToggle.classList.toggle('nav-toggle--entered');
-
-    if (navToggle.classList.contains('nav-toggle--entered')) {
-      disableBodyScroll();
-    } else {
-      enableBodyScroll();
-    }
+    navToggle.classList.toggle('nav-toggle--entered'); // if (navToggle.classList.contains('nav-toggle--entered')) {
+    //     disableBodyScroll();
+    // } else {
+    //     enableBodyScroll();
+    // }
   });
   var allColors = document.querySelectorAll(".color-link");
   Array.from(allColors).forEach(function (element) {
@@ -28958,7 +28956,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53322" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53650" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

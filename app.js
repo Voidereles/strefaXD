@@ -105,26 +105,26 @@ ready(function () {
     //     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     // });
 
-    document.querySelectorAll('.header__dropdown-close').forEach(element => {
-        element.addEventListener('click', function () {
-            $('.collapse').collapse('hide');
-        });
-    });
+    // document.querySelectorAll('.header__dropdown-close').forEach(element => {
+    //     element.addEventListener('click', function () {
+    //         $('.collapse').collapse('hide');
+    //     });
+    // });
 
-    window.addEventListener('resize', function (event) {
-        headerMoveLinks();
-    });
+    // window.addEventListener('resize', function (event) {
+    //     headerMoveLinks();
+    // });
 
 
 
     navToggle.addEventListener('click', function () {
         headerNav.classList.toggle('header__nav--entered');
         navToggle.classList.toggle('nav-toggle--entered');
-        if (navToggle.classList.contains('nav-toggle--entered')) {
-            disableBodyScroll();
-        } else {
-            enableBodyScroll();
-        }
+        // if (navToggle.classList.contains('nav-toggle--entered')) {
+        //     disableBodyScroll();
+        // } else {
+        //     enableBodyScroll();
+        // }
     });
 
 
