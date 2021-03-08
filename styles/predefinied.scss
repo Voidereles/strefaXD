@@ -1,11 +1,4 @@
 @font-face {
-    font-family: 'Anton';
-    font-weight: 400;
-    font-display: swap;
-    src: url('../fonts/Anton-Regular.ttf');
-}
-
-@font-face {
     font-family: 'Kelson-Sans-RU';
     font-weight: 700;
     font-display: swap;
@@ -428,67 +421,6 @@ a.sizeOf {
 }
 
 
-// .owl-carousel {
-
-// .owl-nav button.owl-prev,
-// .owl-nav button.owl-next {
-//     top: 50%;
-//     transform: translateY(calc(-50% - 75px));
-//     padding: 0.75rem 0.45rem !important;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     left: -1rem;
-//     position: absolute;
-//     transition: $durationM;
-
-//     span {
-//         background-repeat: no-repeat;
-//         background-size: contain;
-//         background-position: center;
-//         background: url('../images/next.svg');
-//         transform: rotateZ(180deg);
-//         z-index: 1;
-//         position: relative;
-//         color: transparent;
-//         width: 32px;
-//         height: 32px;
-//         display: block;
-//     }
-
-//     &::before {
-//         content: '';
-//         background: black;
-//         width: 100%;
-//         height: 100%;
-//         top: 0;
-//         left: 0;
-//         z-index: -1;
-//         position: absolute;
-//     }
-
-//     &:focus {
-//         box-shadow: none;
-//         outline: none;
-//         border: none;
-//     }
-
-//     &:active {
-//         transform: translateY(calc(-50% - 75px)) scale(0.695);
-//     }
-// }
-
-// .owl-nav button.owl-next {
-//     left: initial;
-//     background: url('../images/next.svg');
-//     right: -1rem;
-
-//     span {
-//         transform: rotateZ(0);
-//     }
-
-// }
-// }
 
 .flex-basis-100 {
     flex-basis: 100%;

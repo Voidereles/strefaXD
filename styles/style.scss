@@ -1,12 +1,14 @@
 // @import 'predefinied.scss';
 @import 'header.scss';
+@import url('bootstrap/dist/css/bootstrap.min.css');
+@import url('owl.carousel/dist/assets/owl.carousel.css');
+
 
 body {
     font-family: 'Kelson-Sans-RU', sans-serif;
     color: $dark;
     overflow-x: hidden;
     width: 100%;
-    // font-family: 'Anton', sans-serif;
 }
 
 .main {

@@ -1,4 +1,5 @@
 @import 'style.scss';
+@import url('select2/dist/css/select2.min.css');
 
 .product {
     p {
@@ -312,7 +313,7 @@
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
-            background: url('../images/next.svg');
+            // background: url('../images/next.svg');
             transform: rotateZ(180deg);
             z-index: 1;
             position: relative;
@@ -346,7 +347,7 @@
 
     &__next {
         left: initial;
-        background: url('../images/next.svg');
+        // background: url('../images/next.svg');
 
         svg {
             height: 59px;

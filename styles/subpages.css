@@ -1,11 +1,7 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Anton';
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/Anton-Regular.ttf");
-}
-
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("owl.carousel/dist/assets/owl.carousel.css");
+@import url("select2/dist/css/select2.min.css");
 @font-face {
   font-family: 'Kelson-Sans-RU';
   font-weight: 700;
@@ -557,6 +553,17 @@ a.sizeOf.active {
   line-height: 0.9;
   -webkit-transition: 400ms;
   transition: 400ms;
+  width: 0;
+  overflow: hidden;
+}
+
+.header__search-input:focus {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 170px;
+  padding-left: 0.5rem;
 }
 
 .header__search-input::-webkit-input-placeholder {
@@ -621,6 +628,11 @@ a.sizeOf.active {
   background: white;
   -webkit-transition: 400ms;
   transition: 400ms;
+}
+
+.header__search-form:hover .header__search-input {
+  width: 170px;
+  padding-left: 0.5rem;
 }
 
 .header__cart-container, .header__login-container {
@@ -2247,7 +2259,7 @@ body {
 
 @media (min-width: 1200px) {
   .main > .container-fluid {
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .main > .container-fluid.overflow-visible {
     overflow: visible;
@@ -2837,7 +2849,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background: url("../images/next.svg");
   -webkit-transform: rotateZ(180deg);
           transform: rotateZ(180deg);
   z-index: 1;
@@ -2862,7 +2873,6 @@ body {
 
 .pagination__next {
   left: initial;
-  background: url("../images/next.svg");
 }
 
 .pagination__next svg {

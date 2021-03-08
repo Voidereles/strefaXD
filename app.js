@@ -1,3 +1,9 @@
+import 'bootstrap';
+import 'owl.carousel';
+import 'select2';
+import 'stickybits';
+
+
 const header = document.querySelector('.header');
 const navToggle = document.querySelector('.nav-toggle');
 
@@ -126,7 +132,7 @@ ready(function () {
 
     Array.from(allColors).forEach(element => {
         // element.style.transitionDelay = "0.01s";
-        dataColor = element.getAttribute('data-color');
+        let dataColor = element.getAttribute('data-color');
         element.style.backgroundColor = dataColor;
 
     });
@@ -348,7 +354,7 @@ ready(function () {
         const star = document.querySelector('.opinions__stars').innerHTML;
         document.querySelectorAll('.opinions__stars').forEach(element => {
             numberOfStars = element.getAttribute('data-stars');
-            for (i = 1; i < numberOfStars; i++) {
+            for (let i = 1; i < numberOfStars; i++) {
                 element.innerHTML += star;
             };
         });
