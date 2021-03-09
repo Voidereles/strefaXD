@@ -22640,7 +22640,7 @@ ready(function () {
     $('.products__carousel').owlCarousel((_$$owlCarousel = {
       loop: true,
       autoplay: true
-    }, _defineProperty(_$$owlCarousel, "autoplay", false), _defineProperty(_$$owlCarousel, "items", 1), _defineProperty(_$$owlCarousel, "lazyLoad", true), _defineProperty(_$$owlCarousel, "margin", 16), _defineProperty(_$$owlCarousel, "autoplayHoverPause", true), _defineProperty(_$$owlCarousel, "dots", false), _defineProperty(_$$owlCarousel, "nav", false), _defineProperty(_$$owlCarousel, "responsiveClass", true), _defineProperty(_$$owlCarousel, "responsive", {
+    }, _defineProperty(_$$owlCarousel, "autoplay", false), _defineProperty(_$$owlCarousel, "lazyLoad", true), _defineProperty(_$$owlCarousel, "items", 1), _defineProperty(_$$owlCarousel, "lazyLoad", true), _defineProperty(_$$owlCarousel, "margin", 16), _defineProperty(_$$owlCarousel, "autoplayHoverPause", true), _defineProperty(_$$owlCarousel, "dots", false), _defineProperty(_$$owlCarousel, "nav", false), _defineProperty(_$$owlCarousel, "responsiveClass", true), _defineProperty(_$$owlCarousel, "responsive", {
       0: {
         items: 1,
         stagePadding: 30,
@@ -22873,7 +22873,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57478" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59026" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

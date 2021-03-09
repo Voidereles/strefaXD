@@ -394,7 +394,9 @@ body {
     &__img {
         max-width: 180px;
         max-height: 180px;
+        height: 180px;
         margin: auto;
+        object-fit: contain;
     }
 
     &__content {

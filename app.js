@@ -266,7 +266,7 @@ ready(function () {
             loop: true,
             autoplay: true,
             autoplay: false,
-            // lazyLoad: true,
+            lazyLoad: true,
             items: 1,
             lazyLoad: true,
             margin: 16,
