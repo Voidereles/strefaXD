@@ -23490,7 +23490,7 @@ ready(function () {
       loop: true,
       // autoplay: true,
       autoplay: false,
-      lazyLoad: true,
+      // lazyLoad: true,
       // lazyLoad: true,
       // items: 3,
       margin: 10,
@@ -23536,7 +23536,7 @@ ready(function () {
       items: 1,
       // singleItem: true,
       loop: true,
-      lazyLoad: true,
+      // lazyLoad: true,
       // margin: 10,
       dots: false,
       // pagination: false,
@@ -23548,7 +23548,7 @@ ready(function () {
       items: 1,
       loop: true,
       margin: 0,
-      lazyLoad: true,
+      // lazyLoad: true,
       dots: false
     }, _defineProperty(_heroOwlImgs$owlCarou, "margin", 200), _defineProperty(_heroOwlImgs$owlCarou, "touchDrag", false), _defineProperty(_heroOwlImgs$owlCarou, "mouseDrag", false), _defineProperty(_heroOwlImgs$owlCarou, "responsiveClass", true), _defineProperty(_heroOwlImgs$owlCarou, "responsive", {
       0: {
