@@ -23485,12 +23485,6 @@ ready(function () {
   headerOnScroll(); // headerMoveLinks();
   // window.scrollTo(0, parseInt(scrollY || '0') * -1);
 
-  document.querySelectorAll('.owl-carousel').forEach(function (element) {
-    element.querySelectorAll('.owl-dot').forEach(function (owlDot, index) {
-      owlDot.setAttribute('aria-label', index + 1);
-    });
-  });
-
   if (typeof document.querySelector('.mega-menu__new-products-carousel') != 'undefined' && document.querySelector('.mega-menu__new-products-carousel') != null) {
     $('.mega-menu__new-products-carousel').owlCarousel({
       loop: true,
@@ -23786,6 +23780,27 @@ ready(function () {
       useStickyClasses: true
     });
   }
+
+  document.querySelectorAll('.owl-carousel').forEach(function (element) {
+    element.querySelectorAll('.owl-dot').forEach(function (owlDot, index) {
+      owlDot.setAttribute('aria-label', 'dot' + index + 1);
+    });
+  });
+  document.querySelectorAll('.owl-arrow-container').forEach(function (element) {
+    element.querySelectorAll('.owl-prev').forEach(function (owlPrev, index) {
+      owlPrev.setAttribute('aria-label', 'owl-prev-' + index + 1);
+    });
+  });
+  document.querySelectorAll('.owl-arrow-container').forEach(function (element) {
+    element.querySelectorAll('.owl-next').forEach(function (owlNext, index) {
+      owlNext.setAttribute('aria-label', 'owl-next-' + index + 1);
+    });
+  });
+  document.querySelectorAll('.products__item').forEach(function (element) {
+    element.querySelectorAll('.toggle-favourite').forEach(function (toggleFavourite) {
+      toggleFavourite.setAttribute('aria-label', 'toggle-favourite');
+    });
+  });
 });
 },{"bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","owl.carousel":"node_modules/owl.carousel/dist/owl.carousel.js","stickybits":"node_modules/stickybits/dist/stickybits.es.js","./scripts/product.js":"scripts/product.js","lazysizes":"node_modules/lazysizes/lazysizes.js","lazysizes/plugins/parent-fit/ls.parent-fit":"node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

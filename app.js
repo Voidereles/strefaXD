@@ -150,11 +150,6 @@ ready(function () {
 
     // window.scrollTo(0, parseInt(scrollY || '0') * -1);
 
-    document.querySelectorAll('.owl-carousel').forEach(element => {
-        element.querySelectorAll('.owl-dot').forEach(function (owlDot, index) {
-            owlDot.setAttribute('aria-label', index + 1)
-        });
-    });
 
 
     if (typeof (document.querySelector('.mega-menu__new-products-carousel')) != 'undefined' && document.querySelector('.mega-menu__new-products-carousel') != null) {
@@ -502,6 +497,31 @@ ready(function () {
         });
     }
 
+
+
+    document.querySelectorAll('.owl-carousel').forEach(element => {
+        element.querySelectorAll('.owl-dot').forEach(function (owlDot, index) {
+            owlDot.setAttribute('aria-label', 'dot' + index + 1)
+        });
+    });
+
+    document.querySelectorAll('.owl-arrow-container').forEach(element => {
+        element.querySelectorAll('.owl-prev').forEach(function (owlPrev, index) {
+            owlPrev.setAttribute('aria-label', 'owl-prev-' + index + 1)
+        });
+    });
+
+    document.querySelectorAll('.owl-arrow-container').forEach(element => {
+        element.querySelectorAll('.owl-next').forEach(function (owlNext, index) {
+            owlNext.setAttribute('aria-label', 'owl-next-' + index + 1)
+        });
+    });
+
+    document.querySelectorAll('.products__item').forEach(element => {
+        element.querySelectorAll('.toggle-favourite').forEach(function (toggleFavourite) {
+            toggleFavourite.setAttribute('aria-label', 'toggle-favourite')
+        });
+    });
 
 
 });
