@@ -3,6 +3,9 @@ import 'bootstrap';
 import 'owl.carousel';
 import stickybits from 'stickybits';
 import './scripts/product.js';
+import 'lazysizes';
+// import a plugin
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 
 const header = document.querySelector('.header');
