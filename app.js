@@ -1,5 +1,17 @@
 // import 'select2';
-import 'bootstrap';
+// const {
+//     JSDOM
+// } = require("jsdom");
+// const {
+//     window
+// } = new JSDOM("");
+// const $ = require("jquery")(window);
+const lazysizes = require("lazysizes");
+
+import 'popper.js';
+// import 'bootstrap';
+// import 'bootstrap/js/dist/collapse.js';
+// import 'popper';
 import 'owl.carousel';
 import stickybits from 'stickybits';
 import './scripts/product.js';
@@ -58,6 +70,23 @@ jQuery.event.special.touchmove = {
 
 ready(function () {
 
+    document.querySelectorAll('.header__dropdown-close').forEach(element => {
+        element.addEventListener('click', function () {
+            $('.collapse').collapse('hide');
+            // let dropdownToClose = element.parentElement.parentElement.parentElement;
+            // console.log(dropdownToClose);
+            // $(dropdownToClose).slideUp('fast', function () {
+            //     $(dropdownToClose).removeClass('show');
+            //     $(dropdownToClose).attr('style', null);
+            // })
+        });
+        $(document).on('click', function (e) {
+            if (!$(e.target).is(element)) {
+                $('.collapse').collapse('hide');
+            }
+        });
+
+    });
     const headerMoveLinks = () => {
         if (window.innerWidth <= 992) {
             headerNav.append(headerContainerBottom);
@@ -124,11 +153,6 @@ ready(function () {
     //     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
     // });
 
-    // document.querySelectorAll('.header__dropdown-close').forEach(element => {
-    //     element.addEventListener('click', function () {
-    //         $('.collapse').collapse('hide');
-    //     });
-    // });
 
     // window.addEventListener('resize', function (event) {
     //     headerMoveLinks();
@@ -311,21 +335,29 @@ ready(function () {
         })
 
         //owl things need to be made on jquery objects
+
+    }
+
+    if (typeof (document.querySelector('.owl-prev')) != 'undefined' && document.querySelector('.owl-prev') != null) {
+
         $('.owl-prev').each(function () {
             $(this).on('click', function () {
                 $(this).parent().parent().children('.owl-carousel').trigger('prev.owl.carousel');
             });
         });
 
+
+    }
+
+    if (typeof (document.querySelector('.owl-next')) != 'undefined' && document.querySelector('.owl-next') != null) {
+
         $('.owl-next').each(function () {
             $(this).on('click', function () {
                 $(this).parent().parent().children('.owl-carousel').trigger('next.owl.carousel');
             });
         });
+
     }
-
-
-
 
 
     document.querySelectorAll('.toggle-favourite').forEach(element => {
