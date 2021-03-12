@@ -7968,8 +7968,11 @@ ready(function () {
   // });
 
 
-  window.addEventListener('resize', function (event) {// headerMoveLinks();
-    // setInstagramHeight();
+  window.addEventListener('resize', function (event) {
+    if (window.matchMedia("(pointer: coarse)").matches == false) {
+      headerMoveLinks();
+      setInstagramHeight();
+    }
   });
   navToggle.addEventListener('click', function () {
     headerNav.classList.toggle('header__nav--entered');
