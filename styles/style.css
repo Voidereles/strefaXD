@@ -1597,7 +1597,7 @@ body {
 }
 
 .products__carousel {
-  max-width: 1400px;
+  max-width: 100%;
   margin: auto;
   border-radius: 1.25rem;
   padding: 2rem;
@@ -2366,6 +2366,9 @@ body {
   .products--green__splash {
     right: -65%;
   }
+  .products .owl-arrow-container {
+    padding-right: 30px;
+  }
   .delivery,
   .help {
     position: relative;
@@ -2540,7 +2543,6 @@ body {
   }
   .products .owl-arrow-container {
     margin-top: calc(50px - 1rem);
-    padding-right: 30px;
   }
   .products--green .tab-pane .products__carousel, .products--blue .tab-pane .products__carousel {
     border: none;

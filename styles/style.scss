@@ -247,7 +247,7 @@ body {
     }
 
     &__carousel {
-        max-width: 1400px;
+        max-width: 100%;
         margin: auto;
         border-radius: 1.25rem;
         padding: 2rem;
@@ -1112,6 +1112,10 @@ body {
         &--green__splash {
             right: -65%;
         }
+
+        .owl-arrow-container {
+            padding-right: 30px;
+        }
     }
 
     .delivery,
@@ -1230,6 +1234,7 @@ body {
     .footer {
         margin-top: 4.5rem;
     }
+
 }
 
 @media (max-width:576px) {
@@ -1353,7 +1358,6 @@ body {
 
         .owl-arrow-container {
             margin-top: calc(50px - 1rem);
-            padding-right: 30px;
         }
 
         &--green,
