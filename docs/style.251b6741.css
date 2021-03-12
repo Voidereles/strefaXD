@@ -2763,6 +2763,7 @@ body {
   }
   .newsletter__input {
     width: 100%;
+    max-width: 100%;
   }
   .newsletter__submit {
     padding: 0;
