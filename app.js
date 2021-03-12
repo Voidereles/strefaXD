@@ -155,9 +155,9 @@ ready(function () {
 
 
     window.addEventListener('resize', function (event) {
-        headerMoveLinks();
+        // headerMoveLinks();
 
-        setInstagramHeight();
+        // setInstagramHeight();
     });
 
 
