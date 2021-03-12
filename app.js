@@ -154,9 +154,11 @@ ready(function () {
     // });
 
 
-    // window.addEventListener('resize', function (event) {
-    //     headerMoveLinks();
-    // });
+    window.addEventListener('resize', function (event) {
+        headerMoveLinks();
+
+        setInstagramHeight();
+    });
 
 
 
@@ -293,7 +295,7 @@ ready(function () {
         });
 
 
-        if (innerWidth <= 480) {
+        if (innerWidth <= 576) {
             document.querySelector('.hero .row').prepend(document.querySelector('.hero__right'));
         }
     }
@@ -321,7 +323,10 @@ ready(function () {
                     stagePadding: 30,
                     margin: 0
                 },
-                600: {
+                480: {
+                    stagePadding: 80,
+                },
+                576: {
                     items: 2,
                     margin: 16,
                     stagePadding: 0
@@ -422,18 +427,20 @@ ready(function () {
             items: 1,
             margin: 32,
             autoplayHoverPause: true,
-            dots: true,
+            dots: false,
             nav: false,
             responsiveClass: true,
             responsive: {
                 0: {
                     items: 1,
-                    dots: true
+                    dots: false,
+                    stagePadding: 80
+                },
+                480: {
+                    items: 2,
+                    stagePadding: 0
                 },
                 600: {
-                    items: 2,
-                },
-                1200: {
                     items: 3
                 },
                 1700: {
@@ -441,7 +448,26 @@ ready(function () {
                 }
             }
         });
+
+
     }
+
+
+    const setInstagramHeight = () => {
+        if (typeof (document.querySelector('.instagram__carousel')) != 'undefined' && document.querySelector('.instagram__carousel') != null && typeof (document.querySelector('.delivery')) != 'undefined' && document.querySelector('.delivery') != null) {
+
+            if (innerWidth >= 992) {
+                let deliveryHeight = document.querySelector('.delivery').clientHeight;
+                document.querySelectorAll('.instagram__img').forEach(element => {
+                    element.style.height = "calc(" + document.querySelector('.delivery').clientHeight + "px - 1.5rem - 4px)";
+                });
+            }
+        }
+
+    }
+
+    setInstagramHeight();
+
 
 
 
@@ -461,7 +487,9 @@ ready(function () {
                     items: 1,
                     dots: true
                 },
-
+                480: {
+                    items: 2
+                },
                 600: {
                     items: 3
                 },

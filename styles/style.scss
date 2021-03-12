@@ -882,7 +882,6 @@ body {
             border: none;
             outline: none;
             box-shadow: none;
-            width: calc(100% - 180px);
         }
 
         &::placeholder {
@@ -912,7 +911,7 @@ body {
 
 .footer {
     padding: 4rem 0;
-    margin-top: 7rem;
+    margin-top: 3.5rem;
     background: $yellow;
 
     &__logo {
@@ -1155,7 +1154,7 @@ body {
         }
 
         &__input {
-            min-width: 230px;
+            // min-width: 230px;
         }
     }
 }
@@ -1206,17 +1205,34 @@ body {
         margin-top: 0;
     }
 
-    .partners {
+    .partners,
+    .newsletter {
         margin-top: 1.5rem;
+        padding-bottom: 0;
     }
 
-
     .newsletter {
-        margin-top: 3rem;
+
+        &__submit {
+            margin-left: -50px;
+            width: calc(120px + 55px);
+            padding-left: 35px;
+        }
+
+        &__input {
+            width: calc(100% - 130px);
+            max-width: 300px;
+        }
     }
 }
 
-@media (max-width:480px) {
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 4.5rem;
+    }
+}
+
+@media (max-width:576px) {
     .main {
         overflow: hidden;
         padding-top: 70px;
@@ -1369,12 +1385,10 @@ body {
         }
     }
 
-    .delivery {
-        margin-top: 1.5rem;
-    }
 
     .newsletter {
         height: auto !important;
+        margin-top: 1.5rem;
 
         &__decoration {
             top: 30%;
@@ -1393,5 +1407,34 @@ body {
             margin-top: 1rem;
         }
 
+    }
+
+
+    .partners,
+    .newsletter {
+        padding-bottom: 1.5rem;
+    }
+
+    .newsletter {
+        margin-top: 3rem;
+    }
+
+    .help,
+    .footer {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width:480px) {
+
+    .news,
+    .instagram {
+        .owl-stage {
+            margin-left: -80px;
+
+            &-outer {
+                margin-right: -40px;
+            }
+        }
     }
 }

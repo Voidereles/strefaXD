@@ -7966,11 +7966,12 @@ ready(function () {
   }; // window.addEventListener('scroll', () => {
   //     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
   // });
-  // window.addEventListener('resize', function (event) {
-  //     headerMoveLinks();
-  // });
 
 
+  window.addEventListener('resize', function (event) {
+    headerMoveLinks();
+    setInstagramHeight();
+  });
   navToggle.addEventListener('click', function () {
     headerNav.classList.toggle('header__nav--entered');
     navToggle.classList.toggle('nav-toggle--entered');
@@ -8074,7 +8075,7 @@ ready(function () {
       heroOwlImgs.trigger('next.owl.carousel');
     });
 
-    if (innerWidth <= 480) {
+    if (innerWidth <= 576) {
       document.querySelector('.hero .row').prepend(document.querySelector('.hero__right'));
     }
   }
@@ -8091,7 +8092,10 @@ ready(function () {
         stagePadding: 30,
         margin: 0
       },
-      600: {
+      480: {
+        stagePadding: 80
+      },
+      576: {
         items: 2,
         margin: 16,
         stagePadding: 0
@@ -8181,18 +8185,20 @@ ready(function () {
       items: 1,
       margin: 32,
       autoplayHoverPause: true,
-      dots: true,
+      dots: false,
       nav: false,
       responsiveClass: true,
       responsive: {
         0: {
           items: 1,
-          dots: true
+          dots: false,
+          stagePadding: 80
+        },
+        480: {
+          items: 2,
+          stagePadding: 0
         },
         600: {
-          items: 2
-        },
-        1200: {
           items: 3
         },
         1700: {
@@ -8201,6 +8207,19 @@ ready(function () {
       }
     });
   }
+
+  var setInstagramHeight = function setInstagramHeight() {
+    if (typeof document.querySelector('.instagram__carousel') != 'undefined' && document.querySelector('.instagram__carousel') != null && typeof document.querySelector('.delivery') != 'undefined' && document.querySelector('.delivery') != null) {
+      if (innerWidth >= 992) {
+        var deliveryHeight = document.querySelector('.delivery').clientHeight;
+        document.querySelectorAll('.instagram__img').forEach(function (element) {
+          element.style.height = "calc(" + document.querySelector('.delivery').clientHeight + "px - 1.5rem - 4px)";
+        });
+      }
+    }
+  };
+
+  setInstagramHeight();
 
   if (typeof document.querySelector('.partners__carousel') != 'undefined' && document.querySelector('.partners__carousel') != null) {
     $('.partners__carousel').owlCarousel({
@@ -8217,6 +8236,9 @@ ready(function () {
         0: {
           items: 1,
           dots: true
+        },
+        480: {
+          items: 2
         },
         600: {
           items: 3
@@ -8344,7 +8366,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61722" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53427" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
