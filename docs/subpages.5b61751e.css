@@ -2734,6 +2734,7 @@ body {
   }
   .products .owl-arrow-container {
     margin-top: calc(50px - 1rem);
+    padding-right: 30px;
   }
   .products--green .tab-pane .products__carousel, .products--blue .tab-pane .products__carousel {
     border: none;
