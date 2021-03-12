@@ -585,6 +585,10 @@ a.sizeOf.active {
       flex-basis: 100%;
 }
 
+.max-width-100 {
+  max-width: 100%;
+}
+
 .columns-2 {
   -webkit-columns: 2;
           columns: 2;
@@ -1791,7 +1795,7 @@ body {
   margin: auto;
   border-radius: 1.25rem;
   padding: 2rem;
-  border: 8px solid transparent;
+  border: 2px solid transparent;
   margin-top: -8px;
   background: white;
 }
@@ -2028,7 +2032,7 @@ body {
 }
 
 .products--blue .tab-pane .products__carousel {
-  border: 8px solid #3fbaff;
+  border: 2px solid #3fbaff;
   margin-top: 0;
 }
 
@@ -2097,7 +2101,7 @@ body {
 }
 
 .products--green .tab-pane .products__carousel {
-  border: 8px solid #59CD90;
+  border: 2px solid #59CD90;
   margin-top: 0;
 }
 
@@ -2240,7 +2244,7 @@ body {
 }
 
 .instagram__img {
-  height: 295px;
+  height: 273px;
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -2314,7 +2318,7 @@ body {
   line-height: 0.9;
   -webkit-transition: 400ms;
   transition: 400ms;
-  width: calc(100% - 200px);
+  width: calc(100% - 180px);
   background: white;
   overflow: hidden;
   height: 59px;
@@ -2329,7 +2333,7 @@ body {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  width: calc(100% - 200px);
+  width: calc(100% - 180px);
 }
 
 .newsletter__input::-webkit-input-placeholder {
@@ -2349,7 +2353,7 @@ body {
 }
 
 .newsletter__submit {
-  width: 240px;
+  width: 255px;
   height: 59px;
   margin-left: -80px;
   padding-left: 60px;

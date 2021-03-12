@@ -8073,6 +8073,10 @@ ready(function () {
       heroOwlText.trigger('next.owl.carousel');
       heroOwlImgs.trigger('next.owl.carousel');
     });
+
+    if (innerWidth <= 480) {
+      document.querySelector('.hero .row').prepend(document.querySelector('.hero__right'));
+    }
   }
 
   if (typeof document.querySelector('.products__carousel') != 'undefined' && document.querySelector('.products__carousel') != null) {
@@ -8340,7 +8344,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56777" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61722" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

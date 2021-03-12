@@ -292,6 +292,10 @@ ready(function () {
             heroOwlImgs.trigger('next.owl.carousel');
         });
 
+
+        if (innerWidth <= 480) {
+            document.querySelector('.hero .row').prepend(document.querySelector('.hero__right'));
+        }
     }
 
 

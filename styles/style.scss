@@ -251,7 +251,7 @@ body {
         margin: auto;
         border-radius: 1.25rem;
         padding: 2rem;
-        border: 8px solid transparent;
+        border: 2px solid transparent;
         margin-top: -8px;
         background: white;
         //minus margin -top because of transparent here but borders on the blue and red containers
@@ -414,17 +414,17 @@ body {
     }
 
     &__description {
-        color: $dark;
+        color: $grey;
         font-size: $fontSizeBodyXS;
     }
 
     &__price {
         display: flex;
         align-items: flex-end;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
 
         &-now {
-            font-size: $fontSizeH3;
+            font-size: $fontSizeH2;
             font-weight: bold;
             margin-bottom: -10px;
             color: $dark;
@@ -434,7 +434,7 @@ body {
             margin: 0 0.5rem;
             font-size: $fontSizeBodyM;
             position: relative;
-            margin-bottom: -7px;
+            margin-bottom: -5px;
             color: black;
 
             &::after {
@@ -498,7 +498,7 @@ body {
             .products {
 
                 &__carousel {
-                    border: 8px solid $lightBlue;
+                    border: 2px solid $lightBlue;
                     margin-top: 0;
                 }
 
@@ -598,7 +598,7 @@ body {
             .products {
 
                 &__carousel {
-                    border: 8px solid $green;
+                    border: 2px solid $green;
                     margin-top: 0;
                 }
 
@@ -719,6 +719,7 @@ body {
 
     &__text {
         color: $grey;
+        font-size: $fontSizeBodyXS;
     }
 
     &__arrows {
@@ -769,8 +770,21 @@ body {
         }
     }
 
+    a {
+        picture {
+            transition: $durationM;
+            display: block;
+        }
+
+        &:hover {
+            picture {
+                transform: scale(0.9);
+            }
+        }
+    }
+
     &__img {
-        height: 295px;
+        height: 273px;
         width: auto;
         object-fit: cover;
     }
@@ -825,6 +839,19 @@ body {
             }
         }
     }
+
+    a {
+        img {
+            transition: $durationM;
+            display: block;
+        }
+
+        &:hover {
+            img {
+                transform: scale(0.9);
+            }
+        }
+    }
 }
 
 .newsletter {
@@ -842,7 +869,7 @@ body {
         padding-bottom: 0;
         line-height: 0.9;
         transition: $durationM;
-        width: calc(100% - 200px);
+        width: calc(100% - 180px);
         background: white;
         overflow: hidden;
         height: 59px;
@@ -855,7 +882,7 @@ body {
             border: none;
             outline: none;
             box-shadow: none;
-            width: calc(100% - 200px);
+            width: calc(100% - 180px);
         }
 
         &::placeholder {
@@ -865,7 +892,7 @@ body {
     }
 
     &__submit {
-        width: 240px;
+        width: 255px;
         height: 59px;
         margin-left: -80px;
         padding-left: 60px;
@@ -1192,6 +1219,7 @@ body {
 @media (max-width:480px) {
     .main {
         overflow: hidden;
+        padding-top: 70px;
     }
 
     .hero {
@@ -1204,18 +1232,31 @@ body {
             font-size: $fontSizeBodyS;
         }
 
+        &__yellow-splash,
+        &__xd,
+        &__cut {
+            margin-left: 5%;
+            width: 90%;
+        }
+
+        &__cut {
+            margin: 0;
+            width: 100%;
+        }
+
         &__xd {
-            display: none;
+            transform: scale(1) rotate(-20.9deg) translateY(-90px) translateX(87px);
         }
 
         &__right {
-            transform: scale(0.6) translate(50vw, -81vh);
+            transform: translate(0);
             z-index: -1;
         }
 
         &__img {
 
             margin-bottom: -60px;
+            max-height: 65vh;
 
             &-carousel {
                 &-link {
@@ -1224,10 +1265,39 @@ body {
             }
         }
 
+        &__text-carousel {
+            margin-top: -8rem;
+            height: auto !important;
+
+            &-item {
+                padding-bottom: 2rem;
+                margin-top: 0.5rem;
+            }
+        }
+
+        &__heading {
+            text-align: center;
+            margin-top: 4rem;
+            transform: rotate(5deg);
+            font-size: 2.3rem;
+        }
+
+        &__subheading {
+            display: none;
+        }
+
+        .btn.btn-warning {
+            margin-top: 1.5rem;
+            transform: rotate(-2deg);
+        }
 
         .owl-arrow-container {
-            margin-top: -80vh;
-            margin-left: 0vw;
+            margin-top: -13.5vh;
+            margin-left: auto;
+
+            .owl-prev {
+                display: none;
+            }
         }
     }
 
@@ -1285,7 +1355,7 @@ body {
     }
 
     .products--yellow {
-        margin-top: -64vh !important;
+        margin-top: 10vh !important;
     }
 
     .news,

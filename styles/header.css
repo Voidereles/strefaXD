@@ -388,6 +388,10 @@ a.sizeOf.active {
       flex-basis: 100%;
 }
 
+.max-width-100 {
+  max-width: 100%;
+}
+
 .columns-2 {
   -webkit-columns: 2;
           columns: 2;
@@ -433,7 +437,7 @@ a.sizeOf.active {
 }
 
 .header__logo {
-  max-width: 100%;
+  max-width: 250px;
   max-height: 100%;
   position: relative;
   z-index: 10;
