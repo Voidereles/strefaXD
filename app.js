@@ -329,11 +329,11 @@ ready(function () {
                 },
                 576: {
                     items: 2,
-                    margin: 16,
                     stagePadding: 0
                 },
                 900: {
                     items: 3,
+                    margin: 16,
                 },
                 1200: {
                     items: 4
