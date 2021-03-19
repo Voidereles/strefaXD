@@ -2827,12 +2827,12 @@ body {
 }
 
 .counter__heading-top {
-  font-size: 2rem;
+  font-size: 3vmin;
   font-weight: normal;
 }
 
 .counter__heading-bottom {
-  font-size: 3rem;
+  font-size: 8vmin;
   font-weight: bold;
 }
 
