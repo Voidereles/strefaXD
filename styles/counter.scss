@@ -1,0 +1,138 @@
+@import 'style.scss';
+
+html,
+body {
+    overflow: hidden;
+    width: 100%;
+}
+
+.counter {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading {
+
+        &-bottom,
+        &-top {
+            text-align: center;
+        }
+
+        &-top {
+            font-size: $fontSizeH2;
+            font-weight: normal;
+        }
+
+        &-bottom {
+            font-size: $fontSizeH1;
+            font-weight: bold;
+        }
+    }
+
+    &__blob-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__blob {
+        position: absolute;
+        width: 75%;
+        height: 75%;
+        z-index: -1;
+
+        &--yellow {
+            bottom: -30%;
+            right: -30%;
+            animation: rotateAround 120s infinite linear;
+            transform-origin: 45% 60%;
+        }
+
+        &--green {
+            left: -30%;
+            bottom: -30%;
+            animation: rotateAround 120s infinite linear;
+            transform-origin: 55% 45%;
+        }
+
+        &--blue {
+            top: -45%;
+            left: 30%;
+            animation: blueRotate 60s infinite alternate;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 5vh 0;
+        padding: 0;
+    }
+
+    &__li {
+        padding: 1rem;
+        font-size: 2.5vmin;
+        width: 250px;
+    }
+
+    &__number {
+        display: block;
+        font-size: 15vmin;
+        font-weight: bold;
+    }
+}
+
+@keyframes rotateAround {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blueRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    40% {
+        transform: rotate(-5deg) translate(-20%, 5%);
+    }
+
+    100% {
+        transform: rotate(-15deg) translate(-15%, 10%);
+    }
+}
+
+@media (max-width:1200px) {
+    .counter {
+        &__li {
+            width: 35%;
+        }
+    }
+}
+
+@media (max-width:568px) {
+    .counter {
+        &__heading {
+            &-top {
+                font-size: $fontSizeBodyL;
+            }
+
+            &-bottom {
+                font-size: $fontSizeH2;
+            }
+        }
+    }
+}

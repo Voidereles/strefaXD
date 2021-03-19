@@ -8099,11 +8099,11 @@ ready(function () {
       },
       576: {
         items: 2,
-        margin: 16,
         stagePadding: 0
       },
       900: {
-        items: 3
+        items: 3,
+        margin: 16
       },
       1200: {
         items: 4
@@ -8368,7 +8368,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53427" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55348" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
