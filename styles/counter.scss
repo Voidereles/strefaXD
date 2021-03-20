@@ -50,21 +50,21 @@ body {
         &--yellow {
             bottom: -30%;
             right: -30%;
-            animation: rotateAround 120s infinite linear;
+            animation: rotateAround 90s infinite linear;
             transform-origin: 45% 60%;
         }
 
         &--green {
             left: -30%;
             bottom: -30%;
-            animation: rotateAround 120s infinite linear;
+            animation: rotateAround 90s infinite linear;
             transform-origin: 55% 45%;
         }
 
         &--blue {
             top: -45%;
             left: 30%;
-            animation: blueRotate 60s infinite alternate;
+            animation: blueRotate 40s infinite alternate;
         }
     }
 

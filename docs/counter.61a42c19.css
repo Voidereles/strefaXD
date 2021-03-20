@@ -2855,8 +2855,8 @@ body {
 .counter__blob--yellow {
   bottom: -30%;
   right: -30%;
-  -webkit-animation: rotateAround 120s infinite linear;
-          animation: rotateAround 120s infinite linear;
+  -webkit-animation: rotateAround 90s infinite linear;
+          animation: rotateAround 90s infinite linear;
   -webkit-transform-origin: 45% 60%;
           transform-origin: 45% 60%;
 }
@@ -2864,8 +2864,8 @@ body {
 .counter__blob--green {
   left: -30%;
   bottom: -30%;
-  -webkit-animation: rotateAround 120s infinite linear;
-          animation: rotateAround 120s infinite linear;
+  -webkit-animation: rotateAround 90s infinite linear;
+          animation: rotateAround 90s infinite linear;
   -webkit-transform-origin: 55% 45%;
           transform-origin: 55% 45%;
 }
@@ -2873,8 +2873,8 @@ body {
 .counter__blob--blue {
   top: -45%;
   left: 30%;
-  -webkit-animation: blueRotate 60s infinite alternate;
-          animation: blueRotate 60s infinite alternate;
+  -webkit-animation: blueRotate 40s infinite alternate;
+          animation: blueRotate 40s infinite alternate;
 }
 
 .counter__list {
