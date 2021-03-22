@@ -987,6 +987,108 @@ body {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//backend
+.iti {
+    display: block !important;
+}
+
+.invalid-feedback {
+    display: block !important;
+}
+
+.disabled {
+    display: none !important;
+}
+
+
+
+.header.backend {
+    .header {
+
+        &__container-bottom,
+        &__nav-upper-functions {
+            display: none !important;
+        }
+
+        &__logo-container {
+            margin: auto;
+            margin-top: 0.5rem;
+        }
+
+        &__nav-upper-list {
+            flex-wrap: wrap;
+            // margin-top: 1rem;
+            line-height: 2.2;
+            max-width: 1400px;
+        }
+    }
+}
+
+@media (max-width:992px) {
+
+
+    .header.backend {
+        .header {
+            &__nav-upper-list {
+                flex-wrap: initial;
+                max-height: calc(100vh - 70px);
+                overflow: scroll;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width:1200px) and (max-width:1699px) {
     .main {
         &>.container-fluid {
