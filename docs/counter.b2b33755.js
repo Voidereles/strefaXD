@@ -123,7 +123,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24;
-  var birthday = "Apr 6, 2021 00:00:00",
+  var birthday = "Apr 6, 2021 18:00:00",
       countDown = new Date(birthday).getTime(),
       x = setInterval(function () {
     var now = new Date().getTime(),
@@ -168,7 +168,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63147" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58180" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
