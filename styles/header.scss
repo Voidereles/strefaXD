@@ -678,7 +678,14 @@
                 }
             }
         }
+
+
+        &__logo {
+            max-width: 230px;
+        }
     }
+
+
 }
 
 @media (max-width: 992px) {

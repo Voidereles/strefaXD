@@ -1152,6 +1152,9 @@ a.sizeOf.active {
   .header__nav-bottom-mega-menu .mega-menu__new-products .owl-dots {
     bottom: -30px;
   }
+  .header__logo {
+    max-width: 230px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2108,6 +2111,10 @@ body {
   display: flex !important;
 }
 
+.partners__carousel img {
+  height: 100px;
+}
+
 .partners__arrows {
   margin: 0;
   margin-left: auto;
@@ -2310,6 +2317,18 @@ body {
       flex-wrap: wrap;
   line-height: 2.2;
   max-width: 1400px;
+}
+
+.breadcrumb {
+  background: #FFD357;
+  border-radius: 200px;
+  padding: 0.75rem 1.5rem;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus,
+.breadcrumb a:active {
+  color: white;
 }
 
 @media (max-width: 992px) {

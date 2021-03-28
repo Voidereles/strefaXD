@@ -823,6 +823,10 @@ body {
         max-width: calc(100% - 4rem);
         width: calc(100% - 4rem);
         display: flex !important;
+
+        img {
+            height: 100px;
+        }
     }
 
     &__arrows {
@@ -1046,6 +1050,18 @@ body {
             line-height: 2.2;
             max-width: 1400px;
         }
+    }
+}
+
+.breadcrumb {
+    background: $yellow;
+    border-radius: 200px;
+    padding: 0.75rem 1.5rem;
+
+    a:hover,
+    a:focus,
+    a:active {
+        color: white;
     }
 }
 

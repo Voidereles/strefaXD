@@ -1149,6 +1149,9 @@ a.sizeOf.active {
   .header__nav-bottom-mega-menu .mega-menu__new-products .owl-dots {
     bottom: -30px;
   }
+  .header__logo {
+    max-width: 230px;
+  }
 }
 
 @media (max-width: 992px) {

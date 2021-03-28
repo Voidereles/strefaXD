@@ -2,14 +2,14 @@
   font-family: 'Kelson-Sans-RU';
   font-weight: 700;
   font-display: swap;
-  src: url("kelson-sans-ru-bold.bcf821de.ttf") format("truetype"), url("Kelson Sans Bold RU.4fa44668.otf") format("opentype");
+  src: url("ea32d12b502d6d90aa2ea870bcf821de.ttf") format("truetype"), url("f2c6d318f34d906fa2c2cbf54fa44668.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Kelson-Sans-RU';
   font-weight: 400;
   font-display: swap;
-  src: url("kelson-sans-ru-normal.75027a85.ttf") format("truetype"), url("Kelson Sans Regular RU.ce98b126.otf") format("opentype");
+  src: url("f46314992d35287c3e46a9a075027a85.ttf") format("truetype"), url("67b721e2622758616d217221ce98b126.otf") format("opentype");
 }
 
 .font-grey {
