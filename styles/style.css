@@ -2557,6 +2557,18 @@ span.select2-dropdown.filters__select-container.select2-dropdown--below .select2
   display: inline-block;
 }
 
+.kv-loader-overlay .grid-view .select2-container--krajee-bs4 .select2-selection--multiple,
+.kv-loader-overlay .grid-view .select2-container--krajee-bs4 .select2-selection--single {
+  border-radius: 0.5rem;
+  height: 38px;
+  padding-left: 0.25rem;
+}
+
+.kv-loader-overlay .grid-view .select2-container--krajee-bs4 .select2-selection--multiple .select2-selection__rendered,
+.kv-loader-overlay .grid-view .select2-container--krajee-bs4 .select2-selection--single .select2-selection__rendered {
+  margin-top: -2px;
+}
+
 @media (max-width: 992px) {
   .header.backend .header__nav-upper-list {
     -ms-flex-wrap: initial;

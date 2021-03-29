@@ -1298,7 +1298,19 @@ span.select2-dropdown.filters__select-container.select2-dropdown--below,
     display: inline-block;
 }
 
+.kv-loader-overlay .grid-view {
 
+    .select2-container--krajee-bs4 .select2-selection--multiple,
+    .select2-container--krajee-bs4 .select2-selection--single {
+        border-radius: 0.5rem;
+        height: 38px;
+        padding-left: 0.25rem;
+
+        .select2-selection__rendered {
+            margin-top: -2px;
+        }
+    }
+}
 
 
 @media (max-width:992px) {
