@@ -367,6 +367,10 @@
 }
 
 .backend {
+    .control-label {
+        margin-bottom: 0 !important;
+    }
+
     .select2 {
         &-container {
             margin-left: 1rem;
@@ -375,78 +379,83 @@
 
     }
 
-    .select2-container--krajee-bs4 .select2-selection--multiple {
-        border: none;
-        border-radius: 200px;
-        padding: 0.75rem 1.5rem;
-        box-shadow: $regularShadow;
-        width: 200px;
-        height: 50px;
-        cursor: pointer;
-    }
+}
 
-    .select2-container--krajee-bs4.select2-container--open.select2-container--below .select2-selection--single,
-    .select2-container--krajee-bs4.select2-container--open.select2-container--below .select2-selection--multiple {
 
-        border-radius: 200px;
-    }
+.select2-container--krajee-bs4 .select2-selection--multiple,
+.select2-container--krajee-bs4 .select2-selection--single {
+    border: none;
+    border-radius: 200px;
+    padding: 0.75rem 1.5rem;
+    box-shadow: $regularShadow;
+    width: 200px;
+    height: 42px;
+    cursor: pointer;
+}
 
-    .select2-container--krajee-bs4 .select2-search--inline .select2-search__field {
-        margin: 0;
-        vertical-align: middle;
-        outline: none !important;
-    }
+.select2-container--krajee-bs4.select2-container--open.select2-container--below .select2-selection--single,
+.select2-container--krajee-bs4.select2-container--open.select2-container--below .select2-selection--multiple {
 
-    .select2-container .select2-search--inline .select2-search__field {
-        // height: 20px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        line-height: 1.2;
-        cursor: pointer;
-    }
+    border-radius: 200px;
+}
 
-    .select2-container .select2-selection--multiple .select2-selection__rendered {
-        max-height: 26px;
-        margin: 0;
-        display: flex;
-        overflow: hidden;
-        transform: translateY(3px);
-        cursor: pointer;
-    }
+.select2-container--krajee-bs4 .select2-search--inline .select2-search__field {
+    margin: 0;
+    vertical-align: middle;
+    outline: none !important;
+}
 
-    .select2-container--krajee-bs4 .select2-selection--multiple .select2-selection__choice {
-        background: none;
-        color: black;
-        margin: 0;
-        background: none;
-        color: black;
-        margin: 0;
-        border: none;
-        padding-left: 0;
+.select2-container--krajee-bs4 .select2-search--inline .select2-search__field {
+    // height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1.2;
+    cursor: pointer;
+}
 
-        &::after {
-            content: ',\00a0';
-        }
-    }
+.select2-container--krajee-bs4 .select2-selection--multiple .select2-selection__rendered {
+    max-height: 26px;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    transform: translateY(3px);
+    cursor: pointer;
+}
 
-    .select2-container--krajee-bs4 .select2-selection--multiple .select2-selection__choice__display {
-        padding: 0;
-        font-size: $fontSizeBodyXS;
-        cursor: pointer;
-    }
+.select2-container--krajee-bs4 .select2-selection--multiple .select2-selection__choice {
+    background: none;
+    color: black;
+    margin: 0;
+    background: none;
+    color: black;
+    margin: 0;
+    border: none;
+    padding-left: 0;
 
-    .select2-container--krajee-bs4 .select2-selection--multiple .select2-selection__choice__remove {
-        display: none;
+    &::after {
+        content: ',\00a0';
     }
 }
 
-span.select2-dropdown.filters__select-container.select2-dropdown--below {
+.select2-container--krajee-bs4 .select2-selection--multiple .select2-selection__choice__display {
+    padding: 0;
+    font-size: $fontSizeBodyXS;
+    cursor: pointer;
+}
+
+.select2-container--krajee-bs4 .select2-selection--multiple .select2-selection__choice__remove {
+    display: none;
+}
+
+span.select2-dropdown.filters__select-container.select2-dropdown--below,
+.select2-container--krajee-bs4:not(.select2-container--disabled) .select2-dropdown,
+.select2-container--krajee-bs4 .select2-container--open .select2-dropdown--below {
     width: 200px !important;
     border-radius: 1.5rem;
     border: none;
-    box-shadow: $regularShadow;
     transform: translateY(0.5rem);
+    box-shadow: $regularShadow;
     // z-index: 1;
 
     .select2-results__option {
