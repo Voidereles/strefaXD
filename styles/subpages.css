@@ -2300,10 +2300,6 @@ body {
   display: block !important;
 }
 
-.disabled {
-  display: none !important;
-}
-
 .header.backend .header__container-bottom, .header.backend .header__nav-upper-functions {
   display: none !important;
 }

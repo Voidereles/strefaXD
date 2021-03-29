@@ -1344,6 +1344,9 @@ a.sizeOf.active {
   .header__nav-bottom-mega-menu .mega-menu__new-products .owl-dots {
     bottom: -30px;
   }
+  .header__logo {
+    max-width: 230px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2300,6 +2303,10 @@ body {
   display: flex !important;
 }
 
+.partners__carousel img {
+  height: 100px;
+}
+
 .partners__arrows {
   margin: 0;
   margin-left: auto;
@@ -2482,10 +2489,6 @@ body {
 
 .invalid-feedback {
   display: block !important;
-}
-
-.disabled {
-  display: none !important;
 }
 
 .header.backend .header__container-bottom, .header.backend .header__nav-upper-functions {
