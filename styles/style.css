@@ -415,8 +415,8 @@ a.sizeOf.active {
   display: -ms-flexbox;
   display: flex;
   top: 0;
-  -webkit-transition: 200ms;
-  transition: 200ms;
+  -webkit-transition: 400ms;
+  transition: 400ms;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2315,6 +2315,10 @@ body {
   max-width: 1400px;
 }
 
+.header.backend .header__container-upper {
+  height: auto;
+}
+
 .breadcrumb {
   background: #FFD357;
   border-radius: 200px;
@@ -2327,63 +2331,64 @@ body {
   color: #595959;
 }
 
-.backend.main {
+.backend .container-fluid.main {
   padding-top: calc(213px + 1rem);
 }
 
-.backend .header__logo {
+.backend .container-fluid .header__logo {
   margin-bottom: 1rem;
 }
 
-.backend .control-label {
+.backend .container-fluid .control-label {
   margin-bottom: 0 !important;
 }
 
-.backend .select2-container {
+.backend .container-fluid .select2-container {
   min-width: 200px;
   display: block;
   margin-left: 0;
 }
 
-.backend input.file-caption-name {
+.backend .container-fluid input.file-caption-name {
   -webkit-transform: translateY(-9px);
           transform: translateY(-9px);
 }
 
-.backend .btn-group.buttons {
+.backend .container-fluid .btn-group.buttons {
   margin-top: 1rem;
-  -webkit-box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px -1px rgba(0, 0, 0, 0.2);
   border-top-left-radius: 1.25rem;
   border-top-right-radius: 1.25rem;
-  padding-top: 0.5rem;
-  font-size: 3rem !important;
 }
 
-.backend button.btn.btn-outline-secondary {
-  border: none;
-}
-
-.backend button.btn.btn-outline-secondary:first-child {
-  border-top-right-radius: 1.25rem;
-}
-
-.backend button.btn.btn-outline-secondary:last-child {
-  border-top-left-radius: 1.25rem;
-}
-
-.backend .kv-detail-heading button.btn.btn-outline-secondary,
-.backend .kv-detail-heading button.btn.btn-outline-secondary {
+.backend .container-fluid .kv-detail-heading button.btn.btn-outline-secondary,
+.backend .container-fluid .kv-detail-heading button.btn.btn-outline-secondary {
   border-radius: 4px !important;
 }
 
-.backend .zone-size-index .btn {
+.backend .container-fluid .bootstrap-duallistbox-container button.btn.btn-outline-secondary {
+  font-size: 2.5rem;
+  line-height: 32px;
+}
+
+.backend .container-fluid .bootstrap-duallistbox-container button.btn.btn-outline-secondary:first-child {
+  border-top-left-radius: 1.25rem;
+}
+
+.backend .container-fluid .bootstrap-duallistbox-container button.btn.btn-outline-secondary:last-child {
+  border-top-right-radius: 1.25rem;
+}
+
+.backend .container-fluid .zone-size-index .btn,
+.backend .container-fluid .zone-color-index .btn {
   margin-top: -0.5rem;
 }
 
-.backend .bootstrap-duallistbox-container:not(.moveonselect) select {
+.backend .container-fluid .bootstrap-duallistbox-container:not(.moveonselect) select {
   -webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
   padding-top: 2.5rem;
   margin-top: -1.5rem;
   outline: none !important;
@@ -2391,12 +2396,16 @@ body {
   overflow: auto;
 }
 
-.backend .input-group > .input-group-append > .btn,
-.backend .input-group > .input-group-append > .input-group-text,
-.backend .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
-.backend .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
-.backend .input-group > .input-group-prepend:not(:first-child) > .btn,
-.backend .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
+.backend .container-fluid .bootstrap-duallistbox-container:not(.moveonselect) select option {
+  line-height: 24px;
+}
+
+.backend .container-fluid .input-group > .input-group-append > .btn,
+.backend .container-fluid .input-group > .input-group-append > .input-group-text,
+.backend .container-fluid .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+.backend .container-fluid .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child),
+.backend .container-fluid .input-group > .input-group-prepend:not(:first-child) > .btn,
+.backend .container-fluid .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2408,23 +2417,23 @@ body {
           align-items: center;
 }
 
-.backend .input-group > .input-group-append > .btn .fas,
-.backend .input-group > .input-group-append > .btn .fa,
-.backend .input-group > .input-group-append > .input-group-text .fas,
-.backend .input-group > .input-group-append > .input-group-text .fa,
-.backend .input-group > .input-group-prepend:first-child > .btn:not(:first-child) .fas,
-.backend .input-group > .input-group-prepend:first-child > .btn:not(:first-child) .fa,
-.backend .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) .fas,
-.backend .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) .fa,
-.backend .input-group > .input-group-prepend:not(:first-child) > .btn .fas,
-.backend .input-group > .input-group-prepend:not(:first-child) > .btn .fa,
-.backend .input-group > .input-group-prepend:not(:first-child) > .input-group-text .fas,
-.backend .input-group > .input-group-prepend:not(:first-child) > .input-group-text .fa {
+.backend .container-fluid .input-group > .input-group-append > .btn .fas,
+.backend .container-fluid .input-group > .input-group-append > .btn .fa,
+.backend .container-fluid .input-group > .input-group-append > .input-group-text .fas,
+.backend .container-fluid .input-group > .input-group-append > .input-group-text .fa,
+.backend .container-fluid .input-group > .input-group-prepend:first-child > .btn:not(:first-child) .fas,
+.backend .container-fluid .input-group > .input-group-prepend:first-child > .btn:not(:first-child) .fa,
+.backend .container-fluid .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) .fas,
+.backend .container-fluid .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) .fa,
+.backend .container-fluid .input-group > .input-group-prepend:not(:first-child) > .btn .fas,
+.backend .container-fluid .input-group > .input-group-prepend:not(:first-child) > .btn .fa,
+.backend .container-fluid .input-group > .input-group-prepend:not(:first-child) > .input-group-text .fas,
+.backend .container-fluid .input-group > .input-group-prepend:not(:first-child) > .input-group-text .fa {
   margin-right: 0.5rem;
 }
 
-.select2-container--krajee-bs4 .select2-selection--multiple,
-.select2-container--krajee-bs4 .select2-selection--single {
+.backend .container-fluid .select2-container--krajee-bs4 .select2-selection--multiple,
+.backend .container-fluid .select2-container--krajee-bs4 .select2-selection--single {
   border: none;
   border-radius: 200px;
   padding: 0.75rem 1.5rem;
@@ -2447,9 +2456,7 @@ body {
 
 .select2-container--krajee-bs4 .select2-search__field {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 0.5rem;
   line-height: 1.2;
   cursor: pointer;
 }
@@ -2494,6 +2501,7 @@ body {
 span.select2-dropdown.filters__select-container.select2-dropdown--below,
 .select2-container--krajee-bs4:not(.select2-container--disabled) .select2-dropdown,
 .select2-container--krajee-bs4 .select2-container--open .select2-dropdown--below {
+  padding: 0.5rem;
   padding-top: 1rem;
   border-radius: 1.5rem;
   border: none;
@@ -2533,12 +2541,14 @@ span.select2-dropdown.filters__select-container.select2-dropdown--below .select2
 }
 
 .select2-container--krajee-bs4 .select2-search--dropdown {
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 1rem !important;
 }
 
 .select2-container--krajee-bs4 .select2-search--dropdown .select2-search__field {
   border-radius: 200px;
   padding: 0.25rem 1rem;
+  margin: 0 1rem;
+  width: calc(100% - 4rem);
 }
 
 .select2-container--krajee-bs4 .select2-selection--single .select2-selection__placeholder {

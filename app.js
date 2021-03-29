@@ -114,7 +114,7 @@ ready(function () {
                 if (prevScrollpos > currentScrollPos) {
                     header.style.top = "0";
                 } else {
-                    header.style.top = "-161px";
+                    header.style.top = "-250px";
                 }
                 prevScrollpos = currentScrollPos;
             } else {

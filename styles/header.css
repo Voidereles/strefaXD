@@ -412,8 +412,8 @@ a.sizeOf.active {
   display: -ms-flexbox;
   display: flex;
   top: 0;
-  -webkit-transition: 200ms;
-  transition: 200ms;
+  -webkit-transition: 400ms;
+  transition: 400ms;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
