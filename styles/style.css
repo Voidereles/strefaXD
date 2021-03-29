@@ -2324,7 +2324,7 @@ body {
 .breadcrumb a:hover,
 .breadcrumb a:focus,
 .breadcrumb a:active {
-  color: white;
+  color: #595959;
 }
 
 @media (max-width: 992px) {

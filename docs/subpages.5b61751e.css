@@ -199,14 +199,14 @@
   font-family: 'Kelson-Sans-RU';
   font-weight: 700;
   font-display: swap;
-  src: url("kelson-sans-ru-bold.bcf821de.ttf") format("truetype"), url("Kelson Sans Bold RU.4fa44668.otf") format("opentype");
+  src: url("ea32d12b502d6d90aa2ea870bcf821de.ttf") format("truetype"), url("f2c6d318f34d906fa2c2cbf54fa44668.otf") format("opentype");
 }
 
 @font-face {
   font-family: 'Kelson-Sans-RU';
   font-weight: 400;
   font-display: swap;
-  src: url("kelson-sans-ru-normal.75027a85.ttf") format("truetype"), url("Kelson Sans Regular RU.ce98b126.otf") format("opentype");
+  src: url("f46314992d35287c3e46a9a075027a85.ttf") format("truetype"), url("67b721e2622758616d217221ce98b126.otf") format("opentype");
 }
 
 .font-grey {
@@ -1634,14 +1634,14 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url("MainImg.a9ecdeb3.svg");
+  background: url("75067aa56cd7d445bc955a09a9ecdeb3.svg");
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
 
 .hero__xd {
-  background: url("mainXD.7e2896fa.svg");
+  background: url("a8caaa6928c287a4ca3ac6f17e2896fa.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1652,7 +1652,7 @@ body {
 }
 
 .hero__cut {
-  background: url("threeFourCutMainImg.3d8e92af.svg");
+  background: url("fac6e4594c4c25bae8e94af63d8e92af.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -2518,7 +2518,7 @@ body {
 .breadcrumb a:hover,
 .breadcrumb a:focus,
 .breadcrumb a:active {
-  color: white;
+  color: #595959;
 }
 
 @media (max-width: 992px) {
@@ -3238,8 +3238,29 @@ body {
 }
 
 .backend .select2-container {
-  margin-left: 1rem;
   min-width: 200px;
+  display: block;
+}
+
+.backend input.file-caption-name {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.backend .btn-group.buttons {
+  margin-top: 1rem;
+}
+
+.backend button.btn.btn-outline-secondary {
+  border-top-right-radius: 1.25rem;
+}
+
+.backend button.btn.btn-outline-secondary {
+  border-top-left-radius: 1.25rem;
+}
+
+.backend .zone-size-index .btn {
+  margin-top: -0.5rem;
 }
 
 .select2-container--krajee-bs4 .select2-selection--multiple,
@@ -3249,7 +3270,6 @@ body {
   padding: 0.75rem 1.5rem;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  width: 200px;
   height: 42px;
   cursor: pointer;
 }
@@ -3570,7 +3590,7 @@ span.select2-dropdown.filters__select-container.select2-dropdown--below .select2
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("check-mark.e5b0ff21.svg");
+  background-image: url("f82235baaa852867ab9aa7c4e5b0ff21.svg");
 }
 
 .checkbox-container .checkmark {

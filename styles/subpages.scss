@@ -373,10 +373,30 @@
 
     .select2 {
         &-container {
-            margin-left: 1rem;
             min-width: 200px;
+            display: block;
         }
 
+    }
+
+    input.file-caption-name {
+        transform: translateY(-8px);
+    }
+
+    .btn-group.buttons {
+        margin-top: 1rem;
+    }
+
+    button.btn.btn-outline-secondary {
+        border-top-right-radius: 1.25rem;
+    }
+
+    button.btn.btn-outline-secondary {
+        border-top-left-radius: 1.25rem;
+    }
+
+    .zone-size-index .btn {
+        margin-top: -0.5rem;
     }
 
 }
@@ -388,7 +408,6 @@
     border-radius: 200px;
     padding: 0.75rem 1.5rem;
     box-shadow: $regularShadow;
-    width: 200px;
     height: 42px;
     cursor: pointer;
 }

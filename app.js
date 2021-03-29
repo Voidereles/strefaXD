@@ -73,12 +73,6 @@ ready(function () {
     document.querySelectorAll('.header__dropdown-close').forEach(element => {
         element.addEventListener('click', function () {
             $('.collapse').collapse('hide');
-            // let dropdownToClose = element.parentElement.parentElement.parentElement;
-            // console.log(dropdownToClose);
-            // $(dropdownToClose).slideUp('fast', function () {
-            //     $(dropdownToClose).removeClass('show');
-            //     $(dropdownToClose).attr('style', null);
-            // })
         });
         $(document).on('click', function (e) {
             if (!$(e.target).is(element)) {
@@ -89,16 +83,22 @@ ready(function () {
     });
     const headerMoveLinks = () => {
         if (window.innerWidth <= 992) {
-            headerNav.append(headerContainerBottom);
-            navUpper.prepend(navFunctions);
-            document.querySelectorAll('.header__nav-bottom-li').forEach(element => {
-                element.addEventListener('mouseover', function () {
-                    changeLogoColor();
+            if (typeof (document.querySelector('.header .header__container-bottom')) != 'undefined' && document.querySelector('.header .header__container-bottom') != null) {
+                headerNav.append(headerContainerBottom);
+                document.querySelectorAll('.header__nav-bottom-li').forEach(element => {
+                    element.addEventListener('mouseover', function () {
+                        changeLogoColor();
+                    });
+                    element.addEventListener('mouseout', function () {
+                        changeLogoColor();
+                    });
                 });
-                element.addEventListener('mouseout', function () {
-                    changeLogoColor();
-                });
-            });
+
+            }
+            if (typeof (document.querySelector('.header__nav-upper-functions')) != 'undefined' && document.querySelector('.header__nav-upper-functions') != null) {
+                navUpper.prepend(navFunctions);
+            }
+
         }
 
     }

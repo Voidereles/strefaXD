@@ -1057,7 +1057,7 @@ body {
     a:hover,
     a:focus,
     a:active {
-        color: white;
+        color: lighten($color: $dark, $amount: 10%);
     }
 }
 
