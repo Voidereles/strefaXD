@@ -2782,6 +2782,12 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
   }
 }
 
+@media (min-width: 1650px) {
+  .backend.main {
+    padding-top: 173px;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1699px) {
   .main > .container-fluid {
     overflow: hidden;
