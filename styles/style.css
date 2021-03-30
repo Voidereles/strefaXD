@@ -2586,13 +2586,13 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
     overflow: scroll;
   }
   .backend.main {
-    padding-top: 80px;
+    padding-top: 80px !important;
   }
 }
 
 @media (min-width: 1650px) {
   .backend.main {
-    padding-top: 173px;
+    padding-top: 173px !important;
   }
 }
 
