@@ -9,9 +9,9 @@
 const lazysizes = require("lazysizes");
 
 import 'popper.js';
-// import 'bootstrap';
-// import 'bootstrap/js/dist/collapse.js';
 // import 'popper';
+import 'bootstrap';
+// import 'bootstrap/js/dist/collapse.js';
 import 'owl.carousel';
 import stickybits from 'stickybits';
 import './scripts/product.js';
