@@ -921,8 +921,16 @@
     box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.15);
 }
 
+
+
 .tt-scrollable-menu .tt-menu {
     overflow-x: hidden;
+
+    .tt-suggestion {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
 
     .tt-selectable {
         cursor: pointer;
