@@ -256,6 +256,19 @@ body {
         margin-top: -8px;
         background: white;
         //minus margin -top because of transparent here but borders on the blue and red containers
+
+        .owl-stage {
+            display: flex;
+            flex: 1 0 auto;
+            height: 100%;
+
+        }
+
+        .owl-item {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
     }
 
     .owl-arrow-container {
@@ -339,6 +352,7 @@ body {
         height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 
     &__goto-product {
