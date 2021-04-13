@@ -626,13 +626,15 @@ a.sizeOf.active {
   border-radius: 200px;
   padding: 0.75rem;
   background: white;
+  width: 170px;
+  padding-left: 0.5rem;
   -webkit-transition: 400ms;
   transition: 400ms;
 }
 
-.header__search-form:hover .header__search-input {
-  width: 170px;
-  padding-left: 0.5rem;
+.header__search-form .form-control.tt-input {
+  border-radius: 200px;
+  margin-right: 0.5rem;
 }
 
 .header__cart-container, .header__login-container {
@@ -1350,5 +1352,27 @@ a.sizeOf.active {
   .header__logo-container {
     margin-left: -92px;
   }
+}
+
+.tt-scrollable-menu .tt-menu {
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  border: none;
+  margin-top: 6px;
+  border-top-right-radius: 0;
+  -webkit-box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.15);
+}
+
+.tt-scrollable-menu .tt-menu {
+  overflow-x: hidden;
+}
+
+.tt-scrollable-menu .tt-menu .tt-selectable {
+  cursor: pointer;
+}
+
+.tt-scrollable-menu .tt-menu .tt-selectable:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=header.css.map */

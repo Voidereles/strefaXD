@@ -115,11 +115,31 @@ ready(function () {
         });
 
         document.querySelectorAll('.product__big-carousel .product__item').forEach(element => {
+
+            function getPosition(elm) {
+                var xPos = 0,
+                    yPos = 0;
+
+                while (elm) {
+                    xPos += (elm.offsetLeft - elm.scrollLeft + elm.clientLeft);
+                    yPos += (elm.offsetTop - elm.scrollTop + elm.clientTop);
+                    elm = elm.offsetParent;
+                }
+
+                return {
+                    x: xPos,
+                    y: yPos
+                };
+            }
+
+            const distanceToTop = getPosition(element).y;
+
             element.addEventListener("mousemove", (e) => {
                 const x = e.clientX - e.target.offsetLeft;
                 const y = e.clientY - e.target.offsetTop;
+                console.log(elementHeight);
 
-                element.querySelector('.product__img').style.transformOrigin = `${x}px ${y}px`;
+                element.querySelector('.product__img').style.transformOrigin = `${x - 15}px ${y - distanceToTop}px`;
                 element.querySelector('.product__img').style.transform = `scale(2)`;
             });
             element.addEventListener("mouseleave", () => {
@@ -127,6 +147,7 @@ ready(function () {
                 element.querySelector('.product__img').style.transform = "scale(1)";
             });
         });
+        // ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' +
     }
 
 

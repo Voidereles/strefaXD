@@ -114,7 +114,7 @@ body {
         background-repeat: no-repeat;
         background-position: bottom left;
         z-index: 1;
-        height: 100%;
+        height: 101.5%;
         width: calc(100% + 30px);
         margin-left: -15px;
         margin-right: -15px;
@@ -327,10 +327,17 @@ body {
         margin: auto;
         overflow-y: hidden;
         position: relative;
+        height: 100%;
 
         &:hover {
             border-color: $yellow-dark;
         }
+    }
+
+    &__item {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     &__goto-product {
@@ -383,12 +390,22 @@ body {
     &__img-container {
         border: 1px solid $grey-light;
         border-radius: 1rem;
-        padding: 2rem;
+        padding: 1.5rem;
         position: relative;
         z-index: 1;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            .products__img {
+
+                &--second {
+                    z-index: 3;
+                    opacity: 1;
+                }
+            }
+        }
     }
 
     &__img {
@@ -397,6 +414,19 @@ body {
         height: 180px;
         margin: auto;
         object-fit: contain;
+
+
+        &--second {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1.1);
+            z-index: -1;
+            opacity: 0;
+            transition: $durationS;
+        }
     }
 
     &__content {
@@ -1631,6 +1661,10 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
     .hero {
         &__heading {
             font-size: $fontSizeH3;
+            text-align: center;
+            margin-top: 8rem;
+            transform: rotate(5deg);
+            font-size: 2.3rem;
         }
 
         &__subheading {
@@ -1681,16 +1715,6 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
             }
         }
 
-        &__heading {
-            text-align: center;
-            margin-top: 4rem;
-            transform: rotate(5deg);
-            font-size: 2.3rem;
-        }
-
-        &__subheading {
-            display: none;
-        }
 
         .btn.btn-warning {
             margin-top: 1.5rem;
@@ -1698,7 +1722,7 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
         }
 
         .owl-arrow-container {
-            margin-top: -13.5vh;
+            margin-top: -18.5vh;
             margin-left: auto;
 
             .owl-prev {

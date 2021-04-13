@@ -23155,17 +23155,35 @@ ready(function () {
       bigProductOwl.data('owl.carousel').to(number, 300, true);
     });
     document.querySelectorAll('.product__big-carousel .product__item').forEach(function (element) {
+      function getPosition(elm) {
+        var xPos = 0,
+            yPos = 0;
+
+        while (elm) {
+          xPos += elm.offsetLeft - elm.scrollLeft + elm.clientLeft;
+          yPos += elm.offsetTop - elm.scrollTop + elm.clientTop;
+          elm = elm.offsetParent;
+        }
+
+        return {
+          x: xPos,
+          y: yPos
+        };
+      }
+
+      var distanceToTop = getPosition(element).y;
       element.addEventListener("mousemove", function (e) {
         var x = e.clientX - e.target.offsetLeft;
         var y = e.clientY - e.target.offsetTop;
-        element.querySelector('.product__img').style.transformOrigin = "".concat(x, "px ").concat(y, "px");
+        console.log(elementHeight);
+        element.querySelector('.product__img').style.transformOrigin = "".concat(x - 15, "px ").concat(y - distanceToTop, "px");
         element.querySelector('.product__img').style.transform = "scale(2)";
       });
       element.addEventListener("mouseleave", function () {
         element.querySelector('.product__img').style.transformOrigin = "center center";
         element.querySelector('.product__img').style.transform = "scale(1)";
       });
-    });
+    }); // ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' +
   }
 });
 },{}],"node_modules/lazysizes/plugins/parent-fit/ls.parent-fit.js":[function(require,module,exports) {
@@ -23901,7 +23919,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55822" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56784" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

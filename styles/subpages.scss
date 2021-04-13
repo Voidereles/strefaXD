@@ -193,6 +193,7 @@
         gap: 1.5rem;
         grid-auto-flow: dense;
         justify-content: center;
+        grid-auto-rows: 1fr;
     }
 
     .select2 {
@@ -578,6 +579,36 @@
 
 
 }
+
+
+.pagination .page-link {
+    border-radius: 200px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem;
+    color: black;
+    min-width: 42px;
+    height: 42px;
+}
+
+
+
+.pagination {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    max-width: initial;
+    align-items: center !important;
+
+    .page-item.active .page-link {
+        background-color: $yellow;
+        border-color: $yellow;
+        color: black;
+    }
+}
+
+
 
 @media (max-width:600px) {
     .products-grid {
