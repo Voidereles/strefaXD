@@ -1380,6 +1380,12 @@ a.sizeOf.active {
   overflow-x: hidden;
 }
 
+.tt-scrollable-menu .tt-menu .tt-suggestion {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .tt-scrollable-menu .tt-menu .tt-selectable {
   cursor: pointer;
 }

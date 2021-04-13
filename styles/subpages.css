@@ -1381,6 +1381,12 @@ a.sizeOf.active {
   overflow-x: hidden;
 }
 
+.tt-scrollable-menu .tt-menu .tt-suggestion {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .tt-scrollable-menu .tt-menu .tt-selectable {
   cursor: pointer;
 }
@@ -2923,7 +2929,7 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
     margin-right: -40px;
   }
   .products__carousel .owl-stage {
-    margin-left: -40px;
+    margin-left: -21px;
   }
   .products__carousel .owl-stage-outer {
     margin-left: -40px;
