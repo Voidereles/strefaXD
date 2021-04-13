@@ -197,12 +197,13 @@
             align-items: center;
             box-shadow: $regularShadow;
             border-radius: 200px;
-            padding: 0.75rem;
             background: white;
 
             width: 230px;
             padding-left: 0.5rem;
             transition: $durationM;
+            justify-content: space-between;
+            padding: 0.75rem 1rem;
 
             .form-control.tt-input {
                 border-radius: 200px;

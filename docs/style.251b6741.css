@@ -1129,6 +1129,7 @@ a.sizeOf.active {
 .header__nav-bottom-li.no-menu:hover > .header__nav-link::after {
   height: 48px;
   top: -13px;
+  border-radius: 1rem;
 }
 
 .header__nav-bottom-link {
