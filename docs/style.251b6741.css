@@ -819,12 +819,15 @@ a.sizeOf.active {
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 200px;
-  padding: 0.75rem;
   background: white;
   width: 230px;
   padding-left: 0.5rem;
   -webkit-transition: 400ms;
   transition: 400ms;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.75rem 1rem;
 }
 
 .header__search-form .form-control.tt-input {
@@ -3111,7 +3114,7 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
     margin-right: -40px;
   }
   .products__carousel .owl-stage {
-    margin-left: -40px;
+    margin-left: -21px;
   }
   .products__carousel .owl-stage-outer {
     margin-left: -40px;
