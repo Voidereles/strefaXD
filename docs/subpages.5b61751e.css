@@ -750,12 +750,7 @@ a.sizeOf.active {
   line-height: 0.9;
   -webkit-transition: 400ms;
   transition: 400ms;
-  width: 0;
   overflow: hidden;
-}
-
-.header__search-input:focus {
-  border: none;
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;

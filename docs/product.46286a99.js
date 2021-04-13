@@ -249,7 +249,6 @@ ready(function () {
       element.addEventListener("mousemove", function (e) {
         var x = e.clientX - e.target.offsetLeft;
         var y = e.clientY - e.target.offsetTop;
-        console.log(elementHeight);
         element.querySelector('.product__img').style.transformOrigin = "".concat(x - 15, "px ").concat(y - distanceToTop, "px");
         element.querySelector('.product__img').style.transform = "scale(2)";
       });
@@ -288,7 +287,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56784" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63491" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

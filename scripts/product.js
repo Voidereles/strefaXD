@@ -137,7 +137,6 @@ ready(function () {
             element.addEventListener("mousemove", (e) => {
                 const x = e.clientX - e.target.offsetLeft;
                 const y = e.clientY - e.target.offsetTop;
-                console.log(elementHeight);
 
                 element.querySelector('.product__img').style.transformOrigin = `${x - 15}px ${y - distanceToTop}px`;
                 element.querySelector('.product__img').style.transform = `scale(2)`;
