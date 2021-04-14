@@ -1723,6 +1723,7 @@ body {
   width: initial !important;
   max-height: 100vh;
   position: relative;
+  min-height: 350px;
 }
 
 .hero__img-carousel-link {
@@ -2085,19 +2086,6 @@ body {
   position: relative;
   margin-bottom: -5px;
   color: black;
-}
-
-.products__price-old::after {
-  content: '';
-  background: black;
-  height: 2px;
-  border-radius: 200px;
-  width: 90%;
-  left: 5%;
-  top: 40%;
-  position: absolute;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
 }
 
 .products__add {

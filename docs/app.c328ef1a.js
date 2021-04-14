@@ -23172,10 +23172,12 @@ ready(function () {
       }
 
       var distanceToTop = getPosition(element).y;
+      var distanceToLeft = getPosition(element).x;
+      distanceToLeftRect = document.querySelector('.product').getBoundingClientRect().left;
       element.addEventListener("mousemove", function (e) {
         var x = e.clientX - e.target.offsetLeft;
         var y = e.clientY - e.target.offsetTop;
-        element.querySelector('.product__img').style.transformOrigin = "".concat(x - 15, "px ").concat(y - distanceToTop, "px");
+        element.querySelector('.product__img').style.transformOrigin = "".concat(x - distanceToLeftRect, "px ").concat(y - distanceToTop, "px");
         element.querySelector('.product__img').style.transform = "scale(2)";
       });
       element.addEventListener("mouseleave", function () {
@@ -23918,7 +23920,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50461" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63691" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

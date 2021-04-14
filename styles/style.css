@@ -1531,6 +1531,7 @@ body {
   width: initial !important;
   max-height: 100vh;
   position: relative;
+  min-height: 350px;
 }
 
 .hero__img-carousel-link {

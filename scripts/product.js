@@ -133,12 +133,14 @@ ready(function () {
             }
 
             const distanceToTop = getPosition(element).y;
+            const distanceToLeft = getPosition(element).x;
+            distanceToLeftRect = document.querySelector('.product').getBoundingClientRect().left;
 
             element.addEventListener("mousemove", (e) => {
                 const x = e.clientX - e.target.offsetLeft;
                 const y = e.clientY - e.target.offsetTop;
 
-                element.querySelector('.product__img').style.transformOrigin = `${x - 15}px ${y - distanceToTop}px`;
+                element.querySelector('.product__img').style.transformOrigin = `${x - distanceToLeftRect}px ${y - distanceToTop}px`;
                 element.querySelector('.product__img').style.transform = `scale(2)`;
             });
             element.addEventListener("mouseleave", () => {
