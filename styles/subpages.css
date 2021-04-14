@@ -3056,9 +3056,10 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
 .product__big-carousel .product__item {
   border-radius: 1.25rem;
   border: 2px solid #f6c219;
-  height: 400px;
   padding: 1rem;
   overflow: hidden;
+  min-height: 400px;
+  height: auto;
 }
 
 .product__small-carousel .product__item {
