@@ -483,19 +483,6 @@ body {
             position: relative;
             margin-bottom: -5px;
             color: black;
-
-            &::after {
-                content: '';
-                background: black;
-                height: 2px;
-                border-radius: 200px;
-                width: 90%;
-                left: 5%;
-                top: 40%;
-                position: absolute;
-                transform: rotate(30deg);
-
-            }
         }
     }
 
