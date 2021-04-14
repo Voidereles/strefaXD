@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Voidereles/strefaXD#readme",
   "dependencies": {
     "@parcel/fs": "^2.0.0-alpha.3",
+    "animate.css": "^4.1.1",
     "bootstrap": "^4.6.0",
     "canvas": "^2.7.0",
     "jquery": "^3.6.0",

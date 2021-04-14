@@ -251,6 +251,7 @@ ready(function () {
             nav: false,
             dots: false,
             margin: 50,
+
             // autoplay: true
             touchDrag: false,
             // slideBy: 2,
@@ -269,6 +270,9 @@ ready(function () {
             margin: 200,
             touchDrag: false,
             mouseDrag: false,
+            animateOut: 'fadeOut',
+            animateIn: 'fadeIn',
+            pullDrag: false,
             responsiveClass: true,
             responsive: {
                 0: {

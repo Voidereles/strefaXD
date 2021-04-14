@@ -23608,7 +23608,7 @@ ready(function () {
       margin: 0,
       // lazyLoad: true,
       dots: false
-    }, _defineProperty(_heroOwlImgs$owlCarou, "margin", 200), _defineProperty(_heroOwlImgs$owlCarou, "touchDrag", false), _defineProperty(_heroOwlImgs$owlCarou, "mouseDrag", false), _defineProperty(_heroOwlImgs$owlCarou, "responsiveClass", true), _defineProperty(_heroOwlImgs$owlCarou, "responsive", {
+    }, _defineProperty(_heroOwlImgs$owlCarou, "margin", 200), _defineProperty(_heroOwlImgs$owlCarou, "touchDrag", false), _defineProperty(_heroOwlImgs$owlCarou, "mouseDrag", false), _defineProperty(_heroOwlImgs$owlCarou, "animateOut", 'fadeOut'), _defineProperty(_heroOwlImgs$owlCarou, "animateIn", 'fadeIn'), _defineProperty(_heroOwlImgs$owlCarou, "pullDrag", false), _defineProperty(_heroOwlImgs$owlCarou, "responsiveClass", true), _defineProperty(_heroOwlImgs$owlCarou, "responsive", {
       0: {
         margin: 250
       },
@@ -23918,7 +23918,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56599" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50461" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
