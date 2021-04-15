@@ -2904,11 +2904,18 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
             transform: rotate(-2deg);
   }
   .hero .owl-arrow-container {
-    margin-top: -18.5vh;
-    margin-left: auto;
+    position: absolute;
+    top: -110px;
+    right: 8px;
+    border-radius: 50%;
   }
   .hero .owl-arrow-container .owl-prev {
     display: none;
+  }
+  .hero .owl-arrow-container .owl-next.hero__next {
+    padding: 4px;
+    border-radius: 50%;
+    background: white;
   }
   .products__carousel {
     padding: 0;

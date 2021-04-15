@@ -1727,11 +1727,21 @@ span.select2-dropdown.filters__select-container.select2-from-table.select2-dropd
         }
 
         .owl-arrow-container {
-            margin-top: -18.5vh;
-            margin-left: auto;
+            // margin-top: -18.5vh;
+            // margin-left: auto;
+            position: absolute;
+            top: -110px;
+            right: 8px;
+            border-radius: 50%;
 
             .owl-prev {
                 display: none;
+            }
+
+            .owl-next.hero__next {
+                padding: 4px;
+                border-radius: 50%;
+                background: white;
             }
         }
     }
