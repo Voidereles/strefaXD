@@ -68,7 +68,18 @@ jQuery.event.special.touchmove = {
     }
 };
 
+const popupToggle = function () {
+    document.getElementsByClassName('popup')[0].classList.toggle('show');
+}
+
+popupToggle();
+
+document.getElementsByClassName('popup__close')[0].addEventListener('click', function () {
+    document.getElementsByClassName('popup')[0].classList.remove('show');
+});
+
 ready(function () {
+
 
     document.querySelectorAll('.header__dropdown-close').forEach(element => {
         element.addEventListener('click', function () {
