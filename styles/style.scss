@@ -28,6 +28,10 @@ body {
     transition: $durationM;
     box-shadow: $regularShadow;
 
+    &.bg-yellow {
+        background: $yellow;
+    }
+
     &.show {
         right: 1rem;
     }
