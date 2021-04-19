@@ -316,14 +316,17 @@ jQuery.event.special.touchmove = {
   }
 };
 
-var popupToggle = function popupToggle() {
-  document.getElementsByClassName('popup')[0].classList.toggle('show');
-};
+if (typeof document.getElementsByClassName('popup')[0] != 'undefined' && document.getElementsByClassName('popup')[0] != null) {
+  var popupToggle = function popupToggle() {
+    document.getElementsByClassName('popup')[0].classList.toggle('show');
+  };
 
-popupToggle();
-document.getElementsByClassName('popup__close')[0].addEventListener('click', function () {
-  document.getElementsByClassName('popup')[0].classList.remove('show');
-});
+  popupToggle();
+  document.getElementsByClassName('popup__close')[0].addEventListener('click', function () {
+    document.getElementsByClassName('popup')[0].classList.remove('show');
+  });
+}
+
 ready(function () {
   document.querySelectorAll('.header__dropdown-close').forEach(function (element) {
     element.addEventListener('click', function () {

@@ -68,15 +68,19 @@ jQuery.event.special.touchmove = {
     }
 };
 
-const popupToggle = function () {
-    document.getElementsByClassName('popup')[0].classList.toggle('show');
+if (typeof (document.getElementsByClassName('popup')[0]) != 'undefined' && document.getElementsByClassName('popup')[0] != null) {
+    const popupToggle = function () {
+        document.getElementsByClassName('popup')[0].classList.toggle('show');
+    }
+
+    popupToggle();
+
+    document.getElementsByClassName('popup__close')[0].addEventListener('click', function () {
+        document.getElementsByClassName('popup')[0].classList.remove('show');
+    });
 }
 
-popupToggle();
 
-document.getElementsByClassName('popup__close')[0].addEventListener('click', function () {
-    document.getElementsByClassName('popup')[0].classList.remove('show');
-});
 
 ready(function () {
 
