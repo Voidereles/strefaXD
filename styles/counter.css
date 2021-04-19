@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("bootstrap/dist/css/bootstrap.min.css");
-@import url("owl.carousel/dist/assets/owl.carousel.css");
 @font-face {
   font-family: 'Kelson-Sans-RU';
   font-weight: 700;
@@ -1399,6 +1397,37 @@ body {
   color: #3F3F3F;
   overflow-x: hidden;
   width: 100%;
+}
+
+.popup {
+  position: fixed;
+  bottom: 1rem;
+  right: 150%;
+  width: 100%;
+  max-width: 300px;
+  background: white;
+  border-radius: 1.5rem;
+  border: 1px solid #FFD357;
+  padding: 1.5rem;
+  z-index: 9999;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup.bg-yellow {
+  background: #FFD357;
+}
+
+.popup.show {
+  right: 1rem;
+}
+
+.popup__close {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
 }
 
 .main {

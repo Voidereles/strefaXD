@@ -6,18 +6,18 @@
 //     window
 // } = new JSDOM("");
 // const $ = require("jquery")(window);
-const lazysizes = require("lazysizes");
+// const lazysizes = require("lazysizes");
 
-import 'popper.js';
+// import 'popper.js';
 // import 'popper';
-import 'bootstrap';
+// import 'bootstrap';
 // import 'bootstrap/js/dist/collapse.js';
-import 'owl.carousel';
-import stickybits from 'stickybits';
+// import 'owl.carousel';
+// import stickybits from 'stickybits';
 import './scripts/product.js';
-import 'lazysizes';
+// import 'lazysizes';
 // import a plugin
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+// import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 
 const header = document.querySelector('.header');
