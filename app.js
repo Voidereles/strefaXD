@@ -440,7 +440,7 @@ ready(function () {
 
 
     if (typeof (document.querySelector('.news__carousel')) != 'undefined' && document.querySelector('.news__carousel') != null) {
-        $('.news__carousel, .instagram__carousel').owlCarousel({
+        $('.news__carousel').owlCarousel({
             loop: true,
             autoplay: true,
             lazyLoad: true,
@@ -473,20 +473,54 @@ ready(function () {
     }
 
 
-    const setInstagramHeight = () => {
-        if (typeof (document.querySelector('.instagram__carousel')) != 'undefined' && document.querySelector('.instagram__carousel') != null && typeof (document.querySelector('.delivery')) != 'undefined' && document.querySelector('.delivery') != null) {
-
-            if (innerWidth >= 992) {
-                let deliveryHeight = document.querySelector('.delivery').clientHeight;
-                document.querySelectorAll('.instagram__img').forEach(element => {
-                    element.style.height = "calc(" + document.querySelector('.delivery').clientHeight + "px - 1.5rem - 4px)";
-                });
+    if (typeof (document.querySelector('.instagram__carousel')) != 'undefined' && document.querySelector('.instagram__carousel') != null) {
+        $('.instagram__carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            lazyLoad: true,
+            items: 1,
+            margin: 32,
+            autoplayHoverPause: true,
+            dots: false,
+            nav: false,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    dots: false,
+                    stagePadding: 80
+                },
+                480: {
+                    items: 2,
+                    stagePadding: 0
+                },
+                600: {
+                    items: 3
+                },
+                1700: {
+                    items: 4
+                }
             }
+        });
+
+
+        const setInstagramHeight = () => {
+            if (typeof (document.querySelector('.instagram__carousel')) != 'undefined' && document.querySelector('.instagram__carousel') != null && typeof (document.querySelector('.delivery')) != 'undefined' && document.querySelector('.delivery') != null) {
+
+                if (innerWidth >= 992) {
+                    let deliveryHeight = document.querySelector('.delivery').clientHeight;
+                    document.querySelectorAll('.instagram__img').forEach(element => {
+                        element.style.height = "calc(" + document.querySelector('.delivery').clientHeight + "px - 1.5rem - 4px)";
+                    });
+                }
+            }
+
         }
+
+        setInstagramHeight();
 
     }
 
-    setInstagramHeight();
 
 
 

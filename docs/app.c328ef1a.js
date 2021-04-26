@@ -620,7 +620,7 @@ ready(function () {
   }
 
   if (typeof document.querySelector('.news__carousel') != 'undefined' && document.querySelector('.news__carousel') != null) {
-    $('.news__carousel, .instagram__carousel').owlCarousel({
+    $('.news__carousel').owlCarousel({
       loop: true,
       autoplay: true,
       lazyLoad: true,
@@ -650,18 +650,49 @@ ready(function () {
     });
   }
 
-  var setInstagramHeight = function setInstagramHeight() {
-    if (typeof document.querySelector('.instagram__carousel') != 'undefined' && document.querySelector('.instagram__carousel') != null && typeof document.querySelector('.delivery') != 'undefined' && document.querySelector('.delivery') != null) {
-      if (innerWidth >= 992) {
-        var deliveryHeight = document.querySelector('.delivery').clientHeight;
-        document.querySelectorAll('.instagram__img').forEach(function (element) {
-          element.style.height = "calc(" + document.querySelector('.delivery').clientHeight + "px - 1.5rem - 4px)";
-        });
+  if (typeof document.querySelector('.instagram__carousel') != 'undefined' && document.querySelector('.instagram__carousel') != null) {
+    $('.instagram__carousel').owlCarousel({
+      loop: true,
+      autoplay: true,
+      lazyLoad: true,
+      items: 1,
+      margin: 32,
+      autoplayHoverPause: true,
+      dots: false,
+      nav: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          dots: false,
+          stagePadding: 80
+        },
+        480: {
+          items: 2,
+          stagePadding: 0
+        },
+        600: {
+          items: 3
+        },
+        1700: {
+          items: 4
+        }
       }
-    }
-  };
+    });
 
-  setInstagramHeight();
+    var _setInstagramHeight = function _setInstagramHeight() {
+      if (typeof document.querySelector('.instagram__carousel') != 'undefined' && document.querySelector('.instagram__carousel') != null && typeof document.querySelector('.delivery') != 'undefined' && document.querySelector('.delivery') != null) {
+        if (innerWidth >= 992) {
+          var deliveryHeight = document.querySelector('.delivery').clientHeight;
+          document.querySelectorAll('.instagram__img').forEach(function (element) {
+            element.style.height = "calc(" + document.querySelector('.delivery').clientHeight + "px - 1.5rem - 4px)";
+          });
+        }
+      }
+    };
+
+    _setInstagramHeight();
+  }
 
   if (typeof document.querySelector('.partners__carousel') != 'undefined' && document.querySelector('.partners__carousel') != null) {
     $('.partners__carousel').owlCarousel({
@@ -808,7 +839,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62576" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49570" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

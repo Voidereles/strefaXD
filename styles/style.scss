@@ -446,10 +446,11 @@ body {
 
         &:hover {
             .products__img {
+                opacity: 0;
 
                 &--second {
                     z-index: 3;
-                    opacity: 1;
+                    opacity: 1 !important;
                 }
             }
         }

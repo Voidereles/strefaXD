@@ -1853,9 +1853,13 @@ body {
           align-items: center;
 }
 
+.products__img-container:hover .products__img {
+  opacity: 0;
+}
+
 .products__img-container:hover .products__img--second {
   z-index: 3;
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .products__img {
